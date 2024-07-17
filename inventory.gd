@@ -1,5 +1,7 @@
+class_name Inventory
 extends Node
 #autoload
+static var storage = {} #dict for now, may change
 
-func gain(ingredient, amount):
+static func gain(ingredient, amount):
 	pass

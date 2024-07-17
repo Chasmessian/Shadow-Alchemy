@@ -1,3 +1,6 @@
-[gd_scene format=3 uid="uid://pelum1dmhrjg"]
+[gd_scene load_steps=2 format=3 uid="uid://pelum1dmhrjg"]
+
+[ext_resource type="Script" path="res://Afflictions/Base/affliction.gd" id="1_ntkp1"]
 
 [node name="Affliction" type="Node"]
+script = ExtResource("1_ntkp1")
