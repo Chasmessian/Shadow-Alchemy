@@ -1,0 +1,17 @@
+res://Ingredients/ingredient.tscn
+res://Ingredients/ingredient.gd
+res://Potion.tscn
+res://Afflictions/affliction.gd
+res://Ingredients/Base/ingredient.tscn
+res://Patient.tscn
+res://Patient.gd
+res://Afflictions/Base/affliction.gd
+res://garden.tscn
+res://garden.gd
+res://Plants/Base/plant.tscn
+res://Plants/Base/plant.gd
+res://Ingredients/Base/ingredient.gd
+res://inventory.gd
+res://Patients/Base/Patient.tscn
+res://Patients/Base/Species/Base/Species.tscn
+res://Patients/Base/Species/Base/Species.gd
