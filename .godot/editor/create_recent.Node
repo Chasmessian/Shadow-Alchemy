@@ -1,9 +1,9 @@
-Control
-Button
+Node2D
+Node
+Panel
 VBoxContainer
 HBoxContainer
-MarginContainer
-TextureRect
-ColorRect
-Label
-Node
+CanvasLayer
+Control
+Container
+Sprite2D

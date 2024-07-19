@@ -1,3 +1,6 @@
-[gd_scene format=3 uid="uid://bu1tt6krt23qw"]
+[gd_scene load_steps=2 format=3 uid="uid://bu1tt6krt23qw"]
+
+[ext_resource type="Script" path="res://Potion.gd" id="1_hjr0a"]
 
 [node name="Potion" type="Node"]
+script = ExtResource("1_hjr0a")

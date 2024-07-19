@@ -1,5 +1,35 @@
-[gd_scene format=3 uid="uid://uc4kphg4jjyt"]
+[gd_scene load_steps=3 format=3 uid="uid://uc4kphg4jjyt"]
+
+[ext_resource type="PackedScene" uid="uid://cp2nay63s25us" path="res://garden.tscn" id="1_3fwft"]
+[ext_resource type="PackedScene" uid="uid://5edxrxt3wkbv" path="res://viewport.tscn" id="2_x118v"]
 
 [node name="World" type="Node2D"]
 
-[node name="It is me, the Knight of Iron" type="Node" parent="."]
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+
+[node name="Viewport" parent="HBoxContainer/VBoxContainer" instance=ExtResource("2_x118v")]
+layout_mode = 2
+
+[node name="Garden" parent="HBoxContainer/VBoxContainer" instance=ExtResource("1_3fwft")]
+layout_mode = 2
+size_flags_horizontal = 1
+size_flags_vertical = 3
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Panel" type="Panel" parent="HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Panel2" type="Panel" parent="HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3

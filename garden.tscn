@@ -1,6 +1,20 @@
 [gd_scene load_steps=2 format=3 uid="uid://cp2nay63s25us"]
 
-[ext_resource type="Script" path="res://garden.gd" id="1_07iv2"]
+[ext_resource type="Texture2D" uid="uid://bcpdgip6bb3kp" path="res://Garden.png" id="2_cijll"]
 
-[node name="Garden" type="Node2D"]
-script = ExtResource("1_07iv2")
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -646.0
+offset_right = 1155.0
+grow_vertical = 0
+size_flags_horizontal = 6
+size_flags_vertical = 6
+
+[node name="Background" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(378.85, 192.5)
+scale = Vector2(5.06, 5.06)
+texture = ExtResource("2_cijll")

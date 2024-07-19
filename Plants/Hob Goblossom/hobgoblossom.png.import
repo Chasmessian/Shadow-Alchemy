@@ -1,0 +1,26 @@
+[remap]
+
+importer="2d_array_texture"
+type="CompressedTexture2DArray"
+uid="uid://dm8e8d1p4xdoa"
+path="res://.godot/imported/hobgoblossom.png-19b74a8ad0320493b1967771f048406b.ctexarray"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Plants/Hob Goblossom/hobgoblossom.png"
+dest_files=["res://.godot/imported/hobgoblossom.png-19b74a8ad0320493b1967771f048406b.ctexarray"]
+
+[params]
+
+compress/mode=0
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/channel_pack=0
+mipmaps/generate=false
+mipmaps/limit=-1
+slices/horizontal=16
+slices/vertical=16
