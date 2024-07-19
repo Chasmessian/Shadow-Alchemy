@@ -1,0 +1,54 @@
+[gd_scene load_steps=3 format=3 uid="uid://drmrj53ferrvw"]
+
+[ext_resource type="Texture2D" uid="uid://che6nifmou86t" path="res://UI/journal.png" id="1_3qhr3"]
+[ext_resource type="FontFile" uid="uid://qxc36i5l7jjy" path="res://UI/VCR_OSD_MONO_1.001.ttf" id="2_c4v05"]
+
+[node name="Journal" type="Node2D"]
+visible = false
+
+[node name="Journal Image" type="TextureRect" parent="."]
+offset_left = 67.0
+offset_top = 66.0
+offset_right = 1066.0
+offset_bottom = 588.0
+texture = ExtResource("1_3qhr3")
+expand_mode = 1
+
+[node name="JournalContainer" type="MarginContainer" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 72
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 72
+
+[node name="HBoxContainer" type="HBoxContainer" parent="JournalContainer"]
+layout_mode = 2
+
+[node name="Left Arrow" type="Button" parent="JournalContainer/HBoxContainer"]
+layout_mode = 2
+text = "Left arrow"
+
+[node name="Blank" type="Control" parent="JournalContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Right Arrow" type="Button" parent="JournalContainer/HBoxContainer"]
+layout_mode = 2
+text = "Right arrow"
+
+[node name="TextContainer" type="MarginContainer" parent="."]
+visible = false
+offset_left = 39.0
+offset_top = 24.0
+offset_right = 1113.0
+offset_bottom = 631.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+
+[node name="Label" type="Label" parent="TextContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_c4v05")
+theme_override_font_sizes/font_size = 26
+text = "Curse of the Two Week Deadline"
