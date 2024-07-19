@@ -1,1 +1,9 @@
+Node2D
 Node
+Panel
+VBoxContainer
+HBoxContainer
+CanvasLayer
+Control
+Container
+Sprite2D

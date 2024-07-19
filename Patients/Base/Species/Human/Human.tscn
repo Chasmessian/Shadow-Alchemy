@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://hqs7f1u2tudm"]
+
+[ext_resource type="PackedScene" uid="uid://br1nxxvk3huu7" path="res://Patients/Base/Species/Base/Species.tscn" id="1_lddng"]
+[ext_resource type="Script" path="res://Patients/Base/Species/Human/Human.gd" id="2_ufgyj"]
+
+[node name="Species" instance=ExtResource("1_lddng")]
+script = ExtResource("2_ufgyj")

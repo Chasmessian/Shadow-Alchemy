@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://bkwr17r71yflh"]
+
+[ext_resource type="PackedScene" uid="uid://dorx36xayrfnu" path="res://Ingredients/Base/ingredient.tscn" id="1_om57s"]
+[ext_resource type="Script" path="res://Ingredients/ShadowWood/shadow_wood.gd" id="2_e8exa"]
+
+[node name="ShadowWood" instance=ExtResource("1_om57s")]
+script = ExtResource("2_e8exa")

@@ -1,4 +1,4 @@
 class_name Species
 extends Node
-func ratePotion():
+func ratePotion(potion):
 	pass
