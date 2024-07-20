@@ -1,6 +1,6 @@
 res://journal.tscn
 res://journal.gd
+res://world.tscn
 res://Ingredients/Base/ingredient.tscn
 res://Ingredients/ShadowWood/shadow_wood.tscn
 res://Potion.tscn
-res://world.tscn
