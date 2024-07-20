@@ -1,3 +1,6 @@
+Ingredient
+Control
+CanvasLayer
 ScrollContainer
 HScrollBar
 HBoxContainer
@@ -5,11 +8,8 @@ TextureRect
 RichTextLabel
 VBoxContainer
 Panel
-Control
 PanelContainer
 MarginContainer
 Label
 Node2D
 Node
-CanvasLayer
-Container

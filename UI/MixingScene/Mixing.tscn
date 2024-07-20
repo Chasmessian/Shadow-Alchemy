@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://4fymu0qnsaxb"]
+[gd_scene load_steps=2 format=3 uid="uid://4fymu0qnsaxb"]
 
 [ext_resource type="Script" path="res://UI/MixingScene/Mixing.gd" id="1_p404o"]
-[ext_resource type="PackedScene" uid="uid://coujcuc75cc0n" path="res://UI/MixingScene/itemSlot.tscn" id="2_6i45w"]
 
 [node name="Mixing" type="Node2D"]
 script = ExtResource("1_p404o")
@@ -40,48 +39,12 @@ size_flags_vertical = 3
 size_flags_stretch_ratio = 0.5
 
 [node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer"]
+clip_contents = false
 layout_mode = 2
-size_flags_vertical = 3
-follow_focus = true
+size_flags_vertical = 6
 vertical_scroll_mode = 0
 
 [node name="Inventory" type="HBoxContainer" parent="VBoxContainer/ScrollContainer"]
-layout_mode = 2
-
-[node name="ItemSlot" parent="VBoxContainer/ScrollContainer/Inventory" instance=ExtResource("2_6i45w")]
-layout_mode = 2
-
-[node name="ItemSlot2" parent="VBoxContainer/ScrollContainer/Inventory" instance=ExtResource("2_6i45w")]
-layout_mode = 2
-
-[node name="ItemSlot3" parent="VBoxContainer/ScrollContainer/Inventory" instance=ExtResource("2_6i45w")]
-layout_mode = 2
-
-[node name="ItemSlot4" parent="VBoxContainer/ScrollContainer/Inventory" instance=ExtResource("2_6i45w")]
-layout_mode = 2
-
-[node name="ItemSlot5" parent="VBoxContainer/ScrollContainer/Inventory" instance=ExtResource("2_6i45w")]
-layout_mode = 2
-
-[node name="ItemSlot6" parent="VBoxContainer/ScrollContainer/Inventory" instance=ExtResource("2_6i45w")]
-layout_mode = 2
-
-[node name="ItemSlot7" parent="VBoxContainer/ScrollContainer/Inventory" instance=ExtResource("2_6i45w")]
-layout_mode = 2
-
-[node name="ItemSlot8" parent="VBoxContainer/ScrollContainer/Inventory" instance=ExtResource("2_6i45w")]
-layout_mode = 2
-
-[node name="ItemSlot9" parent="VBoxContainer/ScrollContainer/Inventory" instance=ExtResource("2_6i45w")]
-layout_mode = 2
-
-[node name="ItemSlot10" parent="VBoxContainer/ScrollContainer/Inventory" instance=ExtResource("2_6i45w")]
-layout_mode = 2
-
-[node name="ItemSlot11" parent="VBoxContainer/ScrollContainer/Inventory" instance=ExtResource("2_6i45w")]
-layout_mode = 2
-
-[node name="ItemSlot12" parent="VBoxContainer/ScrollContainer/Inventory" instance=ExtResource("2_6i45w")]
 layout_mode = 2
 
 [node name="Spacing3" type="Control" parent="VBoxContainer"]

@@ -1,4 +1,4 @@
 class_name Ingredient
 extends Node
-var image = null #for previews
-
+var image : Texture2D = preload("res://icon.svg")
+var label : String = "Ingredient"

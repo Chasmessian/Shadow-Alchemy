@@ -1,15 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://coujcuc75cc0n"]
+[gd_scene load_steps=3 format=3 uid="uid://coujcuc75cc0n"]
 
 [ext_resource type="Texture2D" uid="uid://cc1eogsgkx3v2" path="res://icon.svg" id="1_b8kgi"]
+[ext_resource type="Script" path="res://UI/MixingScene/itemSlot.gd" id="1_s0iyx"]
 
 [node name="ItemSlot" type="VBoxContainer"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+offset_right = 128.0
+offset_bottom = 132.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
+script = ExtResource("1_s0iyx")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 2
@@ -19,5 +18,6 @@ texture = ExtResource("1_b8kgi")
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 layout_mode = 2
 size_flags_vertical = 3
-size_flags_stretch_ratio = 3.8
 text = "ITEM"
+fit_content = true
+scroll_active = false
