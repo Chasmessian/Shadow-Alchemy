@@ -1,6 +1,13 @@
-res://journal.tscn
-res://journal.gd
 res://Ingredients/Base/ingredient.tscn
+res://Journal Text/page_content_1.txt
+res://page_content_1.txt
+res://Journal Text/page_content_3.txt
+res://Journal Text/page_content_4.txt
+res://page_content_4.txt
 res://Ingredients/ShadowWood/shadow_wood.tscn
 res://Potion.tscn
 res://world.tscn
+res://journal.tscn
+res://Mixing.tscn
+res://UI/MixingScene/itemSlot.tscn
+res://UI/MixingScene/Mixing.tscn
