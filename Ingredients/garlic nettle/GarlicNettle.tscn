@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://boifplfdo2fwu"]
+
+[ext_resource type="Script" path="res://Ingredients/garlic nettle/GarlicNettle.gd" id="1_2hhpb"]
+
+[node name="GarlicNettle" type="Node"]
+script = ExtResource("1_2hhpb")

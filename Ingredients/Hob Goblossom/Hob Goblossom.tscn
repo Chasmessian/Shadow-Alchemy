@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b6tao1dsubd8c"]
+
+[ext_resource type="Script" path="res://Ingredients/Hob Goblossom/Hob Goblossom.gd" id="1_buylc"]
+
+[node name="HobGoblossom" type="Node"]
+script = ExtResource("1_buylc")

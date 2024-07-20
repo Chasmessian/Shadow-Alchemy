@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://qrifoev174sr"]
+
+[ext_resource type="Script" path="res://Ingredients/harpy tongue/Harpy Tongue.gd" id="1_ebbq5"]
+
+[node name="HarpyTongue" type="Node"]
+script = ExtResource("1_ebbq5")

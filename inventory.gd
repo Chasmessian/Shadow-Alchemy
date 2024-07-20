@@ -1,7 +1,7 @@
 class_name Inventory
 extends Node
 #autoload
-static var storage = {} #dict for now, may change
+static var storage = {} #dict for now, may change. keys are classes themselves, values are amounts
 
 static func add(ingredient, amount):
 	if(ingredient in storage.keys()):

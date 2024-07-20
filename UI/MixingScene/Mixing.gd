@@ -2,6 +2,11 @@ extends Node2D
 var itemSlotScene = preload("res://UI/MixingScene/itemSlot.tscn")
 func _ready():
 	Inventory.add(ShadowWood,5)	
+	Inventory.add(Batwort, 10)
+	Inventory.add(BloodRose, 10)
+	Inventory.add(GarlicNettle, 10)
+	
+	
 	load_inventory()
 	
 func load_inventory():

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://d1belk3may6vs"]
+
+[ext_resource type="Script" path="res://Ingredients/Northern Fang/NorthernFang.gd" id="1_f2kvr"]
+
+[node name="NorthernFang" type="Node"]
+script = ExtResource("1_f2kvr")

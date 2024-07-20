@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://de26txum2vblj"]
+
+[ext_resource type="Script" path="res://Ingredients/blood rose/BloodRose.gd" id="1_xtetw"]
+
+[node name="BloodRose" type="Node"]
+script = ExtResource("1_xtetw")

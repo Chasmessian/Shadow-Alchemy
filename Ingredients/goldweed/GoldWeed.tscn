@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bhixxsffy1g7"]
+
+[ext_resource type="Script" path="res://Ingredients/goldweed/GoldWeed.gd" id="1_k1rw8"]
+
+[node name="GoldWeed" type="Node"]
+script = ExtResource("1_k1rw8")

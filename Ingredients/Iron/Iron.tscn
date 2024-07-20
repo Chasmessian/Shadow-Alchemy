@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bgehrpoh0wpvd"]
+
+[ext_resource type="Script" path="res://Ingredients/Iron/Iron.gd" id="1_nph51"]
+
+[node name="Iron" type="Node"]
+script = ExtResource("1_nph51")
