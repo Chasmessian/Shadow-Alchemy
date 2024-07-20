@@ -1,8 +1,6 @@
-res://Patients/Base/Species/Human/Human.tscn
-res://Patients/Base/Species/Base/Species.tscn
-res://Patients/Base/Species/Human/Human.gd
-res://Patients/Base/Species/Base/Species.gd
+res://journal.tscn
+res://journal.gd
+res://Ingredients/Base/ingredient.tscn
 res://Ingredients/ShadowWood/shadow_wood.tscn
-res://Ingredients/ShadowWood/shadow_wood.gd
 res://Potion.tscn
-res://Potion.gd
+res://world.tscn
