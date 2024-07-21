@@ -1,8 +1,9 @@
 res://journal.tscn
-res://journal.gd
 res://Ingredients/Base/ingredient.tscn
 res://Ingredients/ShadowWood/shadow_wood.tscn
 res://Potion.tscn
 res://world.tscn
 res://UI/MixingScene/Mixing.tscn
 res://UI/MixingScene/itemSlot.tscn
+res://viewport.tscn
+res://journal.gd

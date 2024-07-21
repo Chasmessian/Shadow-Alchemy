@@ -1,10 +1,11 @@
+Sprite2D
+TextureRect
 Ingredient
 Control
 CanvasLayer
 ScrollContainer
 HScrollBar
 HBoxContainer
-TextureRect
 RichTextLabel
 VBoxContainer
 Panel

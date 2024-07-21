@@ -1,5 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://5edxrxt3wkbv"]
+[gd_scene load_steps=3 format=3 uid="uid://5edxrxt3wkbv"]
 
+[ext_resource type="Texture2D" uid="uid://dawv6qhl1mysp" path="res://Journal Text/bg.png" id="1_0ola4"]
 [ext_resource type="Texture2D" uid="uid://cc1eogsgkx3v2" path="res://icon.svg" id="1_ol2cq"]
 
 [node name="Control" type="Control"]
@@ -8,7 +9,13 @@ anchors_preset = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(378, 193.5)
+scale = Vector2(2.16, 2.21143)
+texture = ExtResource("1_0ola4")
+
 [node name="Background" type="Sprite2D" parent="."]
+visible = false
 texture_filter = 1
 position = Vector2(381.5, 194)
 scale = Vector2(5.85156, 3.01562)

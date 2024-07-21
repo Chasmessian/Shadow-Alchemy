@@ -49,12 +49,10 @@ func load_solutions():
 func _on_left_arrow_pressed():
 	print("Journal: Left Arrow")
 	change_page(-1)
-	print(page_number)
 
 func _on_right_arrow_pressed():
 	print("Journal: Right Arrow")
 	change_page(1)
-	print(page_number)
 
 func change_page(amount): #Just for changing the page
 	page_number += amount
@@ -63,7 +61,6 @@ func change_page(amount): #Just for changing the page
 
 func get_page(number): # Whenever we need to update the page I guess? Journal should always start at page 0.
 	var mandela_effect = RandomNumberGenerator.new().randi_range(1,100)
-	print(mandela_effect)
 	if number == 10 and mandela_effect > 90:
 			current_title_left.text = "Mambella's Effect"
 			current_title_right.text = "Mambella's Effect"
