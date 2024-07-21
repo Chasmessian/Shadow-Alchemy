@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://gq1ekclxd8na"]
+[gd_scene load_steps=3 format=3 uid="uid://2f5espxhpwja"]
 
 [ext_resource type="Script" path="res://dialogue.gd" id="1_ugl0a"]
 [ext_resource type="FontFile" uid="uid://qxc36i5l7jjy" path="res://UI/JournalScene/VCR_OSD_MONO_1.001.ttf" id="2_o1mfy"]

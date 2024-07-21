@@ -11,6 +11,7 @@ var read_time = 2
 var current_message = 0
 var display = ""
 var current_char = 0
+var next_message_ready = false
 
 func _ready():
 	start_dialogue()
@@ -36,8 +37,9 @@ func _on_next_char_timeout():
 	else:
 		$next_char.stop()
 		$next_message.one_shot = true
-		$next_message.set_wait_time(read_time)
-		$next_message.start()
+		next_message_ready = true
+		#$next_message.set_wait_time(read_time) 
+		#$next_message.start()
 
 func _on_next_message_timeout():
 		if (current_message == len(messages) - 1):
@@ -47,3 +49,7 @@ func _on_next_message_timeout():
 			display = ""
 			current_char = 0
 			$next_char.start()
+			
+func clicked(): #need to call this
+	if(next_message_ready):
+		_on_next_char_timeout()

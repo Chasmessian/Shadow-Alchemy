@@ -12,3 +12,6 @@ res://world.tscn
 res://journal.tscn
 res://UI/MixingScene/Mixing.tscn
 res://UI/MixingScene/itemSlot.tscn
+res://Ingredients/Batwort/Batwort.tscn
+res://dialogue.tscn
+res://dialogue.gd
