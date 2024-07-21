@@ -1,3 +1,13 @@
-res://viewport.tscn
-res://garden.tscn
+res://speech_bubble.tscn
 res://world.tscn
+res://journal.tscn
+res://speech_icon.gd
+res://Ingredients/Base/ingredient.tscn
+res://Ingredients/ShadowWood/shadow_wood.tscn
+res://Potion.tscn
+res://UI/MixingScene/Mixing.tscn
+res://UI/MixingScene/itemSlot.tscn
+res://viewport.tscn
+res://speech_bubble.gd
+res://dialogue.gd
+res://dialogue.tscn

@@ -19,6 +19,7 @@ size_flags_vertical = 4
 theme_override_constants/separation = 8
 
 [node name="Left Arrow Image" type="TextureRect" parent="ImageContainer/HBoxContainer"]
+texture_filter = 2
 custom_minimum_size = Vector2(60, 136)
 layout_mode = 2
 size_flags_vertical = 4
@@ -27,12 +28,14 @@ expand_mode = 1
 stretch_mode = 2
 
 [node name="Journal Image" type="TextureRect" parent="ImageContainer/HBoxContainer"]
+texture_filter = 1
 custom_minimum_size = Vector2(1000, 500)
 layout_mode = 2
 texture = ExtResource("1_3qhr3")
 expand_mode = 1
 
 [node name="Right Arrow Image" type="TextureRect" parent="ImageContainer/HBoxContainer"]
+texture_filter = 2
 custom_minimum_size = Vector2(60, 136)
 layout_mode = 2
 size_flags_vertical = 4
