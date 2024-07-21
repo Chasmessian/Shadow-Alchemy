@@ -1,6 +1,9 @@
-Control
+Timer
+AnimatedSprite2D
 Sprite2D
+Label
 TextureRect
+Control
 Ingredient
 CanvasLayer
 ScrollContainer
@@ -9,6 +12,3 @@ HBoxContainer
 RichTextLabel
 VBoxContainer
 Panel
-PanelContainer
-MarginContainer
-Label
