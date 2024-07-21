@@ -48,6 +48,7 @@ func _on_next_message_timeout():
 			current_message += 1
 			display = ""
 			current_char = 0
+			next_message_ready = false
 			$next_char.start()
 			
 func clicked(): #need to call this
