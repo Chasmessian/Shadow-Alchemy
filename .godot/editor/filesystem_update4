@@ -1,3 +1,14 @@
-res://viewport.tscn
 res://garden.tscn
+res://Ingredients/Base/ingredient.tscn
+res://Journal Text/page_content_1.txt
+res://Journal Text/page_content_3.txt
+res://Journal Text/page_content_4.txt
+res://Journal Text/page_content_5.txt
+res://Journal Text/page_content_6.txt
+res://Journal Text/page_content_7.txt
+res://Ingredients/ShadowWood/shadow_wood.tscn
+res://Potion.tscn
 res://world.tscn
+res://journal.tscn
+res://UI/MixingScene/Mixing.tscn
+res://UI/MixingScene/itemSlot.tscn
