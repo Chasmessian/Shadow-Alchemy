@@ -1,17 +1,17 @@
-res://garden.tscn
+res://dialogue.tscn
+res://journal.tscn
+res://UI/JournalScene/journal.tscn
+res://UI/MainScene/Dialogue/speech_bubble.gd
+res://viewport.tscn
 res://Ingredients/Base/ingredient.tscn
-res://Journal Text/page_content_1.txt
-res://Journal Text/page_content_3.txt
-res://Journal Text/page_content_4.txt
-res://Journal Text/page_content_5.txt
-res://Journal Text/page_content_6.txt
-res://Journal Text/page_content_7.txt
 res://Ingredients/ShadowWood/shadow_wood.tscn
 res://Potion.tscn
 res://world.tscn
-res://journal.tscn
+res://UI/JournalScene/Journal/journal.tscn
 res://UI/MixingScene/Mixing.tscn
 res://UI/MixingScene/itemSlot.tscn
+res://garden.tscn
 res://Ingredients/Batwort/Batwort.tscn
-res://dialogue.tscn
-res://dialogue.gd
+res://UI/MainScene/Dialogue/dialogue.tscn
+res://UI/MainScene/Dialogue/speech_bubble.tscn
+res://UI/MainScene/Dialogue/dialogue.gd

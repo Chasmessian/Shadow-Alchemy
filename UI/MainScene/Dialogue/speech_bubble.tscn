@@ -1,0 +1,53 @@
+[gd_scene load_steps=7 format=3 uid="uid://tdosqb38s672"]
+
+[ext_resource type="Script" path="res://UI/MainScene/Dialogue/speech_bubble.gd" id="1_tgfq6"]
+[ext_resource type="Texture2D" uid="uid://c6mkgyh2g0puc" path="res://UI/MainScene/speech_bubble.png" id="2_4bove"]
+[ext_resource type="PackedScene" uid="uid://2f5espxhpwja" path="res://UI/MainScene/Dialogue/dialogue.tscn" id="3_6etfs"]
+[ext_resource type="Texture2D" uid="uid://ymfxyaxs81sj" path="res://UI/MainScene/speech_icon.png" id="4_jixgp"]
+[ext_resource type="Texture2D" uid="uid://dgdsnchvxlpc7" path="res://UI/MainScene/speech_icon_2.png" id="5_4333a"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m1lwt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_jixgp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_4333a")
+}],
+"loop": true,
+"name": &"bob",
+"speed": 2.0
+}]
+
+[node name="Speech Bubble" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = -428.0
+offset_bottom = -294.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tgfq6")
+
+[node name="Speech Bubble" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(346.5, 175)
+scale = Vector2(1.92857, 1.8)
+texture = ExtResource("2_4bove")
+
+[node name="Dialogue" parent="." instance=ExtResource("3_6etfs")]
+
+[node name="Speech Icon" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(652, 310)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_m1lwt")
+animation = &"bob"
+frame_progress = 0.690565
+
+[connection signal="ending_dialogue" from="Dialogue" to="." method="_on_dialogue_ending_dialogue"]
+[connection signal="starting_dialogue" from="Dialogue" to="." method="_on_dialogue_starting_dialogue"]

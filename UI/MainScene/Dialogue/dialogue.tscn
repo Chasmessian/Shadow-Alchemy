@@ -1,10 +1,10 @@
 [gd_scene load_steps=3 format=3 uid="uid://2f5espxhpwja"]
 
-[ext_resource type="Script" path="res://dialogue.gd" id="1_ugl0a"]
-[ext_resource type="FontFile" uid="uid://qxc36i5l7jjy" path="res://UI/JournalScene/VCR_OSD_MONO_1.001.ttf" id="2_o1mfy"]
+[ext_resource type="Script" path="res://UI/MainScene/Dialogue/dialogue.gd" id="1_u81p3"]
+[ext_resource type="FontFile" uid="uid://qxc36i5l7jjy" path="res://UI/JournalScene/VCR_OSD_MONO_1.001.ttf" id="2_w7fjf"]
 
 [node name="Dialogue" type="Node2D"]
-script = ExtResource("1_ugl0a")
+script = ExtResource("1_u81p3")
 
 [node name="Label" type="Label" parent="."]
 offset_left = 31.0
@@ -12,7 +12,7 @@ offset_top = 206.0
 offset_right = 660.0
 offset_bottom = 313.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("2_o1mfy")
+theme_override_fonts/font = ExtResource("2_w7fjf")
 theme_override_font_sizes/font_size = 26
 text = "..."
 autowrap_mode = 3

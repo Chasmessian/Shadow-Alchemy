@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://drmrj53ferrvw"]
 
-[ext_resource type="Script" path="res://journal.gd" id="1_3nkps"]
+[ext_resource type="Script" path="res://UI/JournalScene/Journal/journal.gd" id="1_3nkps"]
 [ext_resource type="Texture2D" uid="uid://che6nifmou86t" path="res://UI/JournalScene/journal.png" id="1_3qhr3"]
 [ext_resource type="Texture2D" uid="uid://cp24vf1dyuc5t" path="res://UI/JournalScene/arrow_left.png" id="2_2kd72"]
 [ext_resource type="FontFile" uid="uid://qxc36i5l7jjy" path="res://UI/JournalScene/VCR_OSD_MONO_1.001.ttf" id="2_c4v05"]

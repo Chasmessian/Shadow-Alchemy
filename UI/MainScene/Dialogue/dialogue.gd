@@ -1,5 +1,8 @@
 extends Node2D
 
+signal starting_dialogue
+signal ending_dialogue
+
 var messages = [
 	"Sell the water to a fish.",
 	"Sell the time to a clock."
@@ -14,7 +17,7 @@ var current_char = 0
 var next_message_ready = false
 
 func _ready():
-	start_dialogue()
+		start_dialogue()
 
 func start_dialogue():
 	current_message = 0
@@ -23,8 +26,13 @@ func start_dialogue():
 	
 	$next_char.set_wait_time(typing_speed)
 	$next_char.start()
+	
+	emit_signal("starting_dialogue")
+	# %"Viewport Area2D".show()
 
 func stop_dialogue():
+	emit_signal("ending_dialogue")
+	# %"Viewport Area2D".hide()
 	queue_free()
 
 func _on_next_char_timeout():
@@ -41,7 +49,7 @@ func _on_next_char_timeout():
 		#$next_message.set_wait_time(read_time) 
 		#$next_message.start()
 
-func _on_next_message_timeout():
+func _on_next_message_ready():
 		if (current_message == len(messages) - 1):
 			stop_dialogue()
 		else:
@@ -51,6 +59,6 @@ func _on_next_message_timeout():
 			next_message_ready = false
 			$next_char.start()
 			
-func clicked(): #need to call this
+func clicked(): #$"Viewport Area2D" is calling this now
 	if(next_message_ready):
-		_on_next_char_timeout()
+		_on_next_message_ready()

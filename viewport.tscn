@@ -1,9 +1,12 @@
-[gd_scene load_steps=3 format=3 uid="uid://5edxrxt3wkbv"]
+[gd_scene load_steps=4 format=3 uid="uid://5edxrxt3wkbv"]
 
 [ext_resource type="Texture2D" uid="uid://bm1qbsf35h4yt" path="res://UI/MainScene/castle_background_4x.png" id="1_1lo13"]
-[ext_resource type="PackedScene" uid="uid://tdosqb38s672" path="res://speech_bubble.tscn" id="2_8woju"]
+[ext_resource type="PackedScene" uid="uid://tdosqb38s672" path="res://UI/MainScene/Dialogue/speech_bubble.tscn" id="2_8woju"]
 
-[node name="Control" type="Control"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3m8lg"]
+size = Vector2(748, 387.5)
+
+[node name="Viewport" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -12,6 +15,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+mouse_filter = 2
 
 [node name="Castle Background" type="Sprite2D" parent="."]
 position = Vector2(378, 198)
@@ -24,3 +28,12 @@ offset_left = 34.0
 offset_top = 38.0
 offset_right = -399.0
 offset_bottom = -261.0
+mouse_filter = 2
+
+[node name="Viewport Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Viewport Area2D"]
+position = Vector2(378, 198.25)
+shape = SubResource("RectangleShape2D_3m8lg")
+
+[connection signal="input_event" from="Viewport Area2D" to="Speech Bubble" method="_on_viewport_click_field_input_event"]
