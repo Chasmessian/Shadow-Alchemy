@@ -1,14 +1,14 @@
-Ingredient
 Control
+Sprite2D
+TextureRect
+Ingredient
 CanvasLayer
 ScrollContainer
 HScrollBar
 HBoxContainer
-TextureRect
 RichTextLabel
 VBoxContainer
 Panel
 PanelContainer
 MarginContainer
 Label
-Node2D

@@ -15,6 +15,6 @@ size_flags_vertical = 6
 
 [node name="Background" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(378.85, 192.5)
+position = Vector2(380, 125)
 scale = Vector2(5.06, 5.06)
 texture = ExtResource("2_cijll")
