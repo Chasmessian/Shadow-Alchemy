@@ -15,6 +15,7 @@ size_flags_horizontal = 3
 size_flags_stretch_ratio = 2.0
 
 [node name="Viewport" parent="HBoxContainer/VBoxContainer" instance=ExtResource("2_x118v")]
+custom_minimum_size = Vector2(0, 385)
 layout_mode = 2
 
 [node name="Garden" parent="HBoxContainer/VBoxContainer" instance=ExtResource("1_3fwft")]

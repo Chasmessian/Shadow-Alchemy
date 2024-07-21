@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1721520860
+::res://::1721524504
 garden.gd::GDScript::-1::1721488851::0::1::::<>Node2D<>::
 Garden.png::CompressedTexture2D::2557957347790565131::1721419392::1721419392::1::::<><>::
 garden.tscn::PackedScene::5882202851968948714::1721488850::0::1::::<><>::uid://bcpdgip6bb3kp::::res://Garden.png
@@ -9,7 +9,7 @@ journal.gd::GDScript::-1::1721520860::0::1::::<>Node2D<>::
 journal.tscn::PackedScene::8378294806184983948::1721520860::0::1::::<><>::res://journal.gd<>uid://che6nifmou86t::::res://UI/JournalScene/journal.png<>uid://cp24vf1dyuc5t::::res://UI/JournalScene/arrow_left.png<>uid://qxc36i5l7jjy::::res://UI/JournalScene/VCR_OSD_MONO_1.001.ttf<>uid://bjp4rdgp6e5xu::::res://UI/JournalScene/arrow_right.png
 Potion.gd::GDScript::-1::1721419392::0::1::::<>Node<>::
 Potion.tscn::PackedScene::3845060575476844110::1721520835::0::1::::<><>::res://Potion.gd
-viewport.tscn::PackedScene::2114146973724343407::1721520836::0::1::::<><>::uid://cc1eogsgkx3v2::::res://icon.svg
+viewport.tscn::PackedScene::2114146973724343407::1721521191::0::1::::<><>::uid://dawv6qhl1mysp::::res://Journal Text/bg.png<>uid://cc1eogsgkx3v2::::res://icon.svg
 world.tscn::PackedScene::1409685077973657983::1721520835::0::1::::<><>::uid://cp2nay63s25us::::res://garden.tscn<>uid://5edxrxt3wkbv::::res://viewport.tscn
 ::res://Afflictions/::1721240107
 ::res://Afflictions/Base/::1721278413
@@ -108,14 +108,15 @@ plant.tscn::PackedScene::4383893728796868224::1721240107::0::1::::<><>::res://Pl
 hobgoblossom.png::CompressedTexture2DArray::8069954638245750096::1721419392::1721419392::1::::<><>::
 ::res://Plants/Iron/::1721419392
 ironbar-Sheet.png::CompressedTexture2DArray::5817668932711354349::1721419392::1721419392::1::::<><>::
-::res://UI/::1721520880
+::res://UI/::1721524504
 ::res://UI/JournalScene/::1721520832
 arrow_left.png::CompressedTexture2D::5883210818729365399::1721418506::1721520832::1::::<><>::
 arrow_right.png::CompressedTexture2D::3050877261594927242::1721418506::1721520832::1::::<><>::
 journal.png::CompressedTexture2D::5274326654440774261::1721415552::1721520832::1::::<><>::
 VCR_OSD_MONO_1.001.ttf::FontFile::1170675264728083678::1721415933::1721520832::1::::<><>::
-::res://UI/MainScene/::1721520883
-bg.png::CompressedTexture2D::8578293493374502548::1721520883::1721520884::1::::<><>::
+::res://UI/MainScene/::1721524504
+castle_background.png::CompressedTexture2D::1607505891465908153::1721524473::1721524473::1::::<><>::
+castle_background_4x.png::CompressedTexture2D::3283334841090128271::1721524502::1721524505::1::::<><>::
 ::res://UI/MixingScene/::1721520836
 itemSlot.gd::GDScript::-1::1721509828::0::1::::<>VBoxContainer<>::
 itemSlot.tscn::PackedScene::5797323812973276119::1721520836::0::1::::<><>::uid://cc1eogsgkx3v2::::res://icon.svg<>res://UI/MixingScene/itemSlot.gd
