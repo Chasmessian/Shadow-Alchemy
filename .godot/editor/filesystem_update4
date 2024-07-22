@@ -5,3 +5,8 @@ res://Ingredients/Batwort/batwortPlant.tscn
 res://Ingredients/Base/waterlevel.tscn
 res://garden.tscn
 res://viewport.tscn
+res://Ingredients/Base/plant.gd
+res://Ingredients/Iron/iron_plant.tscn
+res://UI/Garden/Garden Pot.tscn
+res://UI/Garden/Garden Pot.gd
+res://garden.gd

@@ -1,3 +1,4 @@
+Node2D
 TextureProgressBar
 ProgressBar
 AnimatedSprite2D
@@ -12,4 +13,3 @@ Ingredient
 CanvasLayer
 ScrollContainer
 HScrollBar
-HBoxContainer

@@ -1,8 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://b3pudbev0ul1q"]
+[gd_scene load_steps=5 format=3 uid="uid://b3pudbev0ul1q"]
 
 [ext_resource type="Script" path="res://Ingredients/Base/plant.gd" id="1_6vu0w"]
 [ext_resource type="Shader" path="res://Ingredients/Base/plant.gdshader" id="1_deodj"]
-[ext_resource type="PackedScene" uid="uid://c7tvqxyjrgfvx" path="res://Ingredients/Base/waterlevel.tscn" id="2_jbnpo"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_gek8r"]
 shader = ExtResource("1_deodj")
@@ -17,7 +16,6 @@ shader_parameter/line_thickness = 0.1
 [node name="Plant" type="Node2D"]
 material = SubResource("ShaderMaterial_gek8r")
 script = ExtResource("1_6vu0w")
-waterBar = ExtResource("2_jbnpo")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1

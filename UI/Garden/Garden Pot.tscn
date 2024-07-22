@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://carb0ug6jsvvw"]
+
+[ext_resource type="Script" path="res://UI/Garden/Garden Pot.gd" id="1_4tv1r"]
+[ext_resource type="PackedScene" uid="uid://c7tvqxyjrgfvx" path="res://Ingredients/Base/waterlevel.tscn" id="1_7wpf2"]
+
+[node name="GardenPot" type="Node2D"]
+scale = Vector2(5, 5)
+script = ExtResource("1_4tv1r")
+
+[node name="Waterlevel" parent="." instance=ExtResource("1_7wpf2")]
+offset_left = -8.0
+offset_top = 8.0
+offset_right = 8.0
+offset_bottom = 17.0

@@ -7,8 +7,6 @@ var amount = 1
 var stageProgress = 0 #fills up slowly, when hits 100, reaches next stage and needs water
 var isWatering = false
 @onready var sprite = $AnimatedSprite2D
-@export var waterBar : PackedScene
-
 func _ready():
 	totalStages = sprite.sprite_frames.get_frame_count("default")-1 #minus one because it is zero indexed
 
