@@ -34,8 +34,14 @@ size_flags_horizontal = 3
 [node name="Journal" type="Button" parent="VBoxContainer2"]
 layout_mode = 2
 size_flags_vertical = 3
-size_flags_stretch_ratio = 8.0
+size_flags_stretch_ratio = 4.0
 text = "Journal"
+
+[node name="Mixing" type="Button" parent="VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 4.0
+text = "Mixing"
 
 [node name="Help" type="Button" parent="VBoxContainer2"]
 layout_mode = 2
@@ -45,3 +51,4 @@ text = "?"
 [connection signal="pressed" from="VBoxContainer/Seeds" to="." method="ChangeMode" binds= ["plant"]]
 [connection signal="pressed" from="VBoxContainer/Water" to="." method="ChangeMode" binds= ["water"]]
 [connection signal="pressed" from="VBoxContainer/Harvest" to="." method="ChangeMode" binds= ["harvest"]]
+[connection signal="pressed" from="VBoxContainer2/Journal" to="." method="openJournal"]

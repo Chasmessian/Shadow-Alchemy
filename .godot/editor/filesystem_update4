@@ -17,3 +17,5 @@ res://UI/garden.tscn
 res://LowerUIButtons.tscn
 res://LowerUIButtons.gd
 res://UI/Garden/garden.tscn
+res://UI/Garden/garden.gd
+res://world.gd
