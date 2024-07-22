@@ -1,7 +1,11 @@
-res://world.tscn
-res://Ingredients/Base/plant.gdshader
 res://Ingredients/Base/plant.tscn
+res://Ingredients/Base/plant.gdshader
 res://Ingredients/Batwort/batwortPlant.tscn
 res://Ingredients/Base/waterlevel.tscn
+res://world.tscn
 res://garden.tscn
+res://UI/MainScene/Dialogue/dialogue.tscn
+res://UI/MainScene/Dialogue/dialogue.gd
 res://viewport.tscn
+res://UI/MainScene/Dialogue/speech_bubble.gd
+res://UI/MainScene/Dialogue/speech_bubble.tscn

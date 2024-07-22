@@ -4,8 +4,8 @@ signal starting_dialogue
 signal ending_dialogue
 
 var messages = [
-	"Sell the water to a fish.",
-	"Sell the time to a clock."
+	"Hey Kaz, the garden is coming along well, I think.",
+	"Well done."
 	]
 
 var typing_speed = .025
@@ -27,12 +27,11 @@ func start_dialogue():
 	$next_char.set_wait_time(typing_speed)
 	$next_char.start()
 	
-	emit_signal("starting_dialogue")
-	# %"Viewport Area2D".show()
+	# Add something to show the speech bubble scene.
 
 func stop_dialogue():
-	emit_signal("ending_dialogue")
-	# %"Viewport Area2D".hide()
+	# Add something to hide the speech bubble scene.
+	
 	queue_free()
 
 func _on_next_char_timeout():
@@ -46,8 +45,6 @@ func _on_next_char_timeout():
 		$next_char.stop()
 		$next_message.one_shot = true
 		next_message_ready = true
-		#$next_message.set_wait_time(read_time) 
-		#$next_message.start()
 
 func _on_next_message_ready():
 		if (current_message == len(messages) - 1):
@@ -58,7 +55,13 @@ func _on_next_message_ready():
 			current_char = 0
 			next_message_ready = false
 			$next_char.start()
-			
-func clicked(): #$"Viewport Area2D" is calling this now
+
+func _on_viewport_area_2d_input_event(viewport, event, shape_idx):
+	if event is InputEventMouseButton:
+		if event.button_index == MOUSE_BUTTON_LEFT or event.button_index == MOUSE_BUTTON_RIGHT:
+			if event.pressed:
+				clicked()
+
+func clicked():
 	if(next_message_ready):
 		_on_next_message_ready()

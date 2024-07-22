@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://2f5espxhpwja"]
+[gd_scene load_steps=4 format=3 uid="uid://2f5espxhpwja"]
 
 [ext_resource type="Script" path="res://UI/MainScene/Dialogue/dialogue.gd" id="1_u81p3"]
 [ext_resource type="FontFile" uid="uid://qxc36i5l7jjy" path="res://UI/JournalScene/VCR_OSD_MONO_1.001.ttf" id="2_w7fjf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gkvs3"]
+size = Vector2(748, 387.5)
 
 [node name="Dialogue" type="Node2D"]
 script = ExtResource("1_u81p3")
@@ -21,5 +24,12 @@ autowrap_mode = 3
 
 [node name="next_message" type="Timer" parent="."]
 
+[node name="Viewport Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Viewport Area2D"]
+position = Vector2(378, 198.25)
+shape = SubResource("RectangleShape2D_gkvs3")
+
 [connection signal="timeout" from="next_char" to="." method="_on_next_char_timeout"]
 [connection signal="timeout" from="next_message" to="." method="_on_next_message_timeout"]
+[connection signal="input_event" from="Viewport Area2D" to="." method="_on_viewport_area_2d_input_event"]
