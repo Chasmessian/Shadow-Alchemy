@@ -1,0 +1,47 @@
+[gd_scene load_steps=2 format=3 uid="uid://b020rgq1ep5nu"]
+
+[ext_resource type="Script" path="res://LowerUIButtons.gd" id="1_gvwqw"]
+
+[node name="Lower UI" type="HBoxContainer"]
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_gvwqw")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 3.0
+
+[node name="Seeds" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Seeds"
+
+[node name="Water" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Water"
+
+[node name="Harvest" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Harvest"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Journal" type="Button" parent="VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 8.0
+text = "Journal"
+
+[node name="Help" type="Button" parent="VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "?"
+
+[connection signal="pressed" from="VBoxContainer/Seeds" to="." method="ChangeMode" binds= ["plant"]]
+[connection signal="pressed" from="VBoxContainer/Water" to="." method="ChangeMode" binds= ["water"]]
+[connection signal="pressed" from="VBoxContainer/Harvest" to="." method="ChangeMode" binds= ["harvest"]]

@@ -1,3 +1,4 @@
+res://
 res://Ingredients/ShadowWood
 res://Ingredients/silverleaf
 res://Ingredients/potato
@@ -11,7 +12,6 @@ res://Ingredients/garlic nettle
 res://Ingredients/Dragongrass
 res://Ingredients/Batwort
 res://UI/JournalScene/Journal
-res://
 res://UI/MainScene
 res://UI
 res://Patients/Base/Species/Human

@@ -1,9 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://cp2nay63s25us"]
+[gd_scene load_steps=4 format=3 uid="uid://cp2nay63s25us"]
 
 [ext_resource type="Script" path="res://garden.gd" id="1_7yt76"]
 [ext_resource type="Texture2D" uid="uid://bhjmns3fqquvh" path="res://testGarden.png" id="1_8oe4q"]
-[ext_resource type="PackedScene" uid="uid://cuvrxqxqk551l" path="res://Ingredients/Batwort/batwortPlant.tscn" id="2_0oj8i"]
-[ext_resource type="PackedScene" uid="uid://bdad6mo50x0jg" path="res://Ingredients/Iron/iron_plant.tscn" id="4_7fnki"]
 [ext_resource type="PackedScene" uid="uid://carb0ug6jsvvw" path="res://UI/Garden/Garden Pot.tscn" id="4_hfc5d"]
 
 [node name="Control" type="Control"]
@@ -16,6 +14,7 @@ offset_right = 1155.0
 grow_vertical = 0
 size_flags_horizontal = 6
 size_flags_vertical = 6
+mouse_filter = 2
 script = ExtResource("1_7yt76")
 
 [node name="Background" type="Sprite2D" parent="."]
@@ -23,13 +22,6 @@ texture_filter = 1
 position = Vector2(380, 128)
 scale = Vector2(10, 10)
 texture = ExtResource("1_8oe4q")
-
-[node name="Plant" parent="." instance=ExtResource("2_0oj8i")]
-position = Vector2(89, 108)
-scale = Vector2(7, 7)
-
-[node name="Iron plant" parent="." instance=ExtResource("4_7fnki")]
-position = Vector2(372, 34)
 
 [node name="Pots" type="Node2D" parent="."]
 

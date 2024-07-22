@@ -48,3 +48,6 @@ scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_m1lwt")
 animation = &"bob"
 frame_progress = 0.690565
+
+[connection signal="ending_dialogue" from="Dialogue" to="." method="_on_dialogue_ending_dialogue"]
+[connection signal="starting_dialogue" from="Dialogue" to="." method="_on_dialogue_starting_dialogue"]

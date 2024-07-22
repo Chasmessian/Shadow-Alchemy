@@ -20,4 +20,3 @@ script = ExtResource("1_6vu0w")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 material = SubResource("ShaderMaterial_aawib")
-scale = Vector2(8, 8)

@@ -1,0 +1,41 @@
+[gd_scene load_steps=4 format=3 uid="uid://cp2nay63s25us"]
+
+[ext_resource type="Script" path="res://UI/Garden/garden.gd" id="1_7yt76"]
+[ext_resource type="Texture2D" uid="uid://bhjmns3fqquvh" path="res://UI/Garden/testGarden.png" id="1_8oe4q"]
+[ext_resource type="PackedScene" uid="uid://carb0ug6jsvvw" path="res://UI/Garden/Garden Pot.tscn" id="4_hfc5d"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -646.0
+offset_right = 1155.0
+grow_vertical = 0
+size_flags_horizontal = 6
+size_flags_vertical = 6
+mouse_filter = 2
+script = ExtResource("1_7yt76")
+
+[node name="Background" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(380, 128)
+scale = Vector2(10, 10)
+texture = ExtResource("1_8oe4q")
+
+[node name="Pots" type="Node2D" parent="."]
+
+[node name="GardenPot" parent="Pots" instance=ExtResource("4_hfc5d")]
+position = Vector2(90, 108.37)
+
+[node name="GardenPot2" parent="Pots" instance=ExtResource("4_hfc5d")]
+position = Vector2(230, 148)
+
+[node name="GardenPot3" parent="Pots" instance=ExtResource("4_hfc5d")]
+position = Vector2(370, 88)
+
+[node name="GardenPot4" parent="Pots" instance=ExtResource("4_hfc5d")]
+position = Vector2(510, 148)
+
+[node name="GardenPot5" parent="Pots" instance=ExtResource("4_hfc5d")]
+position = Vector2(680, 98)
