@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://c7tvqxyjrgfvx"]
+
+[ext_resource type="Texture2D" uid="uid://by77vvhe8djfp" path="res://Ingredients/Base/watermeter.png" id="1_m61wy"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vy88b"]
+atlas = ExtResource("1_m61wy")
+region = Rect2(0, 3, 16, 9)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_at84d"]
+atlas = ExtResource("1_m61wy")
+region = Rect2(32, 3, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m8tt4"]
+atlas = ExtResource("1_m61wy")
+region = Rect2(16, 3, 14, 9)
+
+[node name="Waterlevel" type="TextureProgressBar"]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 10.0
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+value = 100.0
+texture_under = SubResource("AtlasTexture_vy88b")
+texture_over = SubResource("AtlasTexture_at84d")
+texture_progress = SubResource("AtlasTexture_m8tt4")
+tint_under = Color(0.951945, 0.91459, 0.8781, 1)
+tint_over = Color(0.972425, 0.965997, 0.981902, 1)
+tint_progress = Color(0.235852, 0.913845, 1, 1)

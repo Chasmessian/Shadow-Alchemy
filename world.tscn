@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://5edxrxt3wkbv" path="res://viewport.tscn" id="2_x118v"]
 
 [node name="World" type="Node2D"]
+position = Vector2(-1, -1)
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 offset_right = 1152.0

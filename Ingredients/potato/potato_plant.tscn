@@ -1,0 +1,39 @@
+[gd_scene load_steps=7 format=3 uid="uid://bla53673fbaky"]
+
+[ext_resource type="PackedScene" uid="uid://b3pudbev0ul1q" path="res://Ingredients/Base/plant.tscn" id="1_fi0pm"]
+[ext_resource type="Texture2D" uid="uid://c0ywwhvt16a0x" path="res://Ingredients/potato/potato.png" id="2_ehvtf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fcsyp"]
+atlas = ExtResource("2_ehvtf")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_akt32"]
+atlas = ExtResource("2_ehvtf")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fhlpg"]
+atlas = ExtResource("2_ehvtf")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0qu5h"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fcsyp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_akt32")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fhlpg")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Potato Plant" instance=ExtResource("1_fi0pm")]
+
+[node name="AnimatedSprite2D" parent="." index="0"]
+position = Vector2(0, -6)
+sprite_frames = SubResource("SpriteFrames_0qu5h")

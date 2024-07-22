@@ -1,0 +1,41 @@
+[gd_scene load_steps=7 format=3 uid="uid://du7brqf72wsnd"]
+
+[ext_resource type="PackedScene" uid="uid://b3pudbev0ul1q" path="res://Ingredients/Base/plant.tscn" id="1_tiwor"]
+[ext_resource type="Texture2D" uid="uid://caq3xkf0jcyfa" path="res://Ingredients/Northern Fang/Northern Fang.png" id="2_tquv3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6s1l4"]
+atlas = ExtResource("2_tquv3")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sbkvf"]
+atlas = ExtResource("2_tquv3")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xtiff"]
+atlas = ExtResource("2_tquv3")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_leyd0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6s1l4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sbkvf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xtiff")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Northern Fang Plant" instance=ExtResource("1_tiwor")]
+
+[node name="AnimatedSprite2D" parent="." index="0"]
+position = Vector2(-0.5, -5)
+sprite_frames = SubResource("SpriteFrames_leyd0")
+frame = 1
+frame_progress = 0.37607

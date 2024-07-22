@@ -1,0 +1,39 @@
+[gd_scene load_steps=7 format=3 uid="uid://chnfcnnxq3dhf"]
+
+[ext_resource type="PackedScene" uid="uid://b3pudbev0ul1q" path="res://Ingredients/Base/plant.tscn" id="1_vhrff"]
+[ext_resource type="Texture2D" uid="uid://dw1x71tuyk7xm" path="res://Ingredients/harpy tongue/harpy tongue.png" id="2_fvq44"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gm1gw"]
+atlas = ExtResource("2_fvq44")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nufq5"]
+atlas = ExtResource("2_fvq44")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rv6sq"]
+atlas = ExtResource("2_fvq44")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4nosi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gm1gw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nufq5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rv6sq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Harpy Tongue Plant" instance=ExtResource("1_vhrff")]
+
+[node name="AnimatedSprite2D" parent="." index="0"]
+position = Vector2(-1, -7)
+sprite_frames = SubResource("SpriteFrames_4nosi")

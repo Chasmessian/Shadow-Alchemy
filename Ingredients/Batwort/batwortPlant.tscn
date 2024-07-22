@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://cuvrxqxqk551l"]
+
+[ext_resource type="PackedScene" uid="uid://b3pudbev0ul1q" path="res://Ingredients/Base/plant.tscn" id="1_t5yph"]
+[ext_resource type="Texture2D" uid="uid://bk0tgwafkw0hw" path="res://Ingredients/Batwort/batwort.png" id="2_06ua2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b3aaa"]
+atlas = ExtResource("2_06ua2")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hr2ug"]
+atlas = ExtResource("2_06ua2")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xaqo7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b3aaa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hr2ug")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Plant" instance=ExtResource("1_t5yph")]
+material = null
+
+[node name="AnimatedSprite2D" parent="." index="0"]
+position = Vector2(-0.5, -6)
+scale = Vector2(0.998178, 1)
+sprite_frames = SubResource("SpriteFrames_xaqo7")
+frame = 1

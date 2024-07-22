@@ -1,0 +1,46 @@
+[gd_scene load_steps=8 format=3 uid="uid://dl8mwv8pn8scm"]
+
+[ext_resource type="PackedScene" uid="uid://b3pudbev0ul1q" path="res://Ingredients/Base/plant.tscn" id="1_vv42e"]
+[ext_resource type="Texture2D" uid="uid://blaki3agqtqwy" path="res://Ingredients/goldweed/Goldweed.png" id="2_m846o"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6y7kw"]
+atlas = ExtResource("2_m846o")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nuvh2"]
+atlas = ExtResource("2_m846o")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_auo1o"]
+atlas = ExtResource("2_m846o")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k4khu"]
+atlas = ExtResource("2_m846o")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qam83"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6y7kw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nuvh2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_auo1o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k4khu")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Goldweed Plant" instance=ExtResource("1_vv42e")]
+
+[node name="AnimatedSprite2D" parent="." index="0"]
+position = Vector2(0.5, -4)
+sprite_frames = SubResource("SpriteFrames_qam83")

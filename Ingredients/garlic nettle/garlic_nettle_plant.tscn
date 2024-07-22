@@ -1,0 +1,54 @@
+[gd_scene load_steps=9 format=3 uid="uid://baak65twelfua"]
+
+[ext_resource type="PackedScene" uid="uid://b3pudbev0ul1q" path="res://Ingredients/Base/plant.tscn" id="1_u3bew"]
+[ext_resource type="Texture2D" uid="uid://bs8877juayb0j" path="res://Ingredients/garlic nettle/garlicnettle.png" id="2_3e6yd"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f5ajb"]
+atlas = ExtResource("2_3e6yd")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dsovu"]
+atlas = ExtResource("2_3e6yd")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3s0vs"]
+atlas = ExtResource("2_3e6yd")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lhwbf"]
+atlas = ExtResource("2_3e6yd")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nwhum"]
+atlas = ExtResource("2_3e6yd")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ei8ha"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f5ajb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dsovu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3s0vs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lhwbf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nwhum")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Garlic Nettle Plant" instance=ExtResource("1_u3bew")]
+
+[node name="AnimatedSprite2D" parent="." index="0"]
+position = Vector2(0.5, -7)
+sprite_frames = SubResource("SpriteFrames_ei8ha")
+frame_progress = 0.490999

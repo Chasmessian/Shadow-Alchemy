@@ -1,0 +1,39 @@
+[gd_scene load_steps=7 format=3 uid="uid://6mx5ma0oncfn"]
+
+[ext_resource type="PackedScene" uid="uid://b3pudbev0ul1q" path="res://Ingredients/Base/plant.tscn" id="1_cpa4t"]
+[ext_resource type="Texture2D" uid="uid://nmh1ia4jncxn" path="res://Ingredients/blood rose/bloodrose.png" id="2_wvv2w"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wdbr5"]
+atlas = ExtResource("2_wvv2w")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3sxnx"]
+atlas = ExtResource("2_wvv2w")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qsu82"]
+atlas = ExtResource("2_wvv2w")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_l15lr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wdbr5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3sxnx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qsu82")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="BloodRosePlant" instance=ExtResource("1_cpa4t")]
+
+[node name="AnimatedSprite2D" parent="." index="0"]
+position = Vector2(-0.5, -5)
+sprite_frames = SubResource("SpriteFrames_l15lr")

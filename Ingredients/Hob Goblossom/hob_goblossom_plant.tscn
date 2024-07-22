@@ -1,0 +1,46 @@
+[gd_scene load_steps=8 format=3 uid="uid://cbrbf5vn4q06d"]
+
+[ext_resource type="PackedScene" uid="uid://b3pudbev0ul1q" path="res://Ingredients/Base/plant.tscn" id="1_2vkfo"]
+[ext_resource type="Texture2D" uid="uid://mqg4o21s54v3" path="res://Ingredients/Hob Goblossom/hobgoblossom.png" id="2_ysm4e"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_slvwp"]
+atlas = ExtResource("2_ysm4e")
+region = Rect2(0, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0pb2u"]
+atlas = ExtResource("2_ysm4e")
+region = Rect2(0, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pi8q1"]
+atlas = ExtResource("2_ysm4e")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sacl8"]
+atlas = ExtResource("2_ysm4e")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kc33q"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_slvwp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0pb2u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pi8q1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sacl8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Hob Goblossom Plant" instance=ExtResource("1_2vkfo")]
+
+[node name="AnimatedSprite2D" parent="." index="0"]
+position = Vector2(0.5, -6)
+sprite_frames = SubResource("SpriteFrames_kc33q")

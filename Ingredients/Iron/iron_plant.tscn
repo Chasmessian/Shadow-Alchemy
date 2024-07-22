@@ -1,0 +1,39 @@
+[gd_scene load_steps=7 format=3 uid="uid://bdad6mo50x0jg"]
+
+[ext_resource type="PackedScene" uid="uid://b3pudbev0ul1q" path="res://Ingredients/Base/plant.tscn" id="1_cjmew"]
+[ext_resource type="Texture2D" uid="uid://drjt0w57sa166" path="res://Ingredients/Iron/ironbar.png" id="2_oxxlt"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ddxow"]
+atlas = ExtResource("2_oxxlt")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_apblo"]
+atlas = ExtResource("2_oxxlt")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3k18x"]
+atlas = ExtResource("2_oxxlt")
+region = Rect2(0, 32, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kk5xg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ddxow")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_apblo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3k18x")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Iron plant" instance=ExtResource("1_cjmew")]
+
+[node name="AnimatedSprite2D" parent="." index="0"]
+position = Vector2(0, -7.985)
+sprite_frames = SubResource("SpriteFrames_kk5xg")

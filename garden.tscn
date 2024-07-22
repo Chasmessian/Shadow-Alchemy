@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://cp2nay63s25us"]
+[gd_scene load_steps=4 format=3 uid="uid://cp2nay63s25us"]
 
-[ext_resource type="Texture2D" uid="uid://bcpdgip6bb3kp" path="res://Garden.png" id="2_cijll"]
+[ext_resource type="Texture2D" uid="uid://bhjmns3fqquvh" path="res://testGarden.png" id="1_8oe4q"]
+[ext_resource type="PackedScene" uid="uid://cuvrxqxqk551l" path="res://Ingredients/Batwort/batwortPlant.tscn" id="2_0oj8i"]
+[ext_resource type="PackedScene" uid="uid://c7tvqxyjrgfvx" path="res://Ingredients/Base/waterlevel.tscn" id="3_8kkp8"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -15,6 +17,51 @@ size_flags_vertical = 6
 
 [node name="Background" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(380, 125)
-scale = Vector2(5.06, 5.06)
-texture = ExtResource("2_cijll")
+position = Vector2(380, 128)
+scale = Vector2(10, 10)
+texture = ExtResource("1_8oe4q")
+
+[node name="Plant" parent="." instance=ExtResource("2_0oj8i")]
+position = Vector2(89, 108)
+scale = Vector2(7, 7)
+waterBar = null
+
+[node name="Waterlevel" parent="." instance=ExtResource("3_8kkp8")]
+layout_mode = 1
+offset_left = 50.0
+offset_top = 148.0
+offset_right = 50.0
+offset_bottom = 148.0
+scale = Vector2(5, 5)
+
+[node name="Waterlevel3" parent="." instance=ExtResource("3_8kkp8")]
+layout_mode = 1
+offset_left = 330.0
+offset_top = 128.0
+offset_right = 330.0
+offset_bottom = 128.0
+scale = Vector2(5, 5)
+
+[node name="Waterlevel4" parent="." instance=ExtResource("3_8kkp8")]
+layout_mode = 1
+offset_left = 470.0
+offset_top = 188.0
+offset_right = 470.0
+offset_bottom = 188.0
+scale = Vector2(5, 5)
+
+[node name="Waterlevel5" parent="." instance=ExtResource("3_8kkp8")]
+layout_mode = 1
+offset_left = 640.0
+offset_top = 138.0
+offset_right = 640.0
+offset_bottom = 138.0
+scale = Vector2(5, 5)
+
+[node name="Waterlevel2" parent="." instance=ExtResource("3_8kkp8")]
+layout_mode = 1
+offset_left = 190.0
+offset_top = 188.0
+offset_right = 190.0
+offset_bottom = 188.0
+scale = Vector2(5, 5)
