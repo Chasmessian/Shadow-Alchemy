@@ -2,11 +2,11 @@ extends Node2D
 
 @onready var all_page_titles_left = PackedStringArray(['Main Menu', 'The Common Mould', "Ozyth's Luck", 'Curse of Echoes', 'Fireflu', 'The Transformed', 'Frozenheart', 'Merlinism', 'Pre-Possession Paranoia', 'Post-Possession Pathos', "Mambella Effect", 'Disease of Devouring', 'Deadvines', 'Lycanthropy', 'Vampirism', 'Zombification'])
 @onready var all_page_content_left = PackedStringArray([])
-@onready var current_title_left = $"JournalContainer/HBoxContainer/Left Page/Title"
-@onready var current_content_left = $"JournalContainer/HBoxContainer/Left Page/Label"
+@onready var current_title_left = $"JournalContainer/VBoxContainer/HBoxContainer/Left Page/Title"
+@onready var current_content_left = $"JournalContainer/VBoxContainer/HBoxContainer/Left Page/Label"
 @onready var all_page_content_right = PackedStringArray([])
-@onready var current_title_right = $"JournalContainer/HBoxContainer/Right Page/Title"
-@onready var current_content_right = $"JournalContainer/HBoxContainer/Right Page/Label"
+@onready var current_title_right = $"JournalContainer/VBoxContainer/HBoxContainer/Right Page/Title"
+@onready var current_content_right = $"JournalContainer/VBoxContainer/HBoxContainer/Right Page/Label"
 @onready var page_number = 0
 
 func _ready():
@@ -47,12 +47,16 @@ func load_solutions():
 			break
 
 func _on_left_arrow_pressed():
-	print("Journal: Left Arrow")
 	change_page(-1)
 
 func _on_right_arrow_pressed():
-	print("Journal: Right Arrow")
 	change_page(1)
+
+func _on_exit_journal_2_pressed():
+	World.instance.closeMenu()
+
+func _on_exit_journal_pressed():
+	World.instance.closeMenu()
 
 func change_page(amount): #Just for changing the page
 	page_number += amount
@@ -69,3 +73,4 @@ func get_page(number): # Whenever we need to update the page I guess? Journal sh
 		current_title_right.text = all_page_titles_left[number]
 	current_content_left.text = all_page_content_left[number]
 	current_content_right.text = all_page_content_right[number]
+	
