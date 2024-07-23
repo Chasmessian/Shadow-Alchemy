@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://dvcj8y4hu2fw4"]
+
+[ext_resource type="Texture2D" uid="uid://mqg4o21s54v3" path="res://Ingredients/Hob Goblossom/hobgoblossom.png" id="1_6k0xi"]
+
+[resource]
+atlas = ExtResource("1_6k0xi")
+region = Rect2(48, 0, 16, 16)

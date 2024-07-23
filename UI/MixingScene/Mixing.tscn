@@ -9,10 +9,9 @@ script = ExtResource("1_p404o")
 offset_right = 1152.0
 offset_bottom = 648.0
 
-[node name="Spacing" type="Control" parent="VBoxContainer"]
+[node name="Spacing4" type="Control" parent="VBoxContainer"]
 layout_mode = 2
-size_flags_vertical = 3
-size_flags_stretch_ratio = 0.3
+size_flags_horizontal = 3
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
 layout_mode = 2
@@ -35,17 +34,22 @@ size_flags_horizontal = 3
 
 [node name="Spacing2" type="Control" parent="VBoxContainer"]
 layout_mode = 2
-size_flags_vertical = 3
 size_flags_stretch_ratio = 0.5
 
-[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer"]
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/PanelContainer"]
 clip_contents = false
 layout_mode = 2
-size_flags_vertical = 6
+size_flags_vertical = 3
 vertical_scroll_mode = 0
 
-[node name="Inventory" type="HBoxContainer" parent="VBoxContainer/ScrollContainer"]
+[node name="Inventory" type="HBoxContainer" parent="VBoxContainer/PanelContainer/ScrollContainer"]
 layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 
 [node name="Spacing3" type="Control" parent="VBoxContainer"]
 layout_mode = 2

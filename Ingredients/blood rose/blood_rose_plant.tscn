@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://6mx5ma0oncfn"]
+[gd_scene load_steps=8 format=3 uid="uid://6mx5ma0oncfn"]
 
 [ext_resource type="PackedScene" uid="uid://b3pudbev0ul1q" path="res://Ingredients/Base/plant.tscn" id="1_cpa4t"]
+[ext_resource type="Script" path="res://Ingredients/blood rose/BloodRose.gd" id="2_lhvrm"]
 [ext_resource type="Texture2D" uid="uid://nmh1ia4jncxn" path="res://Ingredients/blood rose/bloodrose.png" id="2_wvv2w"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wdbr5"]
@@ -33,6 +34,7 @@ animations = [{
 }]
 
 [node name="BloodRosePlant" instance=ExtResource("1_cpa4t")]
+ingredient = ExtResource("2_lhvrm")
 
 [node name="AnimatedSprite2D" parent="." index="0"]
 position = Vector2(-0.5, -5)

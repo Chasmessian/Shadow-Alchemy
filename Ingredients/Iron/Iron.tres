@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://bcgcsss3gct5i"]
+
+[ext_resource type="Texture2D" uid="uid://drjt0w57sa166" path="res://Ingredients/Iron/ironbar.png" id="1_lfefh"]
+
+[resource]
+atlas = ExtResource("1_lfefh")
+region = Rect2(32, 0, 16, 16)

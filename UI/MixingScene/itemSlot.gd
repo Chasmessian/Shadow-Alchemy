@@ -1,6 +1,6 @@
 extends VBoxContainer
-var image = null
-var label = "NULL"
+@export var ingredient : Script = null
 func _ready():
-	$TextureRect.texture = image
-	$RichTextLabel.text = label
+	var ingredientMade = ingredient.new()
+	$TextureRect.texture = ingredientMade.texture
+	$RichTextLabel.text = ingredientMade.label

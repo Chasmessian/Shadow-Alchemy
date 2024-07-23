@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://chnfcnnxq3dhf"]
+[gd_scene load_steps=8 format=3 uid="uid://chnfcnnxq3dhf"]
 
 [ext_resource type="PackedScene" uid="uid://b3pudbev0ul1q" path="res://Ingredients/Base/plant.tscn" id="1_vhrff"]
+[ext_resource type="Script" path="res://Ingredients/harpy tongue/Harpy Tongue.gd" id="2_45b12"]
 [ext_resource type="Texture2D" uid="uid://dw1x71tuyk7xm" path="res://Ingredients/harpy tongue/harpy tongue.png" id="2_fvq44"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gm1gw"]
@@ -33,6 +34,7 @@ animations = [{
 }]
 
 [node name="Harpy Tongue Plant" instance=ExtResource("1_vhrff")]
+ingredient = ExtResource("2_45b12")
 
 [node name="AnimatedSprite2D" parent="." index="0"]
 position = Vector2(-1, -7)

@@ -1,23 +1,23 @@
 [gd_scene load_steps=3 format=3 uid="uid://coujcuc75cc0n"]
 
-[ext_resource type="Texture2D" uid="uid://cc1eogsgkx3v2" path="res://icon.svg" id="1_b8kgi"]
 [ext_resource type="Script" path="res://UI/MixingScene/itemSlot.gd" id="1_s0iyx"]
+[ext_resource type="Texture2D" uid="uid://b0i7oipxd0pj6" path="res://Ingredients/Dragongrass/DragonGrass.tres" id="2_bkouo"]
 
 [node name="ItemSlot" type="VBoxContainer"]
-offset_right = 128.0
-offset_bottom = 132.0
-size_flags_horizontal = 4
-size_flags_vertical = 4
+offset_right = 16.0
+offset_bottom = 43.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
 script = ExtResource("1_s0iyx")
 
 [node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
 layout_mode = 2
 size_flags_vertical = 3
-texture = ExtResource("1_b8kgi")
+texture = ExtResource("2_bkouo")
+expand_mode = 3
+stretch_mode = 4
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
+[node name="RichTextLabel" type="Label" parent="."]
 layout_mode = 2
-size_flags_vertical = 3
 text = "ITEM"
-fit_content = true
-scroll_active = false

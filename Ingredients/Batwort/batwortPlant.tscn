@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://b3pudbev0ul1q" path="res://Ingredients/Base/plant.tscn" id="1_t5yph"]
 [ext_resource type="Texture2D" uid="uid://bk0tgwafkw0hw" path="res://Ingredients/Batwort/batwort.png" id="2_06ua2"]
-[ext_resource type="PackedScene" uid="uid://cl7m8tj5g8x34" path="res://Ingredients/Batwort/Batwort.tscn" id="2_18wc4"]
+[ext_resource type="Script" path="res://Ingredients/Batwort/Batwort.gd" id="2_rd2ya"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_b3aaa"]
 atlas = ExtResource("2_06ua2")
@@ -28,7 +28,7 @@ animations = [{
 
 [node name="Plant" instance=ExtResource("1_t5yph")]
 material = null
-ingredient = ExtResource("2_18wc4")
+ingredient = ExtResource("2_rd2ya")
 
 [node name="AnimatedSprite2D" parent="." index="0"]
 position = Vector2(-0.5, -6)

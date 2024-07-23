@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://qrifoev174sr"]
+[gd_scene load_steps=4 format=3 uid="uid://qrifoev174sr"]
 
 [ext_resource type="Script" path="res://Ingredients/harpy tongue/Harpy Tongue.gd" id="1_ebbq5"]
+[ext_resource type="Texture2D" uid="uid://dw1x71tuyk7xm" path="res://Ingredients/harpy tongue/harpy tongue.png" id="2_8pp82"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qyyyd"]
+atlas = ExtResource("2_8pp82")
+region = Rect2(32, 0, 16, 16)
 
 [node name="HarpyTongue" type="Node"]
 script = ExtResource("1_ebbq5")
+image = SubResource("AtlasTexture_qyyyd")
+label = "Harpy Tongue"

@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://vywatkvsqapv"]
+
+[ext_resource type="Texture2D" uid="uid://bs8877juayb0j" path="res://Ingredients/garlic nettle/garlicnettle.png" id="1_0f7lp"]
+
+[resource]
+atlas = ExtResource("1_0f7lp")
+region = Rect2(64, 0, 16, 16)

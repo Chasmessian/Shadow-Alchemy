@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://cdpkrh2pqb6wi"]
+[gd_scene load_steps=4 format=3 uid="uid://cdpkrh2pqb6wi"]
 
 [ext_resource type="Script" path="res://Ingredients/potato/Potato.gd" id="1_u11g3"]
+[ext_resource type="Texture2D" uid="uid://c0ywwhvt16a0x" path="res://Ingredients/potato/potato.png" id="2_iu831"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dmenn"]
+atlas = ExtResource("2_iu831")
+region = Rect2(32, 0, 16, 16)
 
 [node name="Potato" type="Node"]
 script = ExtResource("1_u11g3")
+image = SubResource("AtlasTexture_dmenn")
+label = "Potato"

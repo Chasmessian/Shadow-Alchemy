@@ -1,7 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://bkwr17r71yflh"]
+[gd_scene load_steps=5 format=3 uid="uid://bkwr17r71yflh"]
 
 [ext_resource type="PackedScene" uid="uid://dorx36xayrfnu" path="res://Ingredients/Base/ingredient.tscn" id="1_om57s"]
 [ext_resource type="Script" path="res://Ingredients/ShadowWood/shadow_wood.gd" id="2_e8exa"]
+[ext_resource type="Texture2D" uid="uid://bd0jmphscd22q" path="res://Ingredients/ShadowWood/Shadow wood.png" id="3_cwo8a"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_alo8v"]
+atlas = ExtResource("3_cwo8a")
+region = Rect2(16, 0, 16, 16)
 
 [node name="ShadowWood" instance=ExtResource("1_om57s")]
 script = ExtResource("2_e8exa")
+image = SubResource("AtlasTexture_alo8v")
+label = "Shadow Wood"

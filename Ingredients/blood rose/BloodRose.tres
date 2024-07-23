@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://dvpp2mf5hn57t"]
+
+[ext_resource type="Texture2D" uid="uid://nmh1ia4jncxn" path="res://Ingredients/blood rose/bloodrose.png" id="1_1a6bn"]
+
+[resource]
+atlas = ExtResource("1_1a6bn")
+region = Rect2(32, 0, 16, 16)

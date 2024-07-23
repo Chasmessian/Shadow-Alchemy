@@ -2,7 +2,7 @@ class_name Plant
 extends Node2D
 var growthStage = 0
 var totalStages = null
-@export var ingredient : PackedScene = null
+@export var ingredient : Script = null
 @export var amount = 1
 @onready var sprite = $AnimatedSprite2D
 func _ready():

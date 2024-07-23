@@ -1,5 +1,4 @@
 class_name ShadowWood
 extends Ingredient
-func _init():
-	image = load("res://icon.svg")
-	label = "ShadowWood"
+var texture : AtlasTexture = preload("res://Ingredients/ShadowWood/shadow wood.tres")
+var label = "Shadow Wood"

@@ -1,5 +1,4 @@
 class_name NorthernFang
 extends Ingredient
-func _init():
-	image = load("res://icon.svg")
-	label = "Northern Fang"
+var texture : AtlasTexture = preload("res://Ingredients/Northern Fang/northern fang.tres")
+var label = "Northern Fang"

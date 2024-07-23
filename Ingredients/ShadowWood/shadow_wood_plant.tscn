@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://l7wi6f1cd4gr"]
+[gd_scene load_steps=7 format=3 uid="uid://l7wi6f1cd4gr"]
 
 [ext_resource type="PackedScene" uid="uid://b3pudbev0ul1q" path="res://Ingredients/Base/plant.tscn" id="1_iwvkm"]
+[ext_resource type="Script" path="res://Ingredients/ShadowWood/shadow_wood.gd" id="2_bh3en"]
 [ext_resource type="Texture2D" uid="uid://bd0jmphscd22q" path="res://Ingredients/ShadowWood/Shadow wood.png" id="2_xfydv"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_m6tma"]
@@ -26,6 +27,7 @@ animations = [{
 }]
 
 [node name="ShadowWood Plant" instance=ExtResource("1_iwvkm")]
+ingredient = ExtResource("2_bh3en")
 
 [node name="AnimatedSprite2D" parent="." index="0"]
 position = Vector2(0.5, -5)

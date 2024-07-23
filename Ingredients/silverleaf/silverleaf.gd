@@ -1,5 +1,4 @@
 class_name Silverleaf
 extends Ingredient
-func _init():
-	image = load("res://icon.svg")
-	label = "Silver leaf"
+var texture : AtlasTexture = preload("res://Ingredients/silverleaf/silverleaf.tres")
+var label = "Silverleaf"

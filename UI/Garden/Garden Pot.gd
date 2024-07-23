@@ -16,6 +16,7 @@ func harvest():
 	plant.harvest()
 	plant = null
 	waterMeter.value = 0
+	isWatering = false
 	
 func water():
 	isWatering = true

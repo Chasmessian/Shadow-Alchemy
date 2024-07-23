@@ -4,3 +4,5 @@
 
 [node name="Batwort" type="Node"]
 script = ExtResource("1_4ejg1")
+label = "batwort"
+frames = null

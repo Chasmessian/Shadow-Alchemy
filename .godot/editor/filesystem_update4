@@ -1,21 +1,45 @@
-res://world.tscn
+res://UI/MixingScene/itemSlot.tscn
 res://Ingredients/Base/plant.gdshader
-res://Ingredients/Base/plant.tscn
-res://Ingredients/Batwort/batwortPlant.tscn
-res://Ingredients/Base/waterlevel.tscn
-res://garden.tscn
-res://viewport.tscn
-res://Ingredients/Base/plant.gd
+res://Ingredients/Hob Goblossom/hob_goblossom_plant.tscn
 res://Ingredients/Iron/iron_plant.tscn
+res://Ingredients/Base/ingredient.gd
+res://Ingredients/Northern Fang/northern_fang_plant.tscn
+res://Ingredients/harpy tongue/harpy_tongue_plant.tscn
+res://UI/MixingScene/itemSlot.gd
+res://Ingredients/silverleaf/silverleaf_plant.tscn
+res://Ingredients/ShadowWood/shadow_wood_plant.tscn
+res://Ingredients/potato/potato_plant.tscn
+res://Ingredients/Dragongrass/dragon_grass_plant.tscn
+res://Ingredients/Base/ingredient.tscn
+res://Ingredients/Batwort/Batwort.gd
+res://Ingredients/Batwort/Batwort.tscn
+res://Ingredients/garlic nettle/garlic_nettle_plant.tscn
+res://Ingredients/blood rose/BloodRose.gd
+res://Ingredients/goldweed/GoldWeed.tscn
+res://Ingredients/goldweed/GoldWeed.gd
+res://Ingredients/blood rose/BloodRose.tscn
+res://Ingredients/Dragongrass/DragonGrass.tscn
+res://Ingredients/Dragongrass/DragonGrass.gd
+res://UI/MixingScene/Mixing.tscn
+res://UI/MixingScene/Mixing.gd
 res://UI/Garden/Garden Pot.tscn
-res://UI/Garden/Garden Pot.gd
-res://garden.gd
-res://Ingredients/blood rose/blood_rose_plant.tscn
-res://UI/MainScene/Dialogue/speech_bubble.tscn
-res://UI/MainScene/Dialogue/speech_bubble.gd
-res://UI/garden.tscn
-res://LowerUIButtons.tscn
-res://LowerUIButtons.gd
-res://UI/Garden/garden.tscn
-res://UI/Garden/garden.gd
-res://world.gd
+res://Ingredients/Batwort/batwortPlant.tscn
+res://Ingredients/Dragongrass/DragonGrass.tres
+res://UI/MixingScene/spacing.tscn
+res://Ingredients/garlic nettle/GarlicNettle.tscn
+res://Ingredients/garlic nettle/GarlicNettle.gd
+res://Ingredients/garlic nettle/garlicNettle.tres
+res://Ingredients/harpy tongue/Harpy Tongue.tres
+res://Ingredients/Hob Goblossom/HobGoblossom.tres
+res://Ingredients/Iron/Iron.tres
+res://Ingredients/Northern Fang/northern fang.tres
+res://Ingredients/potato/potato.tres
+res://Ingredients/ShadowWood/shadow wood.tres
+res://Ingredients/silverleaf/silverleaf.tres
+res://Ingredients/harpy tongue/Harpy Tongue.gd
+res://Ingredients/Hob Goblossom/Hob Goblossom.gd
+res://Ingredients/Iron/Iron.gd
+res://Ingredients/Northern Fang/NorthernFang.gd
+res://Ingredients/potato/Potato.gd
+res://Ingredients/ShadowWood/shadow_wood.gd
+res://Ingredients/silverleaf/silverleaf.gd

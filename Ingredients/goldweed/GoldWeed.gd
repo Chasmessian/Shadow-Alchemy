@@ -1,5 +1,4 @@
 class_name GoldWeed
 extends Ingredient
-func _init():
-	image = load("res://icon.svg")
-	label = "Goldweed"
+var texture : AtlasTexture = preload("res://Ingredients/goldweed/GoldWeed.tres")
+var label = "Goldweed"

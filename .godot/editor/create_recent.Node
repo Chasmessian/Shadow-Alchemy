@@ -1,3 +1,7 @@
+Control
+Label
+PanelContainer
+TextureRect
 Button
 VBoxContainer
 HBoxContainer
@@ -9,6 +13,3 @@ ProgressBar
 AnimatedSprite2D
 Timer
 Sprite2D
-Label
-TextureRect
-Control

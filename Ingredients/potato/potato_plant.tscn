@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://bla53673fbaky"]
+[gd_scene load_steps=8 format=3 uid="uid://bla53673fbaky"]
 
 [ext_resource type="PackedScene" uid="uid://b3pudbev0ul1q" path="res://Ingredients/Base/plant.tscn" id="1_fi0pm"]
+[ext_resource type="Script" path="res://Ingredients/potato/Potato.gd" id="2_cwy6x"]
 [ext_resource type="Texture2D" uid="uid://c0ywwhvt16a0x" path="res://Ingredients/potato/potato.png" id="2_ehvtf"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fcsyp"]
@@ -33,6 +34,7 @@ animations = [{
 }]
 
 [node name="Potato Plant" instance=ExtResource("1_fi0pm")]
+ingredient = ExtResource("2_cwy6x")
 
 [node name="AnimatedSprite2D" parent="." index="0"]
 position = Vector2(0, -6)

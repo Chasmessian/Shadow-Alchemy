@@ -1,5 +1,4 @@
 class_name GarlicNettle
 extends Ingredient
-func _init():
-	image = load("res://icon.svg")
-	label = "Garlic Nettle"
+var texture : AtlasTexture = preload("res://Ingredients/garlic nettle/garlicNettle.tres")
+var label = "Garlic Nettle"

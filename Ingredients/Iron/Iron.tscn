@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://bgehrpoh0wpvd"]
+[gd_scene load_steps=4 format=3 uid="uid://bgehrpoh0wpvd"]
 
 [ext_resource type="Script" path="res://Ingredients/Iron/Iron.gd" id="1_nph51"]
+[ext_resource type="Texture2D" uid="uid://drjt0w57sa166" path="res://Ingredients/Iron/ironbar.png" id="2_6vwb8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7h3md"]
+atlas = ExtResource("2_6vwb8")
+region = Rect2(0, 32, 16, 16)
 
 [node name="Iron" type="Node"]
 script = ExtResource("1_nph51")
+image = SubResource("AtlasTexture_7h3md")
+label = "Iron"

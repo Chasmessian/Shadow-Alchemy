@@ -1,5 +1,4 @@
 class_name DragonGrass
 extends Ingredient
-func _init():
-	image = load("res://icon.svg")
-	label = "DragonGrass"
+var texture : AtlasTexture = preload("res://Ingredients/Dragongrass/DragonGrass.tres")
+var label = "DragonGrass"

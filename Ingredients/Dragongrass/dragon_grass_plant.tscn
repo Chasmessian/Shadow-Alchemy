@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://cc20h8vikl637"]
+[gd_scene load_steps=7 format=3 uid="uid://cc20h8vikl637"]
 
 [ext_resource type="PackedScene" uid="uid://b3pudbev0ul1q" path="res://Ingredients/Base/plant.tscn" id="1_cx486"]
+[ext_resource type="Script" path="res://Ingredients/Dragongrass/DragonGrass.gd" id="2_6s1ok"]
 [ext_resource type="Texture2D" uid="uid://vnju78pjxy4g" path="res://Ingredients/Dragongrass/dragongrass.png" id="2_s1uvp"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_aunif"]
@@ -26,6 +27,7 @@ animations = [{
 }]
 
 [node name="DragonGrass" instance=ExtResource("1_cx486")]
+ingredient = ExtResource("2_6s1ok")
 
 [node name="AnimatedSprite2D" parent="." index="0"]
 position = Vector2(0, -3)

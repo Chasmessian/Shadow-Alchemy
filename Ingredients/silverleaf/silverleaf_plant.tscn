@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://cfy76yo2fv2s1"]
+[gd_scene load_steps=8 format=3 uid="uid://cfy76yo2fv2s1"]
 
 [ext_resource type="PackedScene" uid="uid://b3pudbev0ul1q" path="res://Ingredients/Base/plant.tscn" id="1_f345e"]
+[ext_resource type="Script" path="res://Ingredients/silverleaf/silverleaf.gd" id="2_pmcf5"]
 [ext_resource type="Texture2D" uid="uid://dmwcqlgxrujrg" path="res://Ingredients/silverleaf/Silverleaf.png" id="2_tehu5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2keqb"]
@@ -33,6 +34,7 @@ animations = [{
 }]
 
 [node name="Silverleaf Plant" instance=ExtResource("1_f345e")]
+ingredient = ExtResource("2_pmcf5")
 
 [node name="AnimatedSprite2D" parent="." index="0"]
 position = Vector2(-0.5, -7)

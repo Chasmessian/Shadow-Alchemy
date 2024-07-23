@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://b6tao1dsubd8c"]
+[gd_scene load_steps=4 format=3 uid="uid://b6tao1dsubd8c"]
 
 [ext_resource type="Script" path="res://Ingredients/Hob Goblossom/Hob Goblossom.gd" id="1_buylc"]
+[ext_resource type="Texture2D" uid="uid://mqg4o21s54v3" path="res://Ingredients/Hob Goblossom/hobgoblossom.png" id="2_sa2xj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p3xn1"]
+atlas = ExtResource("2_sa2xj")
+region = Rect2(0, 0, 16, 16)
 
 [node name="HobGoblossom" type="Node"]
 script = ExtResource("1_buylc")
+image = SubResource("AtlasTexture_p3xn1")
+label = "Hob Goblossom"

@@ -1,31 +1,32 @@
-[gd_scene load_steps=7 format=3 uid="uid://bdad6mo50x0jg"]
+[gd_scene load_steps=8 format=3 uid="uid://bdad6mo50x0jg"]
 
 [ext_resource type="PackedScene" uid="uid://b3pudbev0ul1q" path="res://Ingredients/Base/plant.tscn" id="1_cjmew"]
 [ext_resource type="Texture2D" uid="uid://drjt0w57sa166" path="res://Ingredients/Iron/ironbar.png" id="2_oxxlt"]
+[ext_resource type="Script" path="res://Ingredients/Iron/Iron.gd" id="2_yqqx4"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ddxow"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_x25c5"]
 atlas = ExtResource("2_oxxlt")
 region = Rect2(0, 0, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_apblo"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_msm4h"]
 atlas = ExtResource("2_oxxlt")
-region = Rect2(0, 16, 16, 16)
+region = Rect2(16, 0, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_3k18x"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_d10ru"]
 atlas = ExtResource("2_oxxlt")
-region = Rect2(0, 32, 16, 16)
+region = Rect2(32, 0, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_kk5xg"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ddxow")
+"texture": SubResource("AtlasTexture_x25c5")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_apblo")
+"texture": SubResource("AtlasTexture_msm4h")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_3k18x")
+"texture": SubResource("AtlasTexture_d10ru")
 }],
 "loop": true,
 "name": &"default",
@@ -33,8 +34,8 @@ animations = [{
 }]
 
 [node name="Iron plant" instance=ExtResource("1_cjmew")]
+ingredient = ExtResource("2_yqqx4")
 
 [node name="AnimatedSprite2D" parent="." index="0"]
 position = Vector2(0, -7.985)
 sprite_frames = SubResource("SpriteFrames_kk5xg")
-frame = 2

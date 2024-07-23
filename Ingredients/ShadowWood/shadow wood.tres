@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://cxw48y20mnpb5"]
+
+[ext_resource type="Texture2D" uid="uid://bd0jmphscd22q" path="res://Ingredients/ShadowWood/Shadow wood.png" id="1_fen7a"]
+
+[resource]
+atlas = ExtResource("1_fen7a")
+region = Rect2(16, 0, 16, 16)

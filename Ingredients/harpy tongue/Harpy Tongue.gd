@@ -1,5 +1,4 @@
 class_name HarpyTongue
 extends Ingredient
-func _init():
-	image = load("res://icon.svg")
-	label = "Harpy Tongue"
+var texture : AtlasTexture = preload("res://Ingredients/harpy tongue/Harpy Tongue.tres")
+var label = "Harpy Tongue"

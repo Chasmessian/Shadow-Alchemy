@@ -1,6 +1,4 @@
 class_name Iron
 extends Ingredient
-func _init():
-	image = load("res://icon.svg")
-	label = "Iron"
-
+var texture : AtlasTexture = preload("res://Ingredients/Iron/Iron.tres")
+var label = "Iron"

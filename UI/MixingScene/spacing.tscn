@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://10pft1oqrj8o"]
+
+[node name="Spacing" type="Control"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 3
+anchors_preset = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3

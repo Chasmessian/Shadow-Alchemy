@@ -1,6 +1,4 @@
 class_name HobGoblossom
 extends Ingredient
-func _init():
-	image = load("res://icon.svg")
-	label = "Hob Goblossom"
-
+var texture : AtlasTexture = preload("res://Ingredients/Hob Goblossom/HobGoblossom.tres")
+var label = "Hob Goblossom"

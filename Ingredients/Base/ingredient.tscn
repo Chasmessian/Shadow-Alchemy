@@ -1,6 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://dorx36xayrfnu"]
+[gd_scene load_steps=3 format=3 uid="uid://dorx36xayrfnu"]
 
 [ext_resource type="Script" path="res://Ingredients/Base/ingredient.gd" id="1_3kyed"]
+[ext_resource type="Texture2D" uid="uid://nmh1ia4jncxn" path="res://Ingredients/blood rose/bloodrose.png" id="2_1cg5v"]
 
 [node name="Ingredient" type="Node"]
 script = ExtResource("1_3kyed")
+image = ExtResource("2_1cg5v")
+label = "Bloodrose"
+frames = 3

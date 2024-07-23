@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://dl8mwv8pn8scm"]
+[gd_scene load_steps=9 format=3 uid="uid://dl8mwv8pn8scm"]
 
 [ext_resource type="PackedScene" uid="uid://b3pudbev0ul1q" path="res://Ingredients/Base/plant.tscn" id="1_vv42e"]
+[ext_resource type="Script" path="res://Ingredients/goldweed/GoldWeed.gd" id="2_kq8oe"]
 [ext_resource type="Texture2D" uid="uid://blaki3agqtqwy" path="res://Ingredients/goldweed/Goldweed.png" id="2_m846o"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6y7kw"]
@@ -40,6 +41,7 @@ animations = [{
 }]
 
 [node name="Goldweed Plant" instance=ExtResource("1_vv42e")]
+ingredient = ExtResource("2_kq8oe")
 
 [node name="AnimatedSprite2D" parent="." index="0"]
 position = Vector2(0.5, -4)

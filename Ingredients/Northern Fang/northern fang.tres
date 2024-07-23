@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://cdo36a8aqnpjh"]
+
+[ext_resource type="Texture2D" uid="uid://caq3xkf0jcyfa" path="res://Ingredients/Northern Fang/Northern Fang.png" id="1_bsp8l"]
+
+[resource]
+atlas = ExtResource("1_bsp8l")
+region = Rect2(32, 0, 16, 16)

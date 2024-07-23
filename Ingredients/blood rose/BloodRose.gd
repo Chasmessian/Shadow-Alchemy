@@ -1,5 +1,4 @@
 class_name BloodRose
 extends Ingredient
-func _init():
-	image = load("res://icon.svg")
-	label = "BloodRose"
+var texture = preload("res://Ingredients/blood rose/BloodRose.tres")
+var label : String = "BloodRose"

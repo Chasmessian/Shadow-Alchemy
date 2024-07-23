@@ -1,6 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://cy33drombrr6y"]
+[gd_scene load_steps=3 format=3 uid="uid://cy33drombrr6y"]
 
 [ext_resource type="Script" path="res://Ingredients/silverleaf/silverleaf.gd" id="1_228dc"]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_rjemd"]
+
 [node name="Silverleaf" type="Node"]
 script = ExtResource("1_228dc")
+image = SubResource("AtlasTexture_rjemd")
+label = "Silverleaf"
