@@ -1,13 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://4fymu0qnsaxb"]
+[gd_scene load_steps=4 format=3 uid="uid://4fymu0qnsaxb"]
 
 [ext_resource type="Script" path="res://UI/MixingScene/Mixing.gd" id="1_p404o"]
+[ext_resource type="PackedScene" uid="uid://bm1wqssj1xhiv" path="res://UI/MixingScene/mixing_slot.tscn" id="2_3agj5"]
+[ext_resource type="PackedScene" uid="uid://csv8nc7vi11eo" path="res://UI/MixingScene/draggedItem.tscn" id="2_yvq50"]
 
 [node name="Mixing" type="Node2D"]
 script = ExtResource("1_p404o")
+draggedScene = ExtResource("2_yvq50")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 offset_right = 1152.0
 offset_bottom = 648.0
+mouse_filter = 2
 
 [node name="Spacing4" type="Control" parent="VBoxContainer"]
 layout_mode = 2
@@ -22,79 +26,80 @@ size_flags_stretch_ratio = 5.0
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/HBoxContainer"]
+[node name="Mixing Panel" type="PanelContainer" parent="VBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 6.0
 
-[node name="Spacing2" type="Control" parent="VBoxContainer/HBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/Mixing Panel"]
+layout_mode = 2
+
+[node name="Spacing" type="Control" parent="VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 0.32
+size_flags_stretch_ratio = 6.03
 
-[node name="side buttons" type="VBoxContainer" parent="VBoxContainer/HBoxContainer"]
+[node name="Slots" type="VBoxContainer" parent="VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.8
 
-[node name="Spacing8" type="Control" parent="VBoxContainer/HBoxContainer/side buttons"]
+[node name="Spacing8" type="Control" parent="VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer/Slots"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.23
 
-[node name="Exit Button" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/side buttons"]
+[node name="Exit Button" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer/Slots"]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.35
 
-[node name="Spacing8" type="Control" parent="VBoxContainer/HBoxContainer/side buttons/Exit Button"]
+[node name="Spacing8" type="Control" parent="VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer/Slots/Exit Button"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.58
 
-[node name="Exit" type="Button" parent="VBoxContainer/HBoxContainer/side buttons/Exit Button"]
+[node name="Exit" type="Button" parent="VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer/Slots/Exit Button"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.2
 text = "X"
 
-[node name="Spacing6" type="Control" parent="VBoxContainer/HBoxContainer/side buttons"]
+[node name="Spacing6" type="Control" parent="VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer/Slots"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-size_flags_stretch_ratio = 0.23
+size_flags_stretch_ratio = 0.11
 
-[node name="Button" type="Button" parent="VBoxContainer/HBoxContainer/side buttons"]
+[node name="Mixing Slot" parent="VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer/Slots" instance=ExtResource("2_3agj5")]
 layout_mode = 2
-size_flags_vertical = 3
 
-[node name="Spacing3" type="Control" parent="VBoxContainer/HBoxContainer/side buttons"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-size_flags_stretch_ratio = 0.23
-
-[node name="Button2" type="Button" parent="VBoxContainer/HBoxContainer/side buttons"]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="Spacing4" type="Control" parent="VBoxContainer/HBoxContainer/side buttons"]
+[node name="Spacing3" type="Control" parent="VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer/Slots"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-size_flags_stretch_ratio = 0.23
+size_flags_stretch_ratio = 0.11
 
-[node name="Button3" type="Button" parent="VBoxContainer/HBoxContainer/side buttons"]
+[node name="Mixing Slot2" parent="VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer/Slots" instance=ExtResource("2_3agj5")]
 layout_mode = 2
-size_flags_vertical = 3
 
-[node name="Spacing7" type="Control" parent="VBoxContainer/HBoxContainer/side buttons"]
+[node name="Spacing4" type="Control" parent="VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer/Slots"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-size_flags_stretch_ratio = 0.23
+size_flags_stretch_ratio = 0.11
+
+[node name="Mixing Slot3" parent="VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer/Slots" instance=ExtResource("2_3agj5")]
+layout_mode = 2
+
+[node name="Spacing7" type="Control" parent="VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer/Slots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.11
 
 [node name="Spacing3" type="Control" parent="VBoxContainer/HBoxContainer"]
 layout_mode = 2
@@ -104,24 +109,44 @@ size_flags_horizontal = 3
 layout_mode = 2
 size_flags_stretch_ratio = 0.5
 
-[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer"]
+[node name="InventoryHbox" type="HBoxContainer" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/PanelContainer"]
+[node name="Spacing2" type="Control" parent="VBoxContainer/InventoryHbox"]
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.08
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/InventoryHbox"]
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/InventoryHbox/PanelContainer"]
 clip_contents = false
 layout_mode = 2
 size_flags_vertical = 3
 vertical_scroll_mode = 0
 
-[node name="Inventory" type="HBoxContainer" parent="VBoxContainer/PanelContainer/ScrollContainer"]
+[node name="Inventory" type="HBoxContainer" parent="VBoxContainer/InventoryHbox/PanelContainer/ScrollContainer"]
+clip_contents = true
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+
+[node name="Spacing3" type="Control" parent="VBoxContainer/InventoryHbox"]
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.08
 
 [node name="Spacing3" type="Control" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.5
 
-[connection signal="pressed" from="VBoxContainer/HBoxContainer/side buttons/Exit Button/Exit" to="." method="closeMenu"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer/Slots/Exit Button/Exit" to="." method="closeMenu"]

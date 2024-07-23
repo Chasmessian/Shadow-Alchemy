@@ -1,15 +1,15 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1721685914
+::res://::1721753272
 dialogue.tscn::PackedScene::1482473912121182530::1721598150::0::1::::<><>::res://dialogue.gd<>uid://qxc36i5l7jjy::::res://UI/JournalScene/VCR_OSD_MONO_1.001.ttf
 icon.svg::CompressedTexture2D::4967161088587048813::1721225073::1721678960::1::::<><>::
 inventory.gd::GDScript::-1::1721510661::0::1::::Inventory<>Node<>::
 journal.tscn::PackedScene::3853580450286591515::1721603200::0::1::::<><>::uid://che6nifmou86t::::res://UI/JournalScene/journal.png<>res://UI/JournalScene/Journal/journal.gd<>uid://cp24vf1dyuc5t::::res://UI/JournalScene/arrow_left.png<>uid://qxc36i5l7jjy::::res://UI/JournalScene/VCR_OSD_MONO_1.001.ttf<>uid://bjp4rdgp6e5xu::::res://UI/JournalScene/arrow_right.png
 LowerUIButtons.gd::GDScript::-1::1721682473::0::1::::<>HBoxContainer<>::
 LowerUIButtons.tscn::PackedScene::4198428598363332030::1721682653::0::1::::<><>::res://LowerUIButtons.gd
-Potion.gd::GDScript::-1::1721276051::0::1::::<>Node<>::
+Potion.gd::GDScript::-1::1721748701::0::1::::Potion<>Node<>::
 Potion.tscn::PackedScene::3845060575476844110::1721598149::0::1::::<><>::res://Potion.gd
 viewport.tscn::PackedScene::2114146973724343407::1721682576::0::1::::<><>::uid://bm1qbsf35h4yt::::res://UI/MainScene/castle_background_4x.png<>uid://tdosqb38s672::::res://UI/MainScene/Dialogue/speech_bubble.tscn
-world.gd::GDScript::-1::1721682128::0::1::::World<>Node2D<>::
+world.gd::GDScript::-1::1721700149::0::1::::World<>Node2D<>::
 world.tscn::PackedScene::1409685077973657983::1721682576::0::1::::<><>::uid://cp2nay63s25us::::res://UI/Garden/garden.tscn<>res://world.gd<>uid://5edxrxt3wkbv::::res://viewport.tscn<>uid://b020rgq1ep5nu::::res://LowerUIButtons.tscn
 ::res://Afflictions/::1721510771
 ::res://Afflictions/Base/::1721273995
@@ -17,76 +17,84 @@ affliction.gd::GDScript::-1::1721243875::0::1::::affliction<>Node<>::
 affliction.tscn::PackedScene::1061794438983007828::1721273995::0::1::::<><>::res://Afflictions/Base/affliction.gd
 ::res://Afflictions/Rosemary/::1721510771
 ::res://Ingredients/::1721511154
-::res://Ingredients/Base/::1721697143
+::res://Ingredients/Base/::1721749813
 ingredient.gd::GDScript::-1::1721695584::0::1::::Ingredient<>Node<>::
 ingredient.tscn::PackedScene::8178448440680841002::1721687078::0::1::::<><>::res://Ingredients/Base/ingredient.gd<>uid://nmh1ia4jncxn::::res://Ingredients/blood rose/bloodrose.png
 plant.gd::GDScript::-1::1721682554::0::1::::Plant<>Node2D<>::
-plant.gdshader::Shader::-1::1721697187::0::1::::<><>::
+plant.gdshader::Shader::-1::1721749813::0::1::::<><>::
 plant.tscn::PackedScene::4383893728796868224::1721682576::0::1::::<><>::res://Ingredients/Base/plant.gd<>res://Ingredients/Base/plant.gdshader
 waterlevel.tscn::PackedScene::7059412416225186389::1721682576::0::1::::<><>::uid://by77vvhe8djfp::::res://Ingredients/Base/watermeter.png
 watermeter.png::CompressedTexture2D::4138994578606273989::1721607356::1721607361::1::::<><>::
-::res://Ingredients/Batwort/::1721697142
-Batwort.gd::GDScript::-1::1721695584::0::1::::Batwort<>Ingredient<>::
+::res://Ingredients/Batwort/::1721748638
+Batwort.gd::GDScript::-1::1721748638::0::1::::Batwort<>Ingredient<>::
 batwort.png::CompressedTexture2D::3141084057306048984::1721515187::1721515275::1::::<><>::
-Batwort.tscn::PackedScene::5611767283865828121::1721697142::0::1::::<><>::res://Ingredients/Batwort/Batwort.gd
-batwortPlant.tscn::PackedScene::6221044311764596295::1721697142::0::1::::<><>::uid://b3pudbev0ul1q::::res://Ingredients/Base/plant.tscn<>uid://bk0tgwafkw0hw::::res://Ingredients/Batwort/batwort.png<>res://Ingredients/Batwort/Batwort.gd
 Batwort.tres::AtlasTexture::1554968571973255154::1721693028::0::1::::<><>::uid://bk0tgwafkw0hw::::res://Ingredients/Batwort/batwort.png
-::res://Ingredients/blood rose/::1721697142
-BloodRose.gd::GDScript::-1::1721695623::0::1::::BloodRose<>Ingredient<>::
+Batwort.tscn::PackedScene::5611767283865828121::1721698308::0::1::::<><>::res://Ingredients/Batwort/Batwort.gd
+batwortPlant.tscn::PackedScene::6221044311764596295::1721698308::0::1::::<><>::uid://b3pudbev0ul1q::::res://Ingredients/Base/plant.tscn<>uid://bk0tgwafkw0hw::::res://Ingredients/Batwort/batwort.png<>res://Ingredients/Batwort/Batwort.gd
+::res://Ingredients/blood rose/::1721698344
+BloodRose.gd::GDScript::-1::1721698344::0::1::::BloodRose<>Ingredient<>::
 bloodrose.png::CompressedTexture2D::937699371451000379::1721521975::1721521977::1::::<><>::
-BloodRose.tscn::PackedScene::7497673021366274779::1721697142::0::1::::<><>::res://Ingredients/blood rose/BloodRose.gd
-blood_rose_plant.tscn::PackedScene::2202077381913806247::1721682637::0::1::::<><>::uid://b3pudbev0ul1q::::res://Ingredients/Base/plant.tscn<>res://Ingredients/blood rose/BloodRose.gd<>uid://nmh1ia4jncxn::::res://Ingredients/blood rose/bloodrose.png
 BloodRose.tres::AtlasTexture::8665153044492996643::1721693104::0::1::::<><>::uid://nmh1ia4jncxn::::res://Ingredients/blood rose/bloodrose.png
-::res://Ingredients/Dragongrass/::1721697142
-DragonGrass.gd::GDScript::-1::1721693174::0::1::::DragonGrass<>Ingredient<>::
+BloodRose.tscn::PackedScene::7497673021366274779::1721698308::0::1::::<><>::res://Ingredients/blood rose/BloodRose.gd
+blood_rose_plant.tscn::PackedScene::2202077381913806247::1721682637::0::1::::<><>::uid://b3pudbev0ul1q::::res://Ingredients/Base/plant.tscn<>res://Ingredients/blood rose/BloodRose.gd<>uid://nmh1ia4jncxn::::res://Ingredients/blood rose/bloodrose.png
+::res://Ingredients/Dragongrass/::1721698372
+DragonGrass.gd::GDScript::-1::1721698372::0::1::::DragonGrass<>Ingredient<>::
 dragongrass.png::CompressedTexture2D::1501386528434694696::1721522921::1721522925::1::::<><>::
-DragonGrass.tscn::PackedScene::1795753254605632821::1721697142::0::1::::<><>::res://Ingredients/Dragongrass/DragonGrass.gd
-dragon_grass_plant.tscn::PackedScene::4970489445487140108::1721686983::0::1::::<><>::uid://b3pudbev0ul1q::::res://Ingredients/Base/plant.tscn<>res://Ingredients/Dragongrass/DragonGrass.gd<>uid://vnju78pjxy4g::::res://Ingredients/Dragongrass/dragongrass.png
 DragonGrass.tres::AtlasTexture::4159625185968475685::1721694056::0::1::::<><>::uid://vnju78pjxy4g::::res://Ingredients/Dragongrass/dragongrass.png
-::res://Ingredients/garlic nettle/::1721687886
-GarlicNettle.gd::GDScript::-1::1721683849::0::1::::GarlicNettle<>Ingredient<>::
+DragonGrass.tscn::PackedScene::1795753254605632821::1721698308::0::1::::<><>::res://Ingredients/Dragongrass/DragonGrass.gd
+dragon_grass_plant.tscn::PackedScene::4970489445487140108::1721698309::0::1::::<><>::uid://b3pudbev0ul1q::::res://Ingredients/Base/plant.tscn<>res://Ingredients/Dragongrass/DragonGrass.gd<>uid://vnju78pjxy4g::::res://Ingredients/Dragongrass/dragongrass.png
+::res://Ingredients/garlic nettle/::1721748638
+GarlicNettle.gd::GDScript::-1::1721748638::0::1::::GarlicNettle<>Ingredient<>::
 garlicnettle.png::CompressedTexture2D::3720006836788004703::1721524200::1721524326::1::::<><>::
-GarlicNettle.tscn::PackedScene::3385910474167394796::1721684389::0::1::::<><>::res://Ingredients/garlic nettle/GarlicNettle.gd<>uid://bs8877juayb0j::::res://Ingredients/garlic nettle/garlicnettle.png
-garlic_nettle_plant.tscn::PackedScene::2387084819288969172::1721687886::0::1::::<><>::uid://b3pudbev0ul1q::::res://Ingredients/Base/plant.tscn<>uid://bs8877juayb0j::::res://Ingredients/garlic nettle/garlicnettle.png<>res://Ingredients/garlic nettle/GarlicNettle.gd
-::res://Ingredients/goldweed/::1721697142
-GoldWeed.gd::GDScript::-1::1721693211::0::1::::GoldWeed<>Ingredient<>::
+garlicNettle.tres::AtlasTexture::1524847570707501139::1721698014::0::1::::<><>::uid://bs8877juayb0j::::res://Ingredients/garlic nettle/garlicnettle.png
+GarlicNettle.tscn::PackedScene::3385910474167394796::1721698309::0::1::::<><>::res://Ingredients/garlic nettle/GarlicNettle.gd
+garlic_nettle_plant.tscn::PackedScene::2387084819288969172::1721698309::0::1::::<><>::uid://b3pudbev0ul1q::::res://Ingredients/Base/plant.tscn<>uid://bs8877juayb0j::::res://Ingredients/garlic nettle/garlicnettle.png<>res://Ingredients/garlic nettle/GarlicNettle.gd
+::res://Ingredients/goldweed/::1721698427
+GoldWeed.gd::GDScript::-1::1721698427::0::1::::GoldWeed<>Ingredient<>::
 Goldweed.png::CompressedTexture2D::3159120890938925084::1721525012::1721525037::1::::<><>::
-GoldWeed.tscn::PackedScene::85167533196760324::1721697142::0::1::::<><>::res://Ingredients/goldweed/GoldWeed.gd
-goldweed_plant.tscn::PackedScene::8000232843029857680::1721682576::0::1::::<><>::uid://b3pudbev0ul1q::::res://Ingredients/Base/plant.tscn<>res://Ingredients/goldweed/GoldWeed.gd<>uid://blaki3agqtqwy::::res://Ingredients/goldweed/Goldweed.png
 GoldWeed.tres::AtlasTexture::1972614924178290047::1721693197::0::1::::<><>::uid://blaki3agqtqwy::::res://Ingredients/goldweed/Goldweed.png
-::res://Ingredients/harpy tongue/::1721686718
-Harpy Tongue.gd::GDScript::-1::1721683865::0::1::::HarpyTongue<>Ingredient<>::
+GoldWeed.tscn::PackedScene::85167533196760324::1721698308::0::1::::<><>::res://Ingredients/goldweed/GoldWeed.gd
+goldweed_plant.tscn::PackedScene::8000232843029857680::1721682576::0::1::::<><>::uid://b3pudbev0ul1q::::res://Ingredients/Base/plant.tscn<>res://Ingredients/goldweed/GoldWeed.gd<>uid://blaki3agqtqwy::::res://Ingredients/goldweed/Goldweed.png
+::res://Ingredients/harpy tongue/::1721698443
+Harpy Tongue.gd::GDScript::-1::1721698443::0::1::::HarpyTongue<>Ingredient<>::
 harpy tongue.png::CompressedTexture2D::8758545464859754154::1721527314::1721527326::1::::<><>::
+Harpy Tongue.tres::AtlasTexture::1533214574345713071::1721698069::0::1::::<><>::uid://dw1x71tuyk7xm::::res://Ingredients/harpy tongue/harpy tongue.png
 Harpy Tongue.tscn::PackedScene::1158611327435490729::1721684285::0::1::::<><>::res://Ingredients/harpy tongue/Harpy Tongue.gd<>uid://dw1x71tuyk7xm::::res://Ingredients/harpy tongue/harpy tongue.png
 harpy_tongue_plant.tscn::PackedScene::5291308044160357631::1721686718::0::1::::<><>::uid://b3pudbev0ul1q::::res://Ingredients/Base/plant.tscn<>res://Ingredients/harpy tongue/Harpy Tongue.gd<>uid://dw1x71tuyk7xm::::res://Ingredients/harpy tongue/harpy tongue.png
-::res://Ingredients/Hob Goblossom/::1721687893
-Hob Goblossom.gd::GDScript::-1::1721683877::0::1::::HobGoblossom<>Ingredient<>::
+::res://Ingredients/Hob Goblossom/::1721698468
+Hob Goblossom.gd::GDScript::-1::1721698468::0::1::::HobGoblossom<>Ingredient<>::
 Hob Goblossom.tscn::PackedScene::4601524386000034488::1721684253::0::1::::<><>::res://Ingredients/Hob Goblossom/Hob Goblossom.gd<>uid://mqg4o21s54v3::::res://Ingredients/Hob Goblossom/hobgoblossom.png
 hobgoblossom.png::CompressedTexture2D::875713035944395498::1721686325::1721686329::1::::<><>::
+HobGoblossom.tres::AtlasTexture::8637963212825436501::1721698095::0::1::::<><>::uid://mqg4o21s54v3::::res://Ingredients/Hob Goblossom/hobgoblossom.png
 hob_goblossom_plant.tscn::PackedScene::4878195887577011765::1721687893::0::1::::<><>::uid://b3pudbev0ul1q::::res://Ingredients/Base/plant.tscn<>res://Ingredients/Hob Goblossom/Hob Goblossom.gd<>uid://mqg4o21s54v3::::res://Ingredients/Hob Goblossom/hobgoblossom.png
-::res://Ingredients/Iron/::1721686671
-Iron.gd::GDScript::-1::1721683886::0::1::::Iron<>Ingredient<>::
+::res://Ingredients/Iron/::1721698483
+Iron.gd::GDScript::-1::1721698483::0::1::::Iron<>Ingredient<>::
+Iron.tres::AtlasTexture::2539339190276439104::1721698126::0::1::::<><>::uid://drjt0w57sa166::::res://Ingredients/Iron/ironbar.png
 Iron.tscn::PackedScene::2816267443813136041::1721684211::0::1::::<><>::res://Ingredients/Iron/Iron.gd<>uid://drjt0w57sa166::::res://Ingredients/Iron/ironbar.png
 ironbar.png::CompressedTexture2D::8372251263758431301::1721686417::1721686420::1::::<><>::
 iron_plant.tscn::PackedScene::2597225378501417252::1721686671::0::1::::<><>::uid://b3pudbev0ul1q::::res://Ingredients/Base/plant.tscn<>uid://drjt0w57sa166::::res://Ingredients/Iron/ironbar.png<>res://Ingredients/Iron/Iron.gd
-::res://Ingredients/Northern Fang/::1721686683
+::res://Ingredients/Northern Fang/::1721698502
 Northern Fang.png::CompressedTexture2D::4807613094613974794::1721531012::1721530382::1::::<><>::
-NorthernFang.gd::GDScript::-1::1721683895::0::1::::NorthernFang<>Ingredient<>::
+northern fang.tres::AtlasTexture::5014064673266104605::1721698154::0::1::::<><>::uid://caq3xkf0jcyfa::::res://Ingredients/Northern Fang/Northern Fang.png
+NorthernFang.gd::GDScript::-1::1721698502::0::1::::NorthernFang<>Ingredient<>::
 NorthernFang.tscn::PackedScene::8986499444160454680::1721684153::0::1::::<><>::res://Ingredients/Northern Fang/NorthernFang.gd<>uid://caq3xkf0jcyfa::::res://Ingredients/Northern Fang/Northern Fang.png
 northern_fang_plant.tscn::PackedScene::8629190937047538341::1721686683::0::1::::<><>::uid://b3pudbev0ul1q::::res://Ingredients/Base/plant.tscn<>res://Ingredients/Northern Fang/NorthernFang.gd<>uid://caq3xkf0jcyfa::::res://Ingredients/Northern Fang/Northern Fang.png
-::res://Ingredients/potato/::1721686935
-Potato.gd::GDScript::-1::1721683906::0::1::::Potato<>Ingredient<>::
+::res://Ingredients/potato/::1721698515
+Potato.gd::GDScript::-1::1721698515::0::1::::Potato<>Ingredient<>::
 potato.png::CompressedTexture2D::6578482986744797089::1721599898::1721600353::1::::<><>::
+potato.tres::AtlasTexture::5989524327074801901::1721698181::0::1::::<><>::uid://c0ywwhvt16a0x::::res://Ingredients/potato/potato.png
 Potato.tscn::PackedScene::5015011503111402648::1721684120::0::1::::<><>::res://Ingredients/potato/Potato.gd<>uid://c0ywwhvt16a0x::::res://Ingredients/potato/potato.png
 potato_plant.tscn::PackedScene::3160371154660297284::1721686935::0::1::::<><>::uid://b3pudbev0ul1q::::res://Ingredients/Base/plant.tscn<>res://Ingredients/potato/Potato.gd<>uid://c0ywwhvt16a0x::::res://Ingredients/potato/potato.png
-::res://Ingredients/ShadowWood/::1721686921
+::res://Ingredients/ShadowWood/::1721698530
 Shadow wood.png::CompressedTexture2D::2649165340404992970::1721601105::1721601111::1::::<><>::
-shadow_wood.gd::GDScript::-1::1721683913::0::1::::ShadowWood<>Ingredient<>::
+shadow wood.tres::AtlasTexture::6434422109061923716::1721698210::0::1::::<><>::uid://bd0jmphscd22q::::res://Ingredients/ShadowWood/Shadow wood.png
+shadow_wood.gd::GDScript::-1::1721698530::0::1::::ShadowWood<>Ingredient<>::
 shadow_wood.tscn::PackedScene::3134805758679804593::1721684076::0::1::::<><>::uid://dorx36xayrfnu::::res://Ingredients/Base/ingredient.tscn<>res://Ingredients/ShadowWood/shadow_wood.gd<>uid://bd0jmphscd22q::::res://Ingredients/ShadowWood/Shadow wood.png
 shadow_wood_plant.tscn::PackedScene::839489065472392329::1721686921::0::1::::<><>::uid://b3pudbev0ul1q::::res://Ingredients/Base/plant.tscn<>res://Ingredients/ShadowWood/shadow_wood.gd<>uid://bd0jmphscd22q::::res://Ingredients/ShadowWood/Shadow wood.png
-::res://Ingredients/silverleaf/::1721686912
-silverleaf.gd::GDScript::-1::1721683922::0::1::::Silverleaf<>Ingredient<>::
+::res://Ingredients/silverleaf/::1721698545
+silverleaf.gd::GDScript::-1::1721698545::0::1::::Silverleaf<>Ingredient<>::
 Silverleaf.png::CompressedTexture2D::8047095080107225724::1721601872::1721601875::1::::<><>::
+silverleaf.tres::AtlasTexture::2246648764991067189::1721698230::0::1::::<><>::uid://dmwcqlgxrujrg::::res://Ingredients/silverleaf/Silverleaf.png
 silverleaf.tscn::PackedScene::6516882540063293330::1721684015::0::1::::<><>::res://Ingredients/silverleaf/silverleaf.gd
 silverleaf_plant.tscn::PackedScene::5175330238475337922::1721686912::0::1::::<><>::uid://b3pudbev0ul1q::::res://Ingredients/Base/plant.tscn<>res://Ingredients/silverleaf/silverleaf.gd<>uid://dmwcqlgxrujrg::::res://Ingredients/silverleaf/Silverleaf.png
 ::res://Journal Text/::1721603162
@@ -134,11 +142,10 @@ Species.tscn::PackedScene::3634136482280999056::1721275790::0::1::::<><>::res://
 ::res://Patients/Base/Species/Human/::1721275953
 Human.gd::GDScript::-1::1721275953::0::1::::Human<>Species<>::
 Human.tscn::PackedScene::525502304533161226::1721275825::0::1::::<><>::uid://br1nxxvk3huu7::::res://Patients/Base/Species/Base/Species.tscn<>res://Patients/Base/Species/Human/Human.gd
-::res://UI/::1721697043
-spacing.tscn::PackedScene::1877440101068082396::1721697043::0::1::::<><>::
-::res://UI/Garden/::1721697142
+::res://UI/::1721697187
+::res://UI/Garden/::1721698308
 Garden Pot.gd::GDScript::-1::1721685577::0::1::::<>Node2D<>::
-Garden Pot.tscn::PackedScene::4808042212202694196::1721697142::0::1::::<><>::res://UI/Garden/Garden Pot.gd<>uid://c7tvqxyjrgfvx::::res://Ingredients/Base/waterlevel.tscn
+Garden Pot.tscn::PackedScene::4808042212202694196::1721698308::0::1::::<><>::res://UI/Garden/Garden Pot.gd<>uid://c7tvqxyjrgfvx::::res://Ingredients/Base/waterlevel.tscn
 garden.gd::GDScript::-1::1721680505::0::1::::Garden<>Control<>::
 Garden.png::CompressedTexture2D::2557957347790565131::1721273300::1721678971::1::::<><>::
 garden.tscn::PackedScene::5882202851968948714::1721682576::0::1::::<><>::res://UI/Garden/garden.gd<>uid://bhjmns3fqquvh::::res://UI/Garden/testGarden.png<>uid://carb0ug6jsvvw::::res://UI/Garden/Garden Pot.tscn
@@ -161,8 +168,11 @@ dialogue.gd::GDScript::-1::1721671181::0::1::::<>Node2D<>::
 dialogue.tscn::PackedScene::1907250289603139986::1721671181::0::1::::<><>::res://UI/MainScene/Dialogue/dialogue.gd<>uid://qxc36i5l7jjy::::res://UI/JournalScene/VCR_OSD_MONO_1.001.ttf
 speech_bubble.gd::GDScript::-1::1721672764::0::1::::<>Control<>::
 speech_bubble.tscn::PackedScene::1340664187809255351::1721672547::0::1::::<><>::res://UI/MainScene/Dialogue/speech_bubble.gd<>uid://c6mkgyh2g0puc::::res://UI/MainScene/speech_bubble.png<>uid://2f5espxhpwja::::res://UI/MainScene/Dialogue/dialogue.tscn<>uid://ymfxyaxs81sj::::res://UI/MainScene/speech_icon.png<>uid://dgdsnchvxlpc7::::res://UI/MainScene/speech_icon_2.png
-::res://UI/MixingScene/::1721697143
+::res://UI/MixingScene/::1721749788
 itemSlot.gd::GDScript::-1::1721696359::0::1::::<>VBoxContainer<>::
-itemSlot.tscn::PackedScene::5797323812973276119::1721697143::0::1::::<><>::res://UI/MixingScene/itemSlot.gd<>uid://b0i7oipxd0pj6::::res://Ingredients/Dragongrass/DragonGrass.tres
-Mixing.gd::GDScript::-1::1721697172::0::1::::<>Node2D<>::
-Mixing.tscn::PackedScene::2047278081458652591::1721697187::0::1::::<><>::res://UI/MixingScene/Mixing.gd<>uid://10pft1oqrj8o::::res://UI/spacing.tscn
+itemSlot.tscn::PackedScene::5797323812973276119::1721749788::0::1::::<><>::res://UI/MixingScene/itemSlot.gd<>uid://b0i7oipxd0pj6::::res://Ingredients/Dragongrass/DragonGrass.tres
+Mixing.gd::GDScript::-1::1721749730::0::1::::<>Node2D<>::
+Mixing.tscn::PackedScene::2047278081458652591::1721749788::0::1::::<><>::res://UI/MixingScene/Mixing.gd<>uid://bm1wqssj1xhiv::::res://UI/MixingScene/mixing_slot.tscn
+mixing_slot.tscn::PackedScene::3283725949169742393::1721749788::0::1::::<><>::res://UI/MixingScene/MixSlotLabel.gd
+MixSlotLabel.gd::GDScript::-1::1721749330::0::1::::<>Label<>::
+spacing.tscn::PackedScene::1877440101068082396::1721749788::0::1::::<><>::

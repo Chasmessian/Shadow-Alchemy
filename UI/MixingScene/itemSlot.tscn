@@ -21,3 +21,5 @@ stretch_mode = 4
 [node name="RichTextLabel" type="Label" parent="."]
 layout_mode = 2
 text = "ITEM"
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]

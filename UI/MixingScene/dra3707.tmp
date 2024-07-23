@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://csv8nc7vi11eo"]
+
+[ext_resource type="Texture2D" uid="uid://b0i7oipxd0pj6" path="res://Ingredients/Dragongrass/DragonGrass.tres" id="1_q1xyw"]
+[ext_resource type="Script" path="res://UI/MixingScene/draggedItem.gd" id="2_pi8lm"]
+
+[node name="Texture" type="TextureRect"]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.0610865
+scale = Vector2(6, 6)
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_q1xyw")
+stretch_mode = 4
+script = ExtResource("2_pi8lm")
