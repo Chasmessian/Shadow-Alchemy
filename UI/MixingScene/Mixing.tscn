@@ -31,6 +31,74 @@ size_flags_stretch_ratio = 6.0
 [node name="Spacing2" type="Control" parent="VBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.32
+
+[node name="side buttons" type="VBoxContainer" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Spacing8" type="Control" parent="VBoxContainer/HBoxContainer/side buttons"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.23
+
+[node name="Exit Button" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/side buttons"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.35
+
+[node name="Spacing8" type="Control" parent="VBoxContainer/HBoxContainer/side buttons/Exit Button"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.58
+
+[node name="Exit" type="Button" parent="VBoxContainer/HBoxContainer/side buttons/Exit Button"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.2
+text = "X"
+
+[node name="Spacing6" type="Control" parent="VBoxContainer/HBoxContainer/side buttons"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.23
+
+[node name="Button" type="Button" parent="VBoxContainer/HBoxContainer/side buttons"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Spacing3" type="Control" parent="VBoxContainer/HBoxContainer/side buttons"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.23
+
+[node name="Button2" type="Button" parent="VBoxContainer/HBoxContainer/side buttons"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Spacing4" type="Control" parent="VBoxContainer/HBoxContainer/side buttons"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.23
+
+[node name="Button3" type="Button" parent="VBoxContainer/HBoxContainer/side buttons"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Spacing7" type="Control" parent="VBoxContainer/HBoxContainer/side buttons"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.23
+
+[node name="Spacing3" type="Control" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
 
 [node name="Spacing2" type="Control" parent="VBoxContainer"]
 layout_mode = 2
@@ -55,3 +123,5 @@ size_flags_vertical = 3
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.5
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/side buttons/Exit Button/Exit" to="." method="closeMenu"]

@@ -2,18 +2,20 @@ extends Node2D
 var itemSlotScene = preload("res://UI/MixingScene/itemSlot.tscn")
 @onready var inventoryControl = $VBoxContainer/PanelContainer/ScrollContainer/Inventory
 func _ready():
-	Inventory.add(Batwort, 10)
-	Inventory.add(BloodRose, 10)
-	Inventory.add(DragonGrass, 10)
-	Inventory.add(GarlicNettle, 1)
-	Inventory.add(GoldWeed,5)
-	Inventory.add(HarpyTongue,5)
-	Inventory.add(HobGoblossom,5)
-	Inventory.add(Iron,5)
-	Inventory.add(NorthernFang,5)
-	Inventory.add(Potato,5)
-	Inventory.add(ShadowWood,5)	
-	Inventory.add(Silverleaf,5)
+	#testing purposes
+	
+	#Inventory.add(Batwort, 5)
+	#Inventory.add(BloodRose, 5)
+	#Inventory.add(DragonGrass, 5)
+	#Inventory.add(GarlicNettle, 5)
+	#Inventory.add(GoldWeed,5)
+	#Inventory.add(HarpyTongue,5)
+	#Inventory.add(HobGoblossom,5)
+	#Inventory.add(Iron,5)
+	#Inventory.add(NorthernFang,5)
+	#Inventory.add(Potato,5)
+	#Inventory.add(ShadowWood,5)	
+	#Inventory.add(Silverleaf,5)
 	
 	
 	
@@ -31,3 +33,7 @@ func load_inventory():
 			print(i)
 			inventoryControl.add_child(slot)
 			inventoryControl.add_child(load("res://UI/MixingScene/spacing.tscn").instantiate())
+
+
+func closeMenu():
+	World.instance.closeMenu()

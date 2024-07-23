@@ -1,10 +1,10 @@
+HBoxContainer
+VBoxContainer
+Button
 Control
 Label
 PanelContainer
 TextureRect
-Button
-VBoxContainer
-HBoxContainer
 CollisionShape2D
 Area2D
 Node2D
@@ -12,4 +12,3 @@ TextureProgressBar
 ProgressBar
 AnimatedSprite2D
 Timer
-Sprite2D
