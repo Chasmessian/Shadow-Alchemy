@@ -15,6 +15,7 @@ offset_left = -8.0
 offset_top = 8.0
 offset_right = 8.0
 offset_bottom = 17.0
+step = 0.1
 value = 0.0
 
 [node name="Area2D" type="Area2D" parent="."]

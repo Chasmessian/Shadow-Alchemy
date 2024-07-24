@@ -1,20 +1,10 @@
-res://Afflictions/Base/affliction.tscn
+res://UI/MainScene/viewport.tscn
 res://Ingredients/Dragongrass/DragonGrass.tres
 res://Ingredients/Base/plant.gdshader
+res://UI/Garden/Garden Pot.tscn
+res://UI/MainScene/Dialogue/speech_bubble.tscn
+res://UI/MainScene/Dialogue/dialogue.tscn
 res://Patients/Base/Patient.tscn
-res://UI/Seed Selection/Seed Selection.tscn
-res://UI/Seed Selection/seedSlot.tscn
-res://UI/MixingScene/itemSlot.tscn
-res://UI/MixingScene/Mixing.tscn
-res://world.tscn
-res://UI/MixingScene/mixing_slot.tscn
-res://UI/Seed Selection/seedSlot.gd
-res://UI/Seed Selection/Seed Selection.gd
-res://Ingredients/potato/potato_plant.tscn
-res://LowerUIButtons.tscn
-res://LowerUIButtons.gd
-res://UI/MixingScene/Mixing.gd
-res://UI/MixingScene/draggedItem.tscn
-res://Ingredients/Northern Fang/northern fang.tres
-res://Ingredients/Northern Fang/northern_fang_plant.tscn
-res://Ingredients/Northern Fang/NorthernFang.tscn
+res://UI/MainScene/viewPortPatient.tscn
+res://UI/MainScene/viewPortPatient.gd
+res://UI/MainScene/viewport.gd

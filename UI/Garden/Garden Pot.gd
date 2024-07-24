@@ -2,6 +2,8 @@ extends Node2D
 @onready var waterMeter = $Waterlevel
 var plant : Plant = null
 var isWatering = false
+var waterProgress = 0
+var waterIncrease = 5 #Time to water in seconds, roughly
 #func _ready():
 	#growPlant(load("res://Ingredients/blood rose/blood_rose_plant.tscn"))
 
@@ -15,22 +17,26 @@ func growPlant(plantToGrow):
 func harvest():
 	plant.harvest()
 	plant = null
-	waterMeter.value = 0
+	waterProgress = 0
 	isWatering = false
 	
 func water():
 	isWatering = true
 	pass
+func _process(delta):
+	waterMeter.value = waterProgress
+	
 func _physics_process(delta):
 	if(isWatering):
-		waterMeter.value += 1
-		if(waterMeter.value==100):
+		waterProgress += 100/waterIncrease * delta
+		waterProgress = clampf(waterProgress, 0,100)
+		if(waterProgress==100):
 			if(plant.finishedWaterLevel()):
-				waterMeter.value = 0
+				waterProgress = 0
 				isWatering = false
 			else:
 				plant = null
-				waterMeter.value = 0
+				waterProgress = 0
 				isWatering = false
 
 

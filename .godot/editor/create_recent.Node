@@ -1,10 +1,10 @@
+Node2D
 Control
 VBoxContainer
 Node
 Label
 Area2D
 TextureRect
-Node2D
 Button
 HBoxContainer
 PanelContainer
