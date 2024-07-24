@@ -8,3 +8,9 @@ res://Patients/Base/Patient.tscn
 res://UI/MainScene/viewPortPatient.tscn
 res://UI/MainScene/viewPortPatient.gd
 res://UI/MainScene/viewport.gd
+res://UI/MainScene/Dialogue/dialogue.gd
+res://UI/Seed Selection/seedSlot.tscn
+res://UI/Seed Selection/Seed Selection.tscn
+res://UI/Seed Selection/seedSlot.gd
+res://UI/Seed Selection/Seed Selection.gd
+res://UI/JournalScene/Journal/journal.tscn

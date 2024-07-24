@@ -4,8 +4,8 @@ signal starting_dialogue
 signal ending_dialogue
 
 var messages = [
-	"Hey Kaz, the garden is coming along well, I think.",
-	"Well done."
+	"[Mentions completely irrelevant medical situation that happened to them as a child]",
+	"[Brings it up again because dementia because old because time]"
 	]
 
 var typing_speed = .025

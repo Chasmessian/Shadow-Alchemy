@@ -9,6 +9,7 @@
 size = Vector2(748, 387.5)
 
 [node name="Viewport" type="Control"]
+z_index = -1
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -21,16 +22,17 @@ mouse_filter = 2
 script = ExtResource("1_lkgja")
 
 [node name="Patient" parent="." instance=ExtResource("2_wlxyc")]
+z_index = -1
 position = Vector2(-146, 158)
 flip_h = true
 
 [node name="Castle Background" type="Sprite2D" parent="."]
+z_index = -2
 position = Vector2(378, 198)
 scale = Vector2(2.16, 2.21143)
 texture = ExtResource("1_1hy6x")
 
 [node name="Speech Bubble" parent="." instance=ExtResource("2_5asnf")]
-z_index = 2
 layout_mode = 1
 offset_left = 34.0
 offset_top = 38.0

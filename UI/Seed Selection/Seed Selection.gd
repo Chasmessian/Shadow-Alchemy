@@ -26,13 +26,15 @@ func _ready():
 	for i in range(bottomRow.get_child_count()):
 		bottomRow.get_child(i).selected.connect(highlight)
 	
-func highlight(ingredient):
-	print(ingredient)
+func highlight(ingredient): #ingredient is the actual slot, so that it may be highlighted
+	if(selected!=null):
+		selected.deselect()
+	#print(ingredient)
 	selected = ingredient
 	
 func selectIngredient():
 	if(selected!=null):
-		Garden.selectedSeed = load(seedToPlant[selected])
+		Garden.selectedSeed = load(seedToPlant[selected.ingredient])
 	call_deferred("close")
 func close():
 	World.instance.closeMenu()
