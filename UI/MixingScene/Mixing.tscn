@@ -1,8 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://4fymu0qnsaxb"]
+[gd_scene load_steps=5 format=3 uid="uid://4fymu0qnsaxb"]
 
 [ext_resource type="Script" path="res://UI/MixingScene/Mixing.gd" id="1_p404o"]
 [ext_resource type="PackedScene" uid="uid://bm1wqssj1xhiv" path="res://UI/MixingScene/mixing_slot.tscn" id="2_3agj5"]
 [ext_resource type="PackedScene" uid="uid://csv8nc7vi11eo" path="res://UI/MixingScene/draggedItem.tscn" id="2_yvq50"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bi1rx"]
+bg_color = Color(0.0734939, 0.197779, 0.270075, 1)
 
 [node name="Mixing" type="Node2D"]
 script = ExtResource("1_p404o")
@@ -31,25 +34,50 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 6.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_bi1rx")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/Mixing Panel"]
 layout_mode = 2
 
+[node name="Spacing2" type="Control" parent="VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.18
+
+[node name="Mortar and Pestle" type="VBoxContainer" parent="VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 8.7
+
+[node name="Spacing" type="Control" parent="VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer/Mortar and Pestle"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Submit" type="Button" parent="VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer/Mortar and Pestle"]
+layout_mode = 2
+size_flags_vertical = 10
+text = "Submit"
+
+[node name="Spacing2" type="Control" parent="VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer/Mortar and Pestle"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.18
+
 [node name="Spacing" type="Control" parent="VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 6.03
+size_flags_stretch_ratio = 0.32
 
 [node name="Slots" type="VBoxContainer" parent="VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.8
+size_flags_stretch_ratio = 2.5
 
 [node name="Spacing8" type="Control" parent="VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer/Slots"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-size_flags_stretch_ratio = 0.23
+size_flags_stretch_ratio = 0.1
 
 [node name="Exit Button" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer/Slots"]
 layout_mode = 2
@@ -60,13 +88,19 @@ size_flags_stretch_ratio = 0.35
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-size_flags_stretch_ratio = 0.58
+size_flags_stretch_ratio = 0.85
 
 [node name="Exit" type="Button" parent="VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer/Slots/Exit Button"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.2
 text = "X"
+
+[node name="Spacing9" type="Control" parent="VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer/Slots/Exit Button"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.25
 
 [node name="Spacing6" type="Control" parent="VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer/Slots"]
 layout_mode = 2
@@ -135,7 +169,7 @@ vertical_scroll_mode = 0
 [node name="Inventory" type="HBoxContainer" parent="VBoxContainer/InventoryHbox/PanelContainer/ScrollContainer"]
 clip_contents = true
 layout_mode = 2
-size_flags_horizontal = 3
+size_flags_horizontal = 2
 size_flags_vertical = 3
 
 [node name="Spacing3" type="Control" parent="VBoxContainer/InventoryHbox"]
@@ -149,4 +183,5 @@ layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.5
 
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer/Mortar and Pestle/Submit" to="." method="submit"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer/Slots/Exit Button/Exit" to="." method="closeMenu"]

@@ -7,12 +7,14 @@ var draggedSlot = null
 @onready var ingredientSlots = [$"VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer/Slots/Mixing Slot",$"VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer/Slots/Mixing Slot2", $"VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer/Slots/Mixing Slot3"]
 
 func _ready():
+	for i in ingredientSlots:
+		i.subtracted.connect(slotSubtracted)
 	#testing purposes
-	
+	#
 	Inventory.add(Batwort, 1)
 	Inventory.add(BloodRose, 5)
 	Inventory.add(DragonGrass, 5)
-	Inventory.add(GarlicNettle, 5)
+	Inventory.add(GarlicNettle, 15)
 	Inventory.add(GoldWeed,5)
 	Inventory.add(HarpyTongue,5)
 	Inventory.add(HobGoblossom,5)
@@ -33,15 +35,22 @@ func load_inventory():
 	inventoryControl.add_child(load("res://UI/MixingScene/spacing.tscn").instantiate())
 	for i in Inventory.storage.keys():
 		if(Inventory.storage[i]!=0):
-			var slot = itemSlotScene.instantiate()
-			slot.ingredient = i
+			addSlot(i)
+			
+
+func addSlot(i):
+	var slot = itemSlotScene.instantiate()
+	slot.ingredient = i
+	slot.name = str(i)
 			#print(i)
-			slot.drag.connect(drag)
-			inventoryControl.add_child(slot)
-			inventoryControl.add_child(load("res://UI/MixingScene/spacing.tscn").instantiate())
-
-
+	slot.drag.connect(drag)
+	inventoryControl.add_child(slot)
+	inventoryControl.add_child(load("res://UI/MixingScene/spacing.tscn").instantiate())
+			
 func closeMenu():
+	for i in ingredientSlots:
+		if(i.storedIngredient!=null):
+			Inventory.add(i.storedIngredient, i.currentAmount)
 	World.instance.closeMenu()
 
 func drag(slot):
@@ -56,7 +65,7 @@ func drag(slot):
 	
 func droppedDrag(node):
 	for i in ingredientSlots:
-		if(i.mouseInside):
+		if(i.mouseInside and i.storedIngredient == null):
 			i.dropIngredient(draggedSlot.ingredient)
 			node.queue_free()
 			draggedSlot.consumed()
@@ -69,6 +78,15 @@ func cancelDrag(node):
 	node.queue_free()
 	draggedSlot.cancelDrag()
 	draggedIngredient = null
-	
-func drop(ingredient):
-	pass
+
+func slotSubtracted(ingredient):
+	var inv = $VBoxContainer/InventoryHbox/PanelContainer/ScrollContainer/Inventory
+	for i in range(inv.get_child_count()):
+		if(inv.get_child(i).name == str(ingredient)):
+			return
+	addSlot(ingredient)
+			
+
+
+func submit():
+	pass # Replace with function body.

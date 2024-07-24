@@ -6,20 +6,23 @@
 [node name="ItemSlot" type="VBoxContainer"]
 offset_right = 16.0
 offset_bottom = 43.0
-size_flags_horizontal = 3
+size_flags_horizontal = 0
 size_flags_vertical = 3
 script = ExtResource("1_s0iyx")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 texture_filter = 1
 layout_mode = 2
+size_flags_horizontal = 4
 size_flags_vertical = 3
 texture = ExtResource("2_bkouo")
 expand_mode = 3
 stretch_mode = 4
 
-[node name="RichTextLabel" type="Label" parent="."]
+[node name="Label" type="Label" parent="."]
 layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 3
 text = "ITEM"
 
 [connection signal="gui_input" from="." to="." method="_on_gui_input"]

@@ -1,14 +1,15 @@
-res://UI/MixingScene/mixing_slot.tscn
+res://world.tscn
 res://Ingredients/Batwort/Batwort.gd
 res://Ingredients/garlic nettle/GarlicNettle.gd
 res://Ingredients/Base/plant.gdshader
-res://UI/MixingScene/mixing_slot.gd
-res://UI/MixingScene/itemSlot.tscn
-res://UI/MixingScene/itemSlot.gd
-res://inventory.gd
 res://UI/MixingScene/Mixing.tscn
 res://UI/MixingScene/Mixing.gd
-res://UI/MixingScene/draggedItem.tscn
-res://UI/MixingScene/draggedItem.gd
-res://UI/MixingScene/spacing.tscn
+res://UI/MixingScene/mixing_slot.tscn
+res://UI/MixingScene/mixing_slot.gd
+res://UI/MixingScene/itemSlot.gd
+res://UI/MixingScene/itemSlot.tscn
+res://journal.tscn
+res://LowerUIButtons.tscn
 res://UI/MainScene/Dialogue/dialogue.tscn
+res://UI/JournalScene/Journal/journal.tscn
+res://UI/Garden/Garden Pot.tscn

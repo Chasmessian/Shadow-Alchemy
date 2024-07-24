@@ -9,39 +9,64 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource("1_1nfvx")
 
-[node name="Dose Slider" type="HSlider" parent="."]
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_vertical = 1
-min_value = 1.0
-value = 1.0
-ticks_on_borders = true
+size_flags_stretch_ratio = 10.25
 
-[node name="Label" type="Label" parent="Dose Slider"]
-layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -20.0
-offset_top = -23.0
-offset_right = 20.0
-grow_horizontal = 2
-grow_vertical = 0
-text = "0 units
-"
-
-[node name="Panel" type="PanelContainer" parent="."]
+[node name="Panel" type="PanelContainer" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 10.0
 
-[node name="TextureRect" type="TextureRect" parent="Panel"]
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/Panel"]
 texture_filter = 1
 layout_mode = 2
 expand_mode = 1
 stretch_mode = 5
 
-[connection signal="value_changed" from="Dose Slider" to="." method="_on_dose_slider_value_changed"]
-[connection signal="mouse_entered" from="Panel" to="." method="_on_panel_mouse_entered"]
-[connection signal="mouse_exited" from="Panel" to="." method="_on_panel_mouse_exited"]
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Subtract" type="Button" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "-"
+
+[node name="Add" type="Button" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "+"
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 4
+text = "0 units
+"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.1
+
+[node name="Button" type="Button" parent="VBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "clear"
+
+[node name="Control2" type="Control" parent="VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[connection signal="mouse_entered" from="VBoxContainer/Panel" to="." method="_on_panel_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/Panel" to="." method="_on_panel_mouse_exited"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Subtract" to="." method="subtract"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Add" to="." method="add"]
+[connection signal="pressed" from="VBoxContainer2/Button" to="." method="clearIngredient"]
