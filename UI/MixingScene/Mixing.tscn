@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://4fymu0qnsaxb"]
+[gd_scene load_steps=6 format=3 uid="uid://4fymu0qnsaxb"]
 
 [ext_resource type="Script" path="res://UI/MixingScene/Mixing.gd" id="1_p404o"]
 [ext_resource type="PackedScene" uid="uid://bm1wqssj1xhiv" path="res://UI/MixingScene/mixing_slot.tscn" id="2_3agj5"]
@@ -6,6 +6,9 @@
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bi1rx"]
 bg_color = Color(0.0734939, 0.197779, 0.270075, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_itp1c"]
+bg_color = Color(0.138234, 0.246498, 0.35238, 1)
 
 [node name="Mixing" type="Node2D"]
 script = ExtResource("1_p404o")
@@ -146,6 +149,7 @@ size_flags_stretch_ratio = 0.5
 [node name="InventoryHbox" type="HBoxContainer" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
+size_flags_stretch_ratio = 1.54
 
 [node name="Spacing2" type="Control" parent="VBoxContainer/InventoryHbox"]
 clip_contents = true
@@ -159,18 +163,32 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_itp1c")
 
-[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/InventoryHbox/PanelContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/InventoryHbox/PanelContainer"]
+layout_mode = 2
+
+[node name="Spacing4" type="Control" parent="VBoxContainer/InventoryHbox/PanelContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/InventoryHbox/PanelContainer/VBoxContainer"]
 clip_contents = false
 layout_mode = 2
 size_flags_vertical = 3
 vertical_scroll_mode = 0
 
-[node name="Inventory" type="HBoxContainer" parent="VBoxContainer/InventoryHbox/PanelContainer/ScrollContainer"]
+[node name="Inventory" type="HBoxContainer" parent="VBoxContainer/InventoryHbox/PanelContainer/VBoxContainer/ScrollContainer"]
 clip_contents = true
 layout_mode = 2
 size_flags_horizontal = 2
 size_flags_vertical = 3
+
+[node name="Spacing2" type="Control" parent="VBoxContainer/InventoryHbox/PanelContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.1
 
 [node name="Spacing3" type="Control" parent="VBoxContainer/InventoryHbox"]
 clip_contents = true
@@ -181,7 +199,7 @@ size_flags_stretch_ratio = 0.08
 [node name="Spacing3" type="Control" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
-size_flags_stretch_ratio = 0.5
+size_flags_stretch_ratio = 0.36
 
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer/Mortar and Pestle/Submit" to="." method="submit"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer/Slots/Exit Button/Exit" to="." method="closeMenu"]

@@ -1,6 +1,6 @@
 extends Node2D
 var itemSlotScene = preload("res://UI/MixingScene/itemSlot.tscn")
-@onready var inventoryControl = $VBoxContainer/InventoryHbox/PanelContainer/ScrollContainer/Inventory
+@onready var inventoryControl = $VBoxContainer/InventoryHbox/PanelContainer/VBoxContainer/ScrollContainer/Inventory
 var draggedIngredient = null
 var draggedSlot = null
 @export var draggedScene : PackedScene
@@ -45,7 +45,7 @@ func addSlot(i):
 			#print(i)
 	slot.drag.connect(drag)
 	inventoryControl.add_child(slot)
-	inventoryControl.add_child(load("res://UI/MixingScene/spacing.tscn").instantiate())
+	#inventoryControl.add_child(load("res://UI/MixingScene/spacing.tscn").instantiate())
 			
 func closeMenu():
 	for i in ingredientSlots:
@@ -80,7 +80,7 @@ func cancelDrag(node):
 	draggedIngredient = null
 
 func slotSubtracted(ingredient):
-	var inv = $VBoxContainer/InventoryHbox/PanelContainer/ScrollContainer/Inventory
+	var inv = $VBoxContainer/InventoryHbox/PanelContainer/VBoxContainer/ScrollContainer/Inventory
 	for i in range(inv.get_child_count()):
 		if(inv.get_child(i).name == str(ingredient)):
 			return
