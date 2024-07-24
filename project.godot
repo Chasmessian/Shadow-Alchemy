@@ -19,6 +19,10 @@ config/icon="res://icon.svg"
 
 window/stretch/mode="canvas_items"
 
+[gui]
+
+theme/custom_font="res://UI/JournalScene/VCR_OSD_MONO_1.001.ttf"
+
 [input]
 
 click={

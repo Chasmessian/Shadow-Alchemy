@@ -1,13 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://d1belk3may6vs"]
+[gd_scene load_steps=2 format=3 uid="uid://d1belk3may6vs"]
 
 [ext_resource type="Script" path="res://Ingredients/Northern Fang/NorthernFang.gd" id="1_f2kvr"]
-[ext_resource type="Texture2D" uid="uid://caq3xkf0jcyfa" path="res://Ingredients/Northern Fang/Northern Fang.png" id="2_fo1ye"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_w8b1r"]
-atlas = ExtResource("2_fo1ye")
-region = Rect2(32, 0, 16, 16)
 
 [node name="NorthernFang" type="Node"]
 script = ExtResource("1_f2kvr")
-image = SubResource("AtlasTexture_w8b1r")
-label = "Northern Fang"

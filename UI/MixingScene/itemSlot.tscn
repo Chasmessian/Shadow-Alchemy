@@ -1,13 +1,18 @@
-[gd_scene load_steps=3 format=3 uid="uid://coujcuc75cc0n"]
+[gd_scene load_steps=5 format=3 uid="uid://coujcuc75cc0n"]
 
 [ext_resource type="Script" path="res://UI/MixingScene/itemSlot.gd" id="1_s0iyx"]
 [ext_resource type="Texture2D" uid="uid://b0i7oipxd0pj6" path="res://Ingredients/Dragongrass/DragonGrass.tres" id="2_bkouo"]
+[ext_resource type="FontFile" uid="uid://qxc36i5l7jjy" path="res://UI/JournalScene/VCR_OSD_MONO_1.001.ttf" id="3_sfx8a"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_0rp35"]
+font = ExtResource("3_sfx8a")
 
 [node name="ItemSlot" type="VBoxContainer"]
 offset_right = 16.0
 offset_bottom = 43.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
+mouse_default_cursor_shape = 6
 script = ExtResource("1_s0iyx")
 
 [node name="TextureRect" type="TextureRect" parent="."]
@@ -24,5 +29,7 @@ custom_minimum_size = Vector2(80, 0)
 layout_mode = 2
 size_flags_vertical = 3
 text = "ITEM"
+label_settings = SubResource("LabelSettings_0rp35")
+horizontal_alignment = 1
 
 [connection signal="gui_input" from="." to="." method="_on_gui_input"]

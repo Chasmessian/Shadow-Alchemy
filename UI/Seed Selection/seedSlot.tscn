@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://divqcygwjniho"]
+
+[ext_resource type="Texture2D" uid="uid://b0i7oipxd0pj6" path="res://Ingredients/Dragongrass/DragonGrass.tres" id="1_015jg"]
+[ext_resource type="Script" path="res://UI/Seed Selection/seedSlot.gd" id="1_hamde"]
+[ext_resource type="Script" path="res://Ingredients/Batwort/Batwort.gd" id="2_ka1bg"]
+
+[node name="ItemSlot" type="VBoxContainer"]
+offset_right = 80.0
+offset_bottom = 43.0
+size_flags_horizontal = 6
+size_flags_vertical = 3
+script = ExtResource("1_hamde")
+ingredient = ExtResource("2_ka1bg")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+texture = ExtResource("1_015jg")
+expand_mode = 3
+stretch_mode = 4
+
+[node name="Label" type="Label" parent="."]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+size_flags_vertical = 3
+text = "ITEM"
+horizontal_alignment = 1
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]

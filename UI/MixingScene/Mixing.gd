@@ -11,19 +11,19 @@ func _ready():
 		i.subtracted.connect(slotSubtracted)
 	#testing purposes
 	#
-	Inventory.add(Batwort, 1)
-	Inventory.add(BloodRose, 5)
-	Inventory.add(DragonGrass, 5)
-	Inventory.add(GarlicNettle, 15)
-	Inventory.add(GoldWeed,5)
-	Inventory.add(HarpyTongue,5)
-	Inventory.add(HobGoblossom,5)
-	Inventory.add(Iron,5)
-	Inventory.add(NorthernFang,5)
-	Inventory.add(Potato,5)
-	Inventory.add(ShadowWood,5)	
-	Inventory.add(Silverleaf,5)
-	
+	#Inventory.add(Batwort, 1)
+	#Inventory.add(BloodRose, 5)
+	#Inventory.add(DragonGrass, 5)
+	#Inventory.add(GarlicNettle, 15)
+	#Inventory.add(GoldWeed,5)
+	#Inventory.add(HarpyTongue,5)
+	#Inventory.add(HobGoblossom,5)
+	#Inventory.add(Iron,5)
+	#Inventory.add(NorthernFang,5)
+	#Inventory.add(Potato,5)
+	#Inventory.add(ShadowWood,5)	
+	#Inventory.add(Silverleaf,5)
+	#
 	
 	
 	

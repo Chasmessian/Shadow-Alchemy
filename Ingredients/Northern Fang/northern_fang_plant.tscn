@@ -39,5 +39,3 @@ ingredient = ExtResource("2_ktmfk")
 [node name="AnimatedSprite2D" parent="." index="0"]
 position = Vector2(-0.5, -5)
 sprite_frames = SubResource("SpriteFrames_leyd0")
-frame = 1
-frame_progress = 0.37607

@@ -1,14 +1,20 @@
-res://Potion.gd
-res://Ingredients/Batwort/Batwort.gd
-res://Ingredients/garlic nettle/GarlicNettle.gd
-res://Ingredients/Base/plant.gdshader
-res://Solutions/Potion.gd
-res://Solutions/Base/Potion.gd
-res://Afflictions/Common Mould.gd
-res://Afflictions/Base/affliction.gd
-res://Afflictions/vampirism.gd
 res://Afflictions/Base/affliction.tscn
-res://Patients/Base/Patient.gd
-res://Patients/Base/patientStats.gd
+res://Ingredients/Dragongrass/DragonGrass.tres
+res://Ingredients/Base/plant.gdshader
 res://Patients/Base/Patient.tscn
-res://Patients/Base/Species/Human/Human.gd
+res://UI/Seed Selection/Seed Selection.tscn
+res://UI/Seed Selection/seedSlot.tscn
+res://UI/MixingScene/itemSlot.tscn
+res://UI/MixingScene/Mixing.tscn
+res://world.tscn
+res://UI/MixingScene/mixing_slot.tscn
+res://UI/Seed Selection/seedSlot.gd
+res://UI/Seed Selection/Seed Selection.gd
+res://Ingredients/potato/potato_plant.tscn
+res://LowerUIButtons.tscn
+res://LowerUIButtons.gd
+res://UI/MixingScene/Mixing.gd
+res://UI/MixingScene/draggedItem.tscn
+res://Ingredients/Northern Fang/northern fang.tres
+res://Ingredients/Northern Fang/northern_fang_plant.tscn
+res://Ingredients/Northern Fang/NorthernFang.tscn

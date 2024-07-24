@@ -1,0 +1,149 @@
+[gd_scene load_steps=15 format=3 uid="uid://cg4s2myba36yg"]
+
+[ext_resource type="PackedScene" uid="uid://divqcygwjniho" path="res://UI/Seed Selection/seedSlot.tscn" id="1_0q3qw"]
+[ext_resource type="Script" path="res://UI/Seed Selection/Seed Selection.gd" id="1_mfe30"]
+[ext_resource type="Script" path="res://Ingredients/blood rose/BloodRose.gd" id="4_lfeo2"]
+[ext_resource type="Script" path="res://Ingredients/Dragongrass/DragonGrass.gd" id="5_nblcd"]
+[ext_resource type="Script" path="res://Ingredients/garlic nettle/GarlicNettle.gd" id="6_kms11"]
+[ext_resource type="Script" path="res://Ingredients/goldweed/GoldWeed.gd" id="7_dmiei"]
+[ext_resource type="Script" path="res://Ingredients/harpy tongue/Harpy Tongue.gd" id="8_65rxt"]
+[ext_resource type="Script" path="res://Ingredients/Hob Goblossom/Hob Goblossom.gd" id="9_ttyu0"]
+[ext_resource type="Script" path="res://Ingredients/Iron/Iron.gd" id="10_1rkad"]
+[ext_resource type="Script" path="res://Ingredients/Northern Fang/NorthernFang.gd" id="11_4jqc8"]
+[ext_resource type="Script" path="res://Ingredients/potato/Potato.gd" id="12_838gu"]
+[ext_resource type="Script" path="res://Ingredients/ShadowWood/shadow_wood.gd" id="13_y2118"]
+[ext_resource type="Script" path="res://Ingredients/silverleaf/silverleaf.gd" id="14_rkkuy"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cmhha"]
+bg_color = Color(0.226236, 0.451365, 0.195372, 1)
+
+[node name="SeedSelection" type="Node2D"]
+script = ExtResource("1_mfe30")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 0
+
+[node name="Control3" type="Control" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+
+[node name="Control" type="Control" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="PanelContainer" type="PanelContainer" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_cmhha")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/VBoxContainer/PanelContainer"]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Control2" type="Control" parent="HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.18
+
+[node name="Top Seed Row" type="HBoxContainer" parent="HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="SeedSlot" parent="HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/Top Seed Row" instance=ExtResource("1_0q3qw")]
+layout_mode = 2
+
+[node name="SeedSlot2" parent="HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/Top Seed Row" instance=ExtResource("1_0q3qw")]
+layout_mode = 2
+ingredient = ExtResource("4_lfeo2")
+
+[node name="SeedSlot3" parent="HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/Top Seed Row" instance=ExtResource("1_0q3qw")]
+layout_mode = 2
+ingredient = ExtResource("5_nblcd")
+
+[node name="SeedSlot4" parent="HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/Top Seed Row" instance=ExtResource("1_0q3qw")]
+layout_mode = 2
+ingredient = ExtResource("6_kms11")
+
+[node name="SeedSlot5" parent="HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/Top Seed Row" instance=ExtResource("1_0q3qw")]
+layout_mode = 2
+ingredient = ExtResource("7_dmiei")
+
+[node name="SeedSlot6" parent="HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/Top Seed Row" instance=ExtResource("1_0q3qw")]
+layout_mode = 2
+ingredient = ExtResource("8_65rxt")
+
+[node name="Bottom Seed Row" type="HBoxContainer" parent="HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="SeedSlot" parent="HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/Bottom Seed Row" instance=ExtResource("1_0q3qw")]
+layout_mode = 2
+ingredient = ExtResource("9_ttyu0")
+
+[node name="SeedSlot2" parent="HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/Bottom Seed Row" instance=ExtResource("1_0q3qw")]
+layout_mode = 2
+ingredient = ExtResource("10_1rkad")
+
+[node name="SeedSlot3" parent="HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/Bottom Seed Row" instance=ExtResource("1_0q3qw")]
+layout_mode = 2
+ingredient = ExtResource("11_4jqc8")
+
+[node name="SeedSlot4" parent="HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/Bottom Seed Row" instance=ExtResource("1_0q3qw")]
+layout_mode = 2
+ingredient = ExtResource("12_838gu")
+
+[node name="SeedSlot5" parent="HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/Bottom Seed Row" instance=ExtResource("1_0q3qw")]
+layout_mode = 2
+ingredient = ExtResource("13_y2118")
+
+[node name="SeedSlot6" parent="HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/Bottom Seed Row" instance=ExtResource("1_0q3qw")]
+layout_mode = 2
+ingredient = ExtResource("14_rkkuy")
+
+[node name="Select Button" type="HBoxContainer" parent="HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="Control" type="Control" parent="HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/Select Button"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Select" type="Button" parent="HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/Select Button"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "SELECT"
+
+[node name="Control2" type="Control" parent="HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/Select Button"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Control" type="Control" parent="HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.18
+
+[node name="Control2" type="Control" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="Control2" type="Control" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.3
+
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/PanelContainer/VBoxContainer/Select Button/Select" to="." method="selectIngredient"]

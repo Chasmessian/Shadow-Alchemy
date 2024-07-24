@@ -59,7 +59,7 @@ size_flags_stretch_ratio = 0.1
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-text = "clear"
+text = "CLEAR"
 
 [node name="Control2" type="Control" parent="VBoxContainer2"]
 layout_mode = 2
