@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://uc4kphg4jjyt"]
+
+[ext_resource type="PackedScene" uid="uid://cp2nay63s25us" path="res://UI/Garden/garden.tscn" id="1_3fwft"]
+[ext_resource type="Script" path="res://world.gd" id="1_7qcas"]
+[ext_resource type="PackedScene" uid="uid://5edxrxt3wkbv" path="res://UI/MainScene/viewport.tscn" id="2_x118v"]
+[ext_resource type="PackedScene" uid="uid://b020rgq1ep5nu" path="res://LowerUIButtons.tscn" id="3_cupsl"]
+
+[node name="World" type="Node2D"]
+position = Vector2(-1, -1)
+script = ExtResource("1_7qcas")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+
+[node name="Viewport" parent="HBoxContainer/VBoxContainer" instance=ExtResource("2_x118v")]
+custom_minimum_size = Vector2(0, 385)
+layout_mode = 2
+
+[node name="Garden" parent="HBoxContainer/VBoxContainer" instance=ExtResource("1_3fwft")]
+layout_mode = 2
+size_flags_horizontal = 1
+size_flags_vertical = 3
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Panel" type="Panel" parent="HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Lower UI Buttons" parent="HBoxContainer/VBoxContainer2" instance=ExtResource("3_cupsl")]
+layout_mode = 2

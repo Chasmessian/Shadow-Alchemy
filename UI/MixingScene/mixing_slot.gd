@@ -4,13 +4,15 @@ var currentAmount = 0
 var mouseInside : bool = false
 signal subtracted(ingredient) #when all resources of an ingredient are used, the inventory slot in mixing is removed, this is to ensure it comes back when subtracted
 func dropIngredient(ingredient):
-	print(ingredient)	
+	#print(ingredient)	
+	#Inventory.remove(ingredient,1)
 	storedIngredient = ingredient
 	var made = ingredient.new()
 	currentAmount = 1
 	$VBoxContainer/Panel/TextureRect.texture = made.texture
 	$VBoxContainer/Label.visible = true
 	$VBoxContainer/Label.text = "1 units"
+	
 func clearIngredient():
 	Inventory.add(storedIngredient, currentAmount)
 	subtracted.emit(storedIngredient)
@@ -19,8 +21,13 @@ func clearIngredient():
 	$VBoxContainer/Panel/TextureRect.texture = null
 	$VBoxContainer/Label.hide()
 
-
-
+func delete():
+	Inventory.remove(storedIngredient,currentAmount)
+	storedIngredient = null
+	currentAmount = 0
+	$VBoxContainer/Panel/TextureRect.texture = null
+	$VBoxContainer/Label.hide()
+	
 func _on_panel_mouse_entered():
 	mouseInside = true
 	

@@ -1,7 +1,7 @@
 class_name affliction
-extends Node
 var solutionIngredients = []
 func ratePotion(potion, doses):
+	print("CURING")
 	var pointsEarned = 10
 	var perfect = true
 	#10 points possible
@@ -11,7 +11,6 @@ func ratePotion(potion, doses):
 	#3 if all correct
 	#1 if dose incorrect
 	#0 if ingredient incorrect
-	
 	for i in range(3):
 		if(potion.ingredients[i]!=solutionIngredients[i]):
 			pointsEarned-=3
@@ -21,4 +20,7 @@ func ratePotion(potion, doses):
 			perfect = false
 	if(!perfect):
 		pointsEarned-=1
+	print(pointsEarned)
+		
+	return pointsEarned
 	#will have if statements to see if potion matches the requirements

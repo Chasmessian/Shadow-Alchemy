@@ -14,10 +14,14 @@ func bringOutPatient(newPatient):
 	#patient.flip()
 func patientLeave():
 	#patient.flip()
-	patient.walkTo(get_node("Leave").positon, 5)
+	patient.walkTo(get_node("Leave").position, 5)
 	patient.flipAtEnd = true
 	pass
 func _ready():
 	patient = get_node("Patient")
 	print(patient)
 	bringOutPatient(patient)
+	
+func loadPatient(p):
+	patient.texture = p.texture
+	#something to do with dialogue

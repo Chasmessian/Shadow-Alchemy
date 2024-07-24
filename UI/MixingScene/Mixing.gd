@@ -11,16 +11,16 @@ func _ready():
 		i.subtracted.connect(slotSubtracted)
 	#testing purposes
 	#
-	#Inventory.add(Batwort, 1)
+	#Inventory.add(Batwort, 3)
 	#Inventory.add(BloodRose, 5)
 	#Inventory.add(DragonGrass, 5)
-	#Inventory.add(GarlicNettle, 15)
+	#Inventory.add(GarlicNettle, 4)
 	#Inventory.add(GoldWeed,5)
 	#Inventory.add(HarpyTongue,5)
 	#Inventory.add(HobGoblossom,5)
 	#Inventory.add(Iron,5)
 	#Inventory.add(NorthernFang,5)
-	#Inventory.add(Potato,5)
+	#Inventory.add(Potato,2)
 	#Inventory.add(ShadowWood,5)	
 	#Inventory.add(Silverleaf,5)
 	#
@@ -63,6 +63,7 @@ func drag(slot):
 	draggedIngredient.texture = newIngredient.texture
 	add_child(draggedIngredient)
 	draggedIngredient.dropped.connect(droppedDrag)
+	
 func deleteInvSlot(ingredient):
 	for i in range(inventoryControl.get_child_count()):
 		if(inventoryControl.get_child(i) is mixingItemSlot):
@@ -96,4 +97,18 @@ func slotSubtracted(ingredient):
 
 
 func submit():
-	pass # Replace with function body.
+	#var potion = Potion.new([],[])
+	var ingredients = []
+	var doses = []
+	for i in range(len(ingredientSlots)):
+		if(ingredientSlots[i].storedIngredient == null):
+			return
+		ingredients.append(ingredientSlots[i].storedIngredient)
+		doses.append(ingredientSlots[i].currentAmount)
+	for i in ingredientSlots:
+		i.delete()
+		print(i.storedIngredient)
+		print(i.currentAmount)
+	var potion = Potion.new(ingredients, doses)
+	print("TRYING IT OUT")
+	World.instance.tryPotion(potion)

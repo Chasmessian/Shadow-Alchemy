@@ -20,7 +20,7 @@ func _physics_process(delta):
 	if(walking):
 		timeSpentWalking += delta
 func _process(delta):
-	print(position)
+	#print(position)
 	if(walking):
 		position.x += (walkingTo.x-startPos.x)*(delta/timeToWalk)
 		position.y += (walkingTo.y-startPos.y)*(delta/timeToWalk)

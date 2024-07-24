@@ -1,5 +1,7 @@
-res://UI/MainScene
 res://Patients/Base
+res://Patients
+res://
+res://UI/MainScene
 res://UI/JournalScene
 res://Afflictions
 res://Afflictions/Base
@@ -17,6 +19,4 @@ res://Ingredients/goldweed
 res://Ingredients/Dragongrass
 res://Ingredients/blood rose
 res://Ingredients/Batwort
-res://
 res://UI/JournalScene/Journal
-res://Patients/Base/Species/Human

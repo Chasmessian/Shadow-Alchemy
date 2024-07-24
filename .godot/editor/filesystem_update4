@@ -14,3 +14,17 @@ res://UI/Seed Selection/Seed Selection.tscn
 res://UI/Seed Selection/seedSlot.gd
 res://UI/Seed Selection/Seed Selection.gd
 res://UI/JournalScene/Journal/journal.tscn
+res://UI/MixingScene/Mixing.gd
+res://Potion.gd
+res://UI/MixingScene/Mixing.tscn
+res://world.gd
+res://world.tscn
+res://Patients/Base/Patient.gd
+res://Patients/patientList.gd
+res://UI/MixingScene/mixing_slot.tscn
+res://Patients/List/patient1.gd
+res://Patients/Base/patientStats.gd
+res://Ingredients/Batwort/batwortPlant.tscn
+res://UI/MixingScene/mixing_slot.gd
+res://Afflictions/vampirism.gd
+res://Afflictions/Base/affliction.gd
