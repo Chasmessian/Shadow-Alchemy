@@ -29,6 +29,7 @@ func tryPotion(potion):
 	score += patient.ratePotion(potion)
 	print("SCORE: " + str(score))
 	viewport.instance.patientLeave()
+	viewport.instance.arrived.connect(loadPatient,CONNECT_ONE_SHOT)
 	
 		
 func loadPatient():

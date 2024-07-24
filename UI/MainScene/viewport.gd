@@ -2,6 +2,7 @@ class_name viewport
 extends Control
 static var instance = null
 var patient : viewport_patient = null
+signal arrived
 func _init():
 	if(instance==null):
 		instance = self
@@ -16,12 +17,15 @@ func patientLeave():
 	#patient.flip()
 	patient.walkTo(get_node("Leave").position, 5)
 	patient.flipAtEnd = true
-	pass
+	patient.arrived.connect(func(): 
+		arrived.emit()
+		print("ARRIVED"))
 func _ready():
 	patient = get_node("Patient")
-	print(patient)
-	bringOutPatient(patient)
 	
 func loadPatient(p):
 	patient.texture = p.texture
+	patient.position = get_node("Leave").position
+	bringOutPatient(patient)
+	
 	#something to do with dialogue
