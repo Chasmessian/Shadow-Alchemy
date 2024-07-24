@@ -1,11 +1,11 @@
 extends Node2D
-var isAdult : bool = true
-var age : int = 20
-var weight : int = 75 #in kg
-var affliction = null
-var species = "human"
-
+var stats = patientStats.new()
+var curse = null
+var species = Human
 func ratePotion(potion):
-	#bunch of if statements
+	var points = 0
+	if(curse==null or species == null):
+		return
+	points += curse.cure(potion, stats)
 	#then add the rating from the affliction
 	pass

@@ -1,7 +1,9 @@
+class_name mixingItemSlot
 extends VBoxContainer
 @export var ingredient : Script = null
 var ingredientMade = null
 signal drag(ingred)
+signal delete(ingred) #so that Mixing scene can properly delete this node as well as the spacing control node
 func _ready():
 	ingredientMade = ingredient.new()
 	$TextureRect.texture = ingredientMade.texture
@@ -10,7 +12,7 @@ func _process(delta):
 	$Label.text = ingredientMade.label + "  x" + str(Inventory.storage[ingredient])
 	if(ingredient in Inventory.storage.keys()):
 		if(Inventory.storage[ingredient]<=0):
-			queue_free()	
+			delete.emit(ingredient)
 			
 func updateLabel():
 	$Label.text = ingredientMade.label + "  x" + str(Inventory.storage[ingredient])

@@ -1,15 +1,14 @@
-res://world.tscn
+res://Potion.gd
 res://Ingredients/Batwort/Batwort.gd
 res://Ingredients/garlic nettle/GarlicNettle.gd
 res://Ingredients/Base/plant.gdshader
-res://UI/MixingScene/Mixing.tscn
-res://UI/MixingScene/Mixing.gd
-res://UI/MixingScene/mixing_slot.tscn
-res://UI/MixingScene/mixing_slot.gd
-res://UI/MixingScene/itemSlot.gd
-res://UI/MixingScene/itemSlot.tscn
-res://journal.tscn
-res://LowerUIButtons.tscn
-res://UI/MainScene/Dialogue/dialogue.tscn
-res://UI/JournalScene/Journal/journal.tscn
-res://UI/Garden/Garden Pot.tscn
+res://Solutions/Potion.gd
+res://Solutions/Base/Potion.gd
+res://Afflictions/Common Mould.gd
+res://Afflictions/Base/affliction.gd
+res://Afflictions/vampirism.gd
+res://Afflictions/Base/affliction.tscn
+res://Patients/Base/Patient.gd
+res://Patients/Base/patientStats.gd
+res://Patients/Base/Patient.tscn
+res://Patients/Base/Species/Human/Human.gd

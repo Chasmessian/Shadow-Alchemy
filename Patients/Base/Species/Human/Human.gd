@@ -1,4 +1,4 @@
-class_name  Human
+class_name Human
 extends Species
 func rate_potion(potion):
 	if(potion.contains(ShadowWood)):

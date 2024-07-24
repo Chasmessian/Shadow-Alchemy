@@ -44,8 +44,9 @@ func addSlot(i):
 	slot.name = str(i)
 			#print(i)
 	slot.drag.connect(drag)
+	slot.delete.connect(deleteInvSlot)
 	inventoryControl.add_child(slot)
-	#inventoryControl.add_child(load("res://UI/MixingScene/spacing.tscn").instantiate())
+	inventoryControl.add_child(load("res://UI/MixingScene/spacing.tscn").instantiate())
 			
 func closeMenu():
 	for i in ingredientSlots:
@@ -62,6 +63,12 @@ func drag(slot):
 	draggedIngredient.texture = newIngredient.texture
 	add_child(draggedIngredient)
 	draggedIngredient.dropped.connect(droppedDrag)
+func deleteInvSlot(ingredient):
+	for i in range(inventoryControl.get_child_count()):
+		if(inventoryControl.get_child(i) is mixingItemSlot):
+			if(inventoryControl.get_child(i).ingredient == ingredient):
+				inventoryControl.get_child(i).queue_free()
+				inventoryControl.get_child(i+1).queue_free() #deletes control node immediately after 
 	
 func droppedDrag(node):
 	for i in ingredientSlots:
