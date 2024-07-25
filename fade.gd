@@ -8,7 +8,6 @@ func fadeIn(time): #start dark
 	fading = true	
 	color.a = 1
 	increment = -(1.0/time)
-	print(increment)
 	timer = time
 func fadeOut(time): #start transparent
 	fading = true
@@ -18,7 +17,6 @@ func fadeOut(time): #start transparent
 func _process(delta):
 	if(fading):
 		color.a += increment * delta
-		print(color.a)
 		timeSpent += delta
 		if(timeSpent >= timer):
 			fading = false

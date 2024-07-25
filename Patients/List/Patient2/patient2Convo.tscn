@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://fllm4v7vmdp"]
+
+[ext_resource type="Script" path="res://UI/MainScene/Side Dialogue Buttons/conversation.gd" id="1_i1r85"]
+
+[node name="Patient1Convo" type="Node"]
+script = ExtResource("1_i1r85")
+isRoot = true
+response = ["Go away"]
+
+[node name="conversation" type="Node" parent="."]
+script = ExtResource("1_i1r85")
+text = "Why would you do that?"
+response = ["fine. Give me 3 batwort, 5 garlic nettle, and 2 potatos", "I really don't care"]
+
+[node name="conversation2" type="Node" parent="."]
+script = ExtResource("1_i1r85")
+text = "ok then..."
+response = ["I just want to be healed and get this over with"]
+
+[node name="conversation" type="Node" parent="conversation2"]
+script = ExtResource("1_i1r85")
+text = "why"
+response = ["Why do I want to be healed?", "I think it's rather obvious."]

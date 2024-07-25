@@ -1,3 +1,4 @@
+AudioStreamPlayer2D
 ColorRect
 TextureRect
 Label
@@ -12,4 +13,3 @@ ScrollContainer
 Node2D
 Area2D
 HSlider
-Panel

@@ -5,6 +5,7 @@ var openMenu = null
 static var instance : World = null
 var patient : Patient = null
 var score = 0
+var patientCount = 2
 
 func _init():
 	if(instance==null):
@@ -15,7 +16,7 @@ func _init():
 func _ready():
 	var fade = load("res://fade.tscn").instantiate()
 	get_tree().current_scene.add_child(fade)
-	fade.fadeIn(5)
+	fade.fadeIn(2)
 	fade.done.connect(func():
 		loadPatient())
 	
@@ -36,13 +37,19 @@ func tryPotion(potion):
 	score += patient.ratePotion(potion)
 	print("SCORE: " + str(score))
 	viewport.instance.patientLeave()
-	viewport.instance.arrived.connect(loadPatient,CONNECT_ONE_SHOT)
+	viewport.instance.left.connect(loadPatient,CONNECT_ONE_SHOT)
 	
 		
 func loadPatient():
+	if(patientCount <= 0):
+		endGame()
+		return
+	patientCount -= 1
 	patient = load(PatientList.getPatient()).new()
 	print(patient.curse.name)
 	print(patient)
 	if(patient==null):
 		return
 	viewport.instance.loadPatient(patient)
+func endGame():
+	print("GAME OVER" + str(score))

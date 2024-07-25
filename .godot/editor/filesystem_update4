@@ -1,15 +1,21 @@
-res://UI/StartMenu/StartScreen.tscn
-res://Ingredients/Base/plant.gdshader
-res://world.tscn
-res://UI/MainScene/Side Dialogue Buttons/conversation.tscn
-res://UI/MainScene/viewport.tscn
-res://UI/MainScene/Dialogue/speech_bubble.tscn
-res://UI/MainScene/Dialogue/dialogue.tscn
 res://Patients/Base/Patient.tscn
-res://Question Container.tscn
-res://UpperQuestions.tscn
-res://UI/StartMenu/StartScreen.gd
+res://Ingredients/Base/plant.gdshader
+res://Patients/Base/Species/IntelliJellyfish.gd
+res://UI/MainScene/Dialogue/speech_bubble.tscn
 res://Ingredients/Dragongrass/DragonGrass.tres
+res://UI/MainScene/Dialogue/speech_bubble.gd
+res://Patients/List/Patient1/patient1.gd
+res://UI/MainScene/Dialogue/dialogue.tscn
+res://UI/MainScene/Dialogue/dialogue.gd
+res://UpperQuestions.tscn
+res://Question Container.gd
+res://UI/MainScene/viewport.tscn
+res://UI/MainScene/viewport.gd
+res://Question Container.tscn
+res://world.tscn
 res://world.gd
-res://fade.tscn
+res://Patients/List/Patient2/patient2.gd
+res://Patients/Base/Species/Fey.gd
+res://Patients/patientList.gd
+res://Patients/List/Patient2/patient2Convo.tscn
 res://fade.gd

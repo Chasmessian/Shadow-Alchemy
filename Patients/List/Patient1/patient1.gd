@@ -1,10 +1,11 @@
 extends Patient
 func _init():
+	species = IntelliJellyfish
 	stats = patientStats.new()
 	stats.age = 24
 	stats.curseAge = 9
 	stats.isAdult = true
 	stats.weight = 75
 	curse = vampirism.new()
-	texture = load("res://Patients/Sprites/Fey1.png")
+	texture = load("res://Patients/Sprites/intellijellyfish1.png")
 	conversationNode = load("res://Patients/List/Patient1/patient1Convo.tscn")
