@@ -1,30 +1,28 @@
-res://UI/MainScene/viewport.tscn
+res://UI/MixingScene/Mixing.tscn
 res://Ingredients/Dragongrass/DragonGrass.tres
 res://Ingredients/Base/plant.gdshader
-res://UI/Garden/Garden Pot.tscn
-res://UI/MainScene/Dialogue/speech_bubble.tscn
-res://UI/MainScene/Dialogue/dialogue.tscn
+res://UI/MixingScene/Mixing.gd
+res://world.tscn
+res://UI/MainScene/viewport.tscn
+res://UI/MixingScene/mixing_slot.tscn
 res://Patients/Base/Patient.tscn
-res://UI/MainScene/viewPortPatient.tscn
+res://UI/MainScene/Dialogue/dialogue.tscn
+res://UI/MainScene/Dialogue/dialogue.gd
+res://UI/MainScene/Dialogue/speech_bubble.tscn
+res://UI/MainScene/Dialogue/speech_bubble.gd
 res://UI/MainScene/viewPortPatient.gd
 res://UI/MainScene/viewport.gd
-res://UI/MainScene/Dialogue/dialogue.gd
-res://UI/Seed Selection/seedSlot.tscn
-res://UI/Seed Selection/Seed Selection.tscn
-res://UI/Seed Selection/seedSlot.gd
-res://UI/Seed Selection/Seed Selection.gd
-res://UI/JournalScene/Journal/journal.tscn
-res://UI/MixingScene/Mixing.gd
-res://Potion.gd
-res://UI/MixingScene/Mixing.tscn
-res://world.gd
-res://world.tscn
 res://Patients/Base/Patient.gd
+res://UpperButtons.tscn
+res://UI/MainScene/Side Dialogue Buttons/Question Button.tscn
+res://Question Container.tscn
+res://UpperQuestions.tscn
+res://UI/MainScene/Side Dialogue Buttons/dialogue question.gd
+res://UI/MainScene/Side Dialogue Buttons/conversation.gd
+res://UI/MainScene/Side Dialogue Buttons/conversation.tscn
+res://Question Container.gd
+res://UpperQuestions.gd
+res://Patients/List/Patient1/patient1Convo.tscn
+res://Patients/List/Patient1/patient1.gd
+res://world.gd
 res://Patients/patientList.gd
-res://UI/MixingScene/mixing_slot.tscn
-res://Patients/List/patient1.gd
-res://Patients/Base/patientStats.gd
-res://Ingredients/Batwort/batwortPlant.tscn
-res://UI/MixingScene/mixing_slot.gd
-res://Afflictions/vampirism.gd
-res://Afflictions/Base/affliction.gd

@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://uc4kphg4jjyt"]
+[gd_scene load_steps=6 format=3 uid="uid://uc4kphg4jjyt"]
 
 [ext_resource type="PackedScene" uid="uid://cp2nay63s25us" path="res://UI/Garden/garden.tscn" id="1_3fwft"]
 [ext_resource type="Script" path="res://world.gd" id="1_7qcas"]
 [ext_resource type="PackedScene" uid="uid://5edxrxt3wkbv" path="res://UI/MainScene/viewport.tscn" id="2_x118v"]
 [ext_resource type="PackedScene" uid="uid://b020rgq1ep5nu" path="res://LowerUIButtons.tscn" id="3_cupsl"]
+[ext_resource type="PackedScene" uid="uid://b7pkrh22t7lp8" path="res://UpperQuestions.tscn" id="4_jxe11"]
 
 [node name="World" type="Node2D"]
 position = Vector2(-1, -1)
@@ -31,9 +32,8 @@ size_flags_vertical = 3
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Panel" type="Panel" parent="HBoxContainer/VBoxContainer2"]
+[node name="Upper Questions" parent="HBoxContainer/VBoxContainer2" instance=ExtResource("4_jxe11")]
 layout_mode = 2
-size_flags_vertical = 3
 
 [node name="Lower UI Buttons" parent="HBoxContainer/VBoxContainer2" instance=ExtResource("3_cupsl")]
 layout_mode = 2

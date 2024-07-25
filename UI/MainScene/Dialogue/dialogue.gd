@@ -1,4 +1,7 @@
+class_name Dialogue
 extends Node2D
+
+static var instance = null
 
 signal starting_dialogue
 signal ending_dialogue
@@ -17,9 +20,15 @@ var current_char = 0
 var next_message_ready = false
 
 func _ready():
-		start_dialogue()
+	if(instance==null):
+		instance = self
+	else:
+		queue_free()
+		#start_dialogue()
+	viewport.instance.startConvo.connect(loadConversation, CONNECT_ONE_SHOT)
 
 func start_dialogue():
+	starting_dialogue.emit()
 	current_message = 0
 	display = ""
 	current_char = 0
@@ -30,9 +39,11 @@ func start_dialogue():
 	# Add something to show the speech bubble scene.
 
 func stop_dialogue():
+	ending_dialogue.emit()
+	#hide()
 	# Add something to hide the speech bubble scene.
 	
-	queue_free()
+	#queue_free()
 
 func _on_next_char_timeout():
 	if (current_char < len(messages[current_message])):
@@ -61,7 +72,19 @@ func _on_viewport_area_2d_input_event(viewport, event, shape_idx):
 		if event.button_index == MOUSE_BUTTON_LEFT or event.button_index == MOUSE_BUTTON_RIGHT:
 			if event.pressed:
 				clicked()
-
+				
 func clicked():
 	if(next_message_ready):
 		_on_next_message_ready()
+		
+func loadDialogue(messageList):
+	messages = messageList
+	start_dialogue()
+	
+func loadConversation(convo):
+	print("LOADING ")
+	for i in range($ConversationHolder.get_child_count()):
+		$ConversationHolder.get_child(i).queue_free()
+	var convoInstance = convo.instantiate()
+	$ConversationHolder.add_child(convoInstance)
+	QuestionContainer.instance.loadNode(convoInstance)

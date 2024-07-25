@@ -2,8 +2,8 @@ class_name World
 extends Node2D
 
 var openMenu = null
-static var instance = null
-var patient = null
+static var instance : World = null
+var patient : Patient = null
 var score = 0
 func _init():
 	if(instance==null):

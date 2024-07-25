@@ -4,6 +4,7 @@ var stats = null #patientStats.gd
 var curse = null
 var species = Human
 var texture = null
+var conversationNode = null
 func ratePotion(potion):
 	#alter potion based on race
 	var points = 0

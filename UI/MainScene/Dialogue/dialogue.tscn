@@ -30,6 +30,8 @@ autowrap_mode = 3
 position = Vector2(350, 152)
 shape = SubResource("RectangleShape2D_gkvs3")
 
+[node name="ConversationHolder" type="Node" parent="."]
+
 [connection signal="timeout" from="next_char" to="." method="_on_next_char_timeout"]
 [connection signal="timeout" from="next_message" to="." method="_on_next_message_timeout"]
 [connection signal="input_event" from="Viewport Area2D" to="." method="_on_viewport_area_2d_input_event"]

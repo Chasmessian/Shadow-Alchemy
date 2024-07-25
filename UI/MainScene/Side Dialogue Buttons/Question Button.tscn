@@ -1,0 +1,36 @@
+[gd_scene load_steps=2 format=3 uid="uid://b077a505pcelv"]
+
+[ext_resource type="Script" path="res://UI/MainScene/Side Dialogue Buttons/dialogue question.gd" id="1_2tm1n"]
+
+[node name="QuestionButton" type="PanelContainer"]
+custom_minimum_size = Vector2(0, 100)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_2tm1n")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.1
+
+[node name="Label" type="Label" parent="HBoxContainer"]
+custom_minimum_size = Vector2(200, 10)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "small questionTHIS IS A QUESTION THAT I AM ASKING YOU ABOUT IF I KEEP TALKING SOMETHIGN WILL HAPPENTHIS IS A QUESTION THAT I AM ASKING YOU ABOUT IF I KEEP TALKING SOMETHIGN WILL HAPPENTHIS IS A QUESTION THAT I AM ASKING YOU ABOUT IF I KEEP TALKING SOMETHIGN WILL HAPPENTHIS IS A QUESTION THAT I AM ASKING YOU ABOUT IF I KEEP TALKING SOMETHIGN WILL HAPPENTHIS IS A QUESTION THAT I AM ASKING YOU ABOUT IF I KEEP TALKING SOMETHIGN WILL HAPPENTHIS IS A QUESTION THAT I AM ASKING YOU ABOUT IF I KEEP TALKING SOMETHIGN WILL HAPPENTHIS IS A QUESTION THAT I AM ASKING YOU ABOUT IF I KEEP TALKING SOMETHIGN WILL HAPPEN"
+autowrap_mode = 3
+
+[node name="Control2" type="Control" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.1
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]

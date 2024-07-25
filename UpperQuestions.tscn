@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://b7pkrh22t7lp8"]
+
+[ext_resource type="Script" path="res://UpperQuestions.gd" id="1_3iyfj"]
+[ext_resource type="PackedScene" uid="uid://bae5nw7fcom1v" path="res://Question Container.tscn" id="1_wa76s"]
+
+[node name="Upper Questions" type="PanelContainer"]
+size_flags_vertical = 3
+script = ExtResource("1_3iyfj")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Back" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 2
+size_flags_stretch_ratio = 0.1
+text = "⮐"
+
+[node name="Control" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.01
+
+[node name="UpperButtons" parent="VBoxContainer" instance=ExtResource("1_wa76s")]
+layout_mode = 2
+horizontal_scroll_mode = 0
+
+[connection signal="pressed" from="VBoxContainer/Back" to="." method="previousConversationNode"]

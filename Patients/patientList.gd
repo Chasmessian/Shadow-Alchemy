@@ -1,6 +1,6 @@
 class_name PatientList
 extends Node
-static var patients = ["res://Patients/List/patient1.gd"] #contains script references, World will load thems
+static var patients = ["res://Patients/List/Patient1/patient1.gd"] #contains script references, World will load thems
 static func getPatient():
 	if(len(patients)==0):
 		return null

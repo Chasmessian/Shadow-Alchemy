@@ -8,10 +8,13 @@ var timeToWalk = null
 var timeSpentWalking = 0
 var flipAtEnd = false
 signal arrived
+
+
+
 func flip():
 	flip_h = !flip_h
 func walkTo(coords : Vector2, time):
-	print("WALKING")
+	#print("WALKING")
 	walking = true
 	startPos = position
 	walkingTo = coords
@@ -20,7 +23,7 @@ func _physics_process(delta):
 	if(walking):
 		timeSpentWalking += delta
 func _process(delta):
-	print(position)
+	#print(position)
 	if(walking):
 		position.x += (walkingTo.x-startPos.x)*(delta/timeToWalk)
 		position.y += (walkingTo.y-startPos.y)*(delta/timeToWalk)
