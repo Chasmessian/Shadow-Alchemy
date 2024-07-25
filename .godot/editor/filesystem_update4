@@ -1,28 +1,15 @@
-res://UI/MixingScene/Mixing.tscn
-res://Ingredients/Dragongrass/DragonGrass.tres
-res://Ingredients/Base/plant.gdshader
-res://UI/MixingScene/Mixing.gd
-res://world.tscn
-res://UI/MainScene/viewport.tscn
-res://UI/MixingScene/mixing_slot.tscn
-res://Patients/Base/Patient.tscn
-res://UI/MainScene/Dialogue/dialogue.tscn
-res://UI/MainScene/Dialogue/dialogue.gd
-res://UI/MainScene/Dialogue/speech_bubble.tscn
-res://UI/MainScene/Dialogue/speech_bubble.gd
-res://UI/MainScene/viewPortPatient.gd
-res://UI/MainScene/viewport.gd
-res://Patients/Base/Patient.gd
-res://UpperButtons.tscn
-res://UI/MainScene/Side Dialogue Buttons/Question Button.tscn
-res://Question Container.tscn
 res://UpperQuestions.tscn
-res://UI/MainScene/Side Dialogue Buttons/dialogue question.gd
-res://UI/MainScene/Side Dialogue Buttons/conversation.gd
+res://Ingredients/Base/plant.gdshader
+res://Patients/Base/Species/Fey.gd
+res://Patients/Base/Species/Demon.gd
+res://Patients/Base/Species/IntelliJellyfish.gd
+res://Patients/Base/Patient.tscn
+res://world.tscn
 res://UI/MainScene/Side Dialogue Buttons/conversation.tscn
-res://Question Container.gd
-res://UpperQuestions.gd
+res://UI/MainScene/viewport.tscn
+res://UI/MainScene/Dialogue/speech_bubble.tscn
+res://UI/MainScene/Dialogue/dialogue.tscn
 res://Patients/List/Patient1/patient1Convo.tscn
+res://Patients/Base/Species/Human.gd
 res://Patients/List/Patient1/patient1.gd
-res://world.gd
-res://Patients/patientList.gd
+res://Question Container.tscn

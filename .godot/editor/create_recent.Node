@@ -1,8 +1,8 @@
+Control
+HBoxContainer
 conversation
 Node
 Button
-HBoxContainer
-Control
 VBoxContainer
 PanelContainer
 Label

@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://br1nxxvk3huu7"]
-
-[ext_resource type="Script" path="res://Patients/Base/Species/Base/Species.gd" id="1_0ismo"]
-
-[node name="Species" type="Node"]
-script = ExtResource("1_0ismo")

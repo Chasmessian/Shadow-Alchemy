@@ -10,7 +10,8 @@ func ratePotion(potion):
 	var points = 0
 	if(curse==null or species == null):
 		return
-	points += curse.cure(potion, stats)
+	points += curse.cure(potion, stats, species)
 	#then add the rating from the species
+	points += species.ratePotion(potion)
 	print(points)
 	return points

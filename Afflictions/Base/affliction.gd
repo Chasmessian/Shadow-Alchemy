@@ -1,6 +1,6 @@
 class_name affliction
 var solutionIngredients = []
-func ratePotion(potion, doses):
+func ratePotion(potion, doses, species):
 	print("CURING")
 	var pointsEarned = 10
 	var perfect = true
@@ -13,8 +13,9 @@ func ratePotion(potion, doses):
 	#0 if ingredient incorrect
 	for i in range(3):
 		if(potion.ingredients[i]!=solutionIngredients[i]):
-			pointsEarned-=3
-			perfect = false
+			if(species.attemptSwap(potion.ingredients[i])!=solutionIngredients[i]):
+				pointsEarned-=3
+				perfect = false
 		elif(potion.doses[i]!=doses[i]):
 			pointsEarned-=2
 			perfect = false

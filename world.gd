@@ -11,6 +11,7 @@ func _init():
 	else:
 		queue_free()
 func _ready():
+	print(ShadowWood == ShadowWood)
 	loadPatient()
 func changeMenu(newMenu):
 	if(openMenu!=null):

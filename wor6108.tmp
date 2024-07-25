@@ -1,11 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://uc4kphg4jjyt"]
+[gd_scene load_steps=6 format=3 uid="uid://uc4kphg4jjyt"]
 
 [ext_resource type="PackedScene" uid="uid://cp2nay63s25us" path="res://UI/Garden/garden.tscn" id="1_3fwft"]
 [ext_resource type="Script" path="res://world.gd" id="1_7qcas"]
 [ext_resource type="PackedScene" uid="uid://5edxrxt3wkbv" path="res://UI/MainScene/viewport.tscn" id="2_x118v"]
 [ext_resource type="PackedScene" uid="uid://b020rgq1ep5nu" path="res://LowerUIButtons.tscn" id="3_cupsl"]
 [ext_resource type="PackedScene" uid="uid://b7pkrh22t7lp8" path="res://UpperQuestions.tscn" id="4_jxe11"]
-[ext_resource type="Texture2D" uid="uid://dgb8m0dhf37c2" path="res://MenuBorder.png" id="6_my717"]
 
 [node name="World" type="Node2D"]
 position = Vector2(-1, -1)
@@ -38,22 +37,3 @@ layout_mode = 2
 
 [node name="Lower UI Buttons" parent="HBoxContainer/VBoxContainer2" instance=ExtResource("3_cupsl")]
 layout_mode = 2
-
-[node name="MenuBorder" type="Sprite2D" parent="."]
-texture_filter = 1
-position = Vector2(769, 316)
-rotation = 1.5708
-scale = Vector2(92.555, 4)
-texture = ExtResource("6_my717")
-
-[node name="MenuBorder2" type="Sprite2D" parent="."]
-texture_filter = 1
-position = Vector2(964, 317)
-scale = Vector2(46.75, 4)
-texture = ExtResource("6_my717")
-
-[node name="MenuBorder3" type="Sprite2D" parent="."]
-texture_filter = 1
-position = Vector2(381, 383)
-scale = Vector2(95, 4)
-texture = ExtResource("6_my717")
