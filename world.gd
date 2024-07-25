@@ -5,14 +5,20 @@ var openMenu = null
 static var instance : World = null
 var patient : Patient = null
 var score = 0
+
 func _init():
 	if(instance==null):
 		instance = self
 	else:
 		queue_free()
+		
 func _ready():
-	print(ShadowWood == ShadowWood)
-	loadPatient()
+	var fade = load("res://fade.tscn").instantiate()
+	get_tree().current_scene.add_child(fade)
+	fade.fadeIn(5)
+	fade.done.connect(func():
+		loadPatient())
+	
 func changeMenu(newMenu):
 	if(openMenu!=null):
 		remove_child(openMenu)

@@ -1,0 +1,110 @@
+[gd_scene load_steps=8 format=3 uid="uid://cximrmqg61rf1"]
+
+[ext_resource type="Script" path="res://UI/StartMenu/scrollingSmoke.gd" id="1_8f1qc"]
+[ext_resource type="Script" path="res://UI/StartMenu/StartScreen.gd" id="1_bvwcf"]
+[ext_resource type="Texture2D" uid="uid://dgsd7s6pdvqnd" path="res://UI/StartMenu/cursedLogo.png" id="2_dh7eq"]
+[ext_resource type="PackedScene" uid="uid://bvskqr18kovyu" path="res://fade.tscn" id="4_c3r0k"]
+
+[sub_resource type="Gradient" id="Gradient_1fmtm"]
+colors = PackedColorArray(0, 0, 0, 1, 0.0509458, 0.109163, 0.134267, 1)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_mwhsy"]
+noise_type = 0
+frequency = 0.0083
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_a1671"]
+seamless = true
+seamless_blend_skirt = 0.203
+color_ramp = SubResource("Gradient_1fmtm")
+noise = SubResource("FastNoiseLite_mwhsy")
+
+[node name="StartScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bvwcf")
+
+[node name="Smoke" type="TextureRect" parent="."]
+layout_mode = 1
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = SubResource("NoiseTexture2D_a1671")
+expand_mode = 1
+stretch_mode = 1
+script = ExtResource("1_8f1qc")
+amount = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -204.0
+offset_top = -439.0
+offset_right = 204.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Play" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Play"
+
+[node name="Tutorial" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Tutorial"
+
+[node name="Settings" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Settings"
+
+[node name="Control" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.2
+
+[node name="Logo" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -301.5
+offset_right = 301.5
+offset_bottom = 191.0
+grow_horizontal = 2
+texture = ExtResource("2_dh7eq")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Credits" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -368.0
+offset_top = -30.0
+offset_right = -11.0
+offset_bottom = -15.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "Made by Knight of Iron and Chasmessian"
+
+[node name="Fade" parent="." instance=ExtResource("4_c3r0k")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[connection signal="pressed" from="VBoxContainer/Play" to="." method="_on_play_pressed"]
