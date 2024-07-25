@@ -5,11 +5,10 @@
 [node name="Patient1Convo" type="Node"]
 script = ExtResource("1_0qs0h")
 isRoot = true
-response = ["Hey there, I'm feeling pretty bad", "I feel a need to suck your blood"]
+response = ["Hey there, I'm feeling pretty bad", "I feel a need to suck your blood", "3rd line"]
 
 [node name="conversation" type="Node" parent="."]
 script = ExtResource("1_0qs0h")
-isLeaf = true
 text = "Why would you do that?"
 response = ["I don't know, it is just a very strong urge", "I can't help it."]
 
@@ -20,6 +19,5 @@ response = ["I think it started when I went into a cave", "That was about 12 day
 
 [node name="conversation" type="Node" parent="conversation2"]
 script = ExtResource("1_0qs0h")
-isLeaf = true
 text = "You sure?"
 response = ["Positive"]

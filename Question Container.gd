@@ -40,4 +40,6 @@ func buttonClicked(id):
 func loadPreviousNode():
 	if(currentNode == null):
 		return
+	if(currentNode.isRoot):
+		return
 	loadNode(currentNode.get_parent(), true)
