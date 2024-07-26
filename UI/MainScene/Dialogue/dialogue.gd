@@ -25,7 +25,6 @@ func _ready():
 	else:
 		queue_free()
 		#start_dialogue()
-	viewport.instance.startConvo.connect(loadConversation, CONNECT_ONE_SHOT)
 
 func start_dialogue():
 	starting_dialogue.emit()

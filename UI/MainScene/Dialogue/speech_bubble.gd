@@ -17,9 +17,9 @@ func _process(_delta):
 					#pass
 
 func _on_dialogue_ending_dialogue():
-	$"../Viewport Area2D".hide()
+	#$"../Viewport Area2D".hide()
 	hide()
 
 func _on_dialogue_starting_dialogue():
-	$"../Viewport Area2D".show()
+	#$"../Viewport Area2D".show()
 	show()

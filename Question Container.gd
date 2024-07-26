@@ -2,7 +2,8 @@ class_name QuestionContainer
 extends ScrollContainer
 static var instance : QuestionContainer
 var questionScene = preload("res://UI/MainScene/Side Dialogue Buttons/Question Button.tscn")
-var currentNode : conversation = null
+#var currentNode : conversation = null
+signal buttonClicked(id)
 
 func _ready():
 	if(instance == null):
@@ -10,18 +11,6 @@ func _ready():
 	else:
 		queue_free()
 
-func loadNode(convo : conversation, immedientQuestions = false): #conversation node
-	currentNode = convo
-	Dialogue.instance.loadDialogue(convo.response)
-	if(convo.isLeaf):
-		Dialogue.instance.ending_dialogue.connect(loadPreviousNode, CONNECT_ONE_SHOT)
-		return
-	else:
-		if(!immedientQuestions):
-			Dialogue.instance.ending_dialogue.connect(func():
-				loadQuestions(convo), CONNECT_ONE_SHOT)
-		else:
-			loadQuestions(convo)
 func loadQuestions(convo):
 	for i in range($VBoxContainer.get_child_count()):
 		$VBoxContainer.get_child(i).queue_free()
@@ -29,17 +18,17 @@ func loadQuestions(convo):
 		var newQuestion = questionScene.instantiate()
 		newQuestion.text = convo.get_child(i).text
 		newQuestion.id = i
-		newQuestion.clicked.connect(buttonClicked)
+		newQuestion.clicked.connect(clicked)
 		$VBoxContainer.add_child(newQuestion)
+
 		
-func buttonClicked(id):
+func clicked(id):
 	for i in range($VBoxContainer.get_child_count()):
 		$VBoxContainer.get_child(i).queue_free()
-	print(currentNode)
-	loadNode(currentNode.get_child(id))
-func loadPreviousNode():
-	if(currentNode == null):
-		return
-	if(currentNode.isRoot):
-		return
-	loadNode(currentNode.get_parent(), true)
+	buttonClicked.emit(id)
+	
+func clear():
+	for i in $VBoxContainer.get_child_count():
+		$VBoxContainer.get_child(i).queue_free()
+	#Dialogue.instance.stop_dialogue()
+

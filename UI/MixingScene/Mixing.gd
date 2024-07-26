@@ -11,7 +11,7 @@ func _ready():
 		i.subtracted.connect(slotSubtracted)
 	#testing purposes
 	#
-	#Inventory.add(Batwort, 3)
+	Inventory.add(Batwort, 3)
 	#Inventory.add(BloodRose, 5)
 	#Inventory.add(DragonGrass, 5)
 	#Inventory.add(GarlicNettle, 4)
@@ -97,6 +97,9 @@ func slotSubtracted(ingredient):
 
 
 func submit():
+	print(viewport.patientIn)
+	if(!viewport.patientIn):
+		return
 	#var potion = Potion.new([],[])
 	var ingredients = []
 	var doses = []
