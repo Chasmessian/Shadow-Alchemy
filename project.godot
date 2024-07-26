@@ -15,6 +15,10 @@ run/main_scene="res://UI/StartMenu/StartScreen.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+scoreTracker="*res://scoreTracker.gd"
+
 [display]
 
 window/stretch/mode="canvas_items"

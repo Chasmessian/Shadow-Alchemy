@@ -4,12 +4,17 @@ extends Node2D
 var openMenu = null
 static var instance : World = null
 var patient : Patient = null
-var score = 0
-var patientCount = 2
+
+static var patientCount = 0.0
+const totalPatients = 2.0
+const patientMaxScore = 10
+
+static var gameInProgress = false
 
 func _init():
 	if(instance==null):
 		instance = self
+		patientCount = totalPatients
 	else:
 		queue_free()
 		
@@ -18,7 +23,8 @@ func _ready():
 	get_tree().current_scene.add_child(fade)
 	fade.fadeIn(2)
 	fade.done.connect(func():
-		loadPatient())
+		loadPatient()
+		gameInProgress = true, 4)
 	
 func changeMenu(newMenu):
 	if(openMenu!=null):
@@ -34,8 +40,8 @@ func closeMenu():
 func tryPotion(potion):
 	if(patient==null):
 		return
-	score += patient.ratePotion(potion)
-	print("SCORE: " + str(score))
+	scoreTracker.points += patient.ratePotion(potion)
+	print("SCORE: " + str(scoreTracker.points))
 	viewport.instance.patientLeave()
 	viewport.instance.patientLeft.connect(loadPatient,CONNECT_ONE_SHOT)
 	
@@ -52,4 +58,5 @@ func loadPatient():
 		return
 	viewport.instance.loadPatient(patient)
 func endGame():
-	print("GAME OVER" + str(score))
+	gameInProgress = false
+	get_tree().change_scene_to_file("res://UI/End Scene/endscene.tscn")

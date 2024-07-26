@@ -2,9 +2,9 @@ class_name Demon
 extends Species
 static func ratePotion(potion):
 	if(potion.contains(Potato)):
-		return 0
+		return -3
 	else:
-		return 3
+		return 0
 static func attemptSwap(ingredient):
 	if(ingredient == ShadowWood):
 		return Potato

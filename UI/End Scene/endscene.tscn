@@ -1,0 +1,109 @@
+[gd_scene load_steps=4 format=3 uid="uid://bnnpyscwqdif7"]
+
+[ext_resource type="Script" path="res://UI/End Scene/endscene.gd" id="1_7nr2f"]
+[ext_resource type="Texture2D" uid="uid://cd4mhq8tvncki" path="res://UI/End Scene/PERFECT.png" id="2_gb1wq"]
+[ext_resource type="Script" path="res://UI/End Scene/Grade.gd" id="3_c104w"]
+
+[node name="Endscene" type="ColorRect"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.945098, 0.835294, 0.572549, 1)
+script = ExtResource("1_7nr2f")
+
+[node name="Grade" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 557.0
+offset_top = 135.0
+offset_right = 953.0
+offset_bottom = 327.0
+size_flags_vertical = 3
+texture = ExtResource("2_gb1wq")
+stretch_mode = 5
+script = ExtResource("3_c104w")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -253.0
+offset_right = 563.0
+offset_bottom = 295.0
+grow_vertical = 2
+
+[node name="Score" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 5
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 56
+text = "SCORE: "
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="VBoxContainer/Score"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -7.5
+offset_right = 20.0
+offset_bottom = 7.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 68
+text = "0/0
+"
+horizontal_alignment = 1
+
+[node name="Time" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 5
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 56
+text = "TIME: "
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="VBoxContainer/Time"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -7.5
+offset_right = 20.0
+offset_bottom = 7.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 68
+text = "0:00"
+horizontal_alignment = 1
+
+[node name="Ending" type="Label" parent="."]
+layout_mode = 2
+offset_left = 445.0
+offset_top = 489.0
+offset_right = 1075.0
+offset_bottom = 614.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 35
+theme_override_constants/shadow_outline_size = 40
+theme_override_constants/line_spacing = 35
+theme_override_font_sizes/font_size = 51
+text = "THE END
+THANK YOU FOR PLAYING"
+horizontal_alignment = 1
