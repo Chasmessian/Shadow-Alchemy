@@ -1,6 +1,5 @@
 class_name vampirism
 extends affliction
-var name = "VAMPIRISM"
 func _init():
 	solutionIngredients = [Batwort, GarlicNettle, Potato]
 func cure(potion, stats, species):

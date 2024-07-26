@@ -6,8 +6,17 @@ var waterProgress = 0
 var waterIncrease = 5 #Time to water in seconds, roughly
 #func _ready():
 	#growPlant(load("res://Ingredients/blood rose/blood_rose_plant.tscn"))
+static var plantingSounds = ["res://UI/Garden/Sounds/plant.wav", "res://UI/Garden/Sounds/plant2.wav", "res://UI/Garden/Sounds/plant3.wav", "res://UI/Garden/Sounds/plant4.wav", "res://UI/Garden/Sounds/plant5.wav"]
+static var harvestSounds = ["res://UI/Garden/Sounds/harvest1.wav", "res://UI/Garden/Sounds/harvest2.wav", "res://UI/Garden/Sounds/harvest3.wav", "res://UI/Garden/Sounds/harvest4.wav", "res://UI/Garden/Sounds/harvest5.wav"]
+var isPlaying = false
 
 func growPlant(plantToGrow):
+	if(!isPlaying):
+		$audio.stream = load(plantingSounds.pick_random())
+		$audio.play()
+		$audio.finished.connect(func():
+			isPlaying = false
+			)
 	if(plant==null):
 		var newPlant = plantToGrow.instantiate()
 		add_child(newPlant)
@@ -15,6 +24,12 @@ func growPlant(plantToGrow):
 		#isWatering = true
 		
 func harvest():
+	if(!isPlaying):
+		$audio.stream = load(harvestSounds.pick_random())
+		$audio.play()
+		$audio.finished.connect(func():
+			isPlaying = false
+			)
 	plant.harvest()
 	plant = null
 	waterProgress = 0
@@ -23,6 +38,7 @@ func harvest():
 func water():
 	isWatering = true
 	pass
+	
 func _process(delta):
 	waterMeter.value = waterProgress
 	
@@ -32,10 +48,13 @@ func _physics_process(delta):
 		waterProgress = clampf(waterProgress, 0,100)
 		if(waterProgress==100):
 			if(plant.finishedWaterLevel()):
+				$leafs.texture = load("res://UI/Garden/particle.png")
 				$leafs.emitting = true
 				waterProgress = 0
 				isWatering = false
 			else:
+				$leafs.texture = load("res://UI/Garden/deadParticle.png")
+				$leafs.emitting = true
 				plant = null
 				waterProgress = 0
 				isWatering = false

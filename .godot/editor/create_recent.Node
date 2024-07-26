@@ -1,5 +1,7 @@
-GPUParticles2D
 AudioStreamPlayer
+HTTPRequest
+CanvasLayer
+GPUParticles2D
 AnimatedSprite2D
 TextureButton
 Control
@@ -10,6 +12,3 @@ Node2D
 TextureRect
 ColorRect
 VBoxContainer
-Timer
-AudioStreamPlayer2D
-Button

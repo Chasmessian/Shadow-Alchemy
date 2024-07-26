@@ -9,7 +9,7 @@
 size = Vector2(748, 387.5)
 
 [node name="Viewport" type="Control"]
-z_index = -1
+z_index = 2
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0

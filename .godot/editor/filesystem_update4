@@ -2,39 +2,5 @@ res://world.tscn
 res://Theme.tres
 res://Ingredients/Dragongrass/DragonGrass.tres
 res://Ingredients/Base/plant.gdshader
-res://world.gd
-res://Button Click.gd
-res://UI/MainScene/viewport.tscn
-res://Patients/List/Patient1/patient1Convo.tscn
-res://UI/StartMenu/StartScreen.tscn
-res://UI/MixingScene/Mixing.tscn
-res://UI/MixingScene/mixing_slot.tscn
-res://UI/MixingScene/draggedItem.tscn
-res://UpperQuestions.tscn
-res://Question Container.tscn
-res://click.gd
-res://UI/MixingScene/Mixing.gd
-res://UI/MixingScene/click.gd
-res://UI/MixingScene/mixing_slot.gd
-res://UI/MixingScene/Button Click.gd
-res://UI/MixingScene/button Click.gd
-res://UI/MainScene/Side Dialogue Buttons/conversation.gd
-res://UI/MainScene/conversationMaster.gd
-res://Patients/Base/Species/Demon.gd
-res://UI/MixingScene/draggedItem.gd
-res://fade.gd
-res://UI/StartMenu/fallingGodot.gd
-res://Patients/Base/Species/Fey.gd
-res://Patients/Base/Species/Human.gd
-res://UI/MixingScene/itemSlot.gd
-res://Patients/List/Patient1/patient1.gd
-res://Patients/List/Patient2/patient2.gd
-res://Patients/Base/Patient.gd
-res://Question Container.gd
-res://scoreTracker.gd
-res://UI/StartMenu/StartScreen.gd
-res://UI/MixingScene/Submit.gd
-res://UpperQuestions.gd
-res://UI/MainScene/viewport.gd
 res://UI/Garden/Garden Pot.tscn
 res://UI/Garden/Garden Pot.gd

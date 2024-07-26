@@ -133,6 +133,7 @@ animations = [{
 bg_color = Color(0.138234, 0.246498, 0.35238, 1)
 
 [node name="Mixing" type="Node2D"]
+z_index = 2
 script = ExtResource("1_p404o")
 draggedScene = ExtResource("2_yvq50")
 

@@ -112,6 +112,7 @@ vertical_alignment = 2
 layout_mode = 2
 
 [node name="Label" type="Label" parent="JournalContainer/HBoxContainer/Right Page"]
+z_index = 2
 custom_minimum_size = Vector2(430, 420)
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)

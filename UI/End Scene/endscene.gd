@@ -12,5 +12,7 @@ func _ready():
 	else:
 		$Grade.texture = load("res://UI/End Scene/FAIL.png")		
 		
-		
-	$VBoxContainer/Time/Label.text = str(floor(scoreTracker.time/60.0)) + ":" + str(int(scoreTracker.time)%60)
+	if(int(scoreTracker.time)%60<10):
+		$VBoxContainer/Time/Label.text = str(floor(scoreTracker.time/60.0)) + ":0" + str(int(scoreTracker.time)%60)
+	else:
+		$VBoxContainer/Time/Label.text = str(floor(scoreTracker.time/60.0)) + ":" + str(int(scoreTracker.time)%60)

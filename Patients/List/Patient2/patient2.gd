@@ -6,6 +6,6 @@ func create():
 	stats.curseAge = 10
 	stats.isAdult = true
 	stats.weight = 90
-	curse = vampirism.new()
+	curse = merlinism.new()
 	texture = load("res://Patients/Sprites/Fey1.png")
 	conversationNode = load("res://Patients/List/Patient2/patient2Convo.tscn")

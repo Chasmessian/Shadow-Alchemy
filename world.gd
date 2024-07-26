@@ -51,8 +51,6 @@ func loadPatient():
 		return
 	patientCount -= 1
 	patient = load(PatientList.getPatient()).new()
-	print(patient.curse.name)
-	print(patient)
 	if(patient==null):
 		return
 	viewport.instance.loadPatient(patient)
