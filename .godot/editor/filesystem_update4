@@ -36,3 +36,5 @@ res://UI/StartMenu/StartScreen.gd
 res://UI/MixingScene/Submit.gd
 res://UpperQuestions.gd
 res://UI/MainScene/viewport.gd
+res://UI/Garden/Garden Pot.tscn
+res://UI/Garden/Garden Pot.gd

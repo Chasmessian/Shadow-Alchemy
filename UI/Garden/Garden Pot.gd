@@ -32,6 +32,7 @@ func _physics_process(delta):
 		waterProgress = clampf(waterProgress, 0,100)
 		if(waterProgress==100):
 			if(plant.finishedWaterLevel()):
+				$leafs.emitting = true
 				waterProgress = 0
 				isWatering = false
 			else:
