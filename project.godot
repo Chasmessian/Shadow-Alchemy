@@ -13,6 +13,9 @@ config_version=5
 config/name="Shadow Alchemy"
 run/main_scene="res://UI/StartMenu/StartScreen.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
+boot_splash/show_image=false
+boot_splash/fullsize=false
+boot_splash/use_filter=false
 config/icon="res://icon.svg"
 
 [autoload]
@@ -25,6 +28,7 @@ window/stretch/mode="canvas_items"
 
 [gui]
 
+theme/custom="res://Theme.tres"
 theme/custom_font="res://UI/JournalScene/VCR_OSD_MONO_1.001.ttf"
 
 [input]

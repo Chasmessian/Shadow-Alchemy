@@ -1,6 +1,6 @@
 extends Patient
 func create():
-	species = Fey
+	species = Demon
 	stats = patientStats.new()
 	stats.age = 40
 	stats.curseAge = 10

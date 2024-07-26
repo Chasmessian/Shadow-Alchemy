@@ -18,7 +18,7 @@ size_flags_stretch_ratio = 10.25
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-size_flags_stretch_ratio = 10.0
+size_flags_stretch_ratio = 1.43
 
 [node name="TextureRect" type="TextureRect" parent="VBoxContainer/Panel"]
 texture_filter = 1
@@ -28,24 +28,19 @@ stretch_mode = 5
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
 layout_mode = 2
-size_flags_vertical = 3
+size_flags_vertical = 2
 
 [node name="Subtract" type="Button" parent="VBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_vertical = 4
 text = "-"
 
 [node name="Add" type="Button" parent="VBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_vertical = 4
 text = "+"
-
-[node name="Label" type="Label" parent="VBoxContainer"]
-visible = false
-layout_mode = 2
-size_flags_horizontal = 4
-text = "0 units
-"
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="."]
 layout_mode = 2
@@ -60,6 +55,13 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "CLEAR"
+
+[node name="Label" type="Label" parent="VBoxContainer2"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "0 units"
 
 [node name="Control2" type="Control" parent="VBoxContainer2"]
 layout_mode = 2

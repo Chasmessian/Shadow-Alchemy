@@ -1,12 +1,12 @@
-res://UI/StartMenu
+res://UI/MixingScene
 res://
+res://UI/StartMenu
 res://Patients/Base
 res://Patients
 res://UI/MainScene
 res://UI/JournalScene
 res://Afflictions
 res://Afflictions/Base
-res://UI/MixingScene
 res://Ingredients/silverleaf
 res://Ingredients/ShadowWood
 res://Ingredients/potato

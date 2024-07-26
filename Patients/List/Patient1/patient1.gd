@@ -1,6 +1,6 @@
 extends Patient
 func create():
-	species = IntelliJellyfish
+	species = Human
 	stats = patientStats.new()
 	stats.age = 24
 	stats.curseAge = 9

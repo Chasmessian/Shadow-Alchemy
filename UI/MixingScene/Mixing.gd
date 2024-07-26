@@ -4,7 +4,7 @@ var itemSlotScene = preload("res://UI/MixingScene/itemSlot.tscn")
 var draggedIngredient = null
 var draggedSlot = null
 @export var draggedScene : PackedScene
-@onready var ingredientSlots = [$"VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer/Slots/Mixing Slot",$"VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer/Slots/Mixing Slot2", $"VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer/Slots/Mixing Slot3"]
+@onready var ingredientSlots = [$"VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer/Mortar and Pestle/Slots/Mixing Slot",$"VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer/Mortar and Pestle/Slots/Mixing Slot2", $"VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer/Mortar and Pestle/Slots/Mixing Slot3"]
 
 func _ready():
 	for i in ingredientSlots:
@@ -108,6 +108,10 @@ func submit():
 			return
 		ingredients.append(ingredientSlots[i].storedIngredient)
 		doses.append(ingredientSlots[i].currentAmount)
+	$"VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer/Mortar and Pestle/Submit/AnimatedSprite2D".play()
+	$"VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer/Mortar and Pestle/Submit/AnimatedSprite2D".animation_finished.connect(func():
+		await get_tree().create_timer(.75).timeout
+		World.instance.closeMenu())
 	for i in ingredientSlots:
 		i.delete()
 		print(i.storedIngredient)
