@@ -65,3 +65,7 @@ func add():
 				if(currentAmount>0):
 					$VBoxContainer/HBoxContainer/Subtract.visible = true
 	pass # Replace with function body.
+
+signal clicked
+func click():
+	clicked.emit()

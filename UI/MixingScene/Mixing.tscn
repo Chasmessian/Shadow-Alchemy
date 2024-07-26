@@ -1,9 +1,10 @@
-[gd_scene load_steps=24 format=3 uid="uid://4fymu0qnsaxb"]
+[gd_scene load_steps=25 format=3 uid="uid://4fymu0qnsaxb"]
 
 [ext_resource type="Script" path="res://UI/MixingScene/Mixing.gd" id="1_p404o"]
 [ext_resource type="PackedScene" uid="uid://bm1wqssj1xhiv" path="res://UI/MixingScene/mixing_slot.tscn" id="2_3agj5"]
 [ext_resource type="PackedScene" uid="uid://csv8nc7vi11eo" path="res://UI/MixingScene/draggedItem.tscn" id="2_yvq50"]
 [ext_resource type="Texture2D" uid="uid://dgebgl6qg3x4k" path="res://UI/MixingScene/syringe.png" id="4_7lcyu"]
+[ext_resource type="Script" path="res://UI/MixingScene/button Click.gd" id="5_vdeao"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bi1rx"]
 bg_color = Color(0.0734939, 0.197779, 0.270075, 1)
@@ -334,5 +335,11 @@ layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.36
 
+[node name="Button Click" type="AudioStreamPlayer" parent="."]
+script = ExtResource("5_vdeao")
+
+[connection signal="clicked" from="VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer/Mortar and Pestle/Slots/Mixing Slot" to="Button Click" method="click"]
+[connection signal="clicked" from="VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer/Mortar and Pestle/Slots/Mixing Slot2" to="Button Click" method="click"]
+[connection signal="clicked" from="VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer/Mortar and Pestle/Slots/Mixing Slot3" to="Button Click" method="click"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer/Mortar and Pestle/Slots/Exit Button/Exit" to="." method="closeMenu"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer/Mortar and Pestle/Submit" to="." method="submit"]
