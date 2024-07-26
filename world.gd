@@ -24,7 +24,7 @@ func _ready():
 	fade.fadeIn(2)
 	fade.done.connect(func():
 		loadPatient()
-		gameInProgress = true, 4)
+		World.gameInProgress = true, 4)
 	
 func changeMenu(newMenu):
 	if(openMenu!=null):
@@ -58,5 +58,5 @@ func loadPatient():
 		return
 	viewport.instance.loadPatient(patient)
 func endGame():
-	gameInProgress = false
+	World.gameInProgress = false
 	get_tree().change_scene_to_file("res://UI/End Scene/endscene.tscn")

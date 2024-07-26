@@ -14,3 +14,6 @@ res://Patients/Base/Species/Demon.gd
 res://Patients/Base/Species/Fey.gd
 res://Patients/Base/Species/Human.gd
 res://Patients/Base/Species/IntelliJellyfish.gd
+res://UI/MainScene/viewport.tscn
+res://UI/MainScene/viewport.gd
+res://Patients/List/Patient1/patient1.gd

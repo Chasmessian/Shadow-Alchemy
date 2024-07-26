@@ -3,6 +3,7 @@ extends Node
 var currentConvo = null
 var currentNode = null
 static var instance = null
+
 func _init():
 	if(instance == null):
 		instance = self
@@ -15,8 +16,10 @@ func newConversation(convoNode):
 	add_child(currentConvo)
 	currentNode = currentConvo
 	loadNode(currentNode)
+	playAudio()
 	
 func clearConversation():
+	viewport.instance.audioPlayer.stop()
 	currentConvo = null
 	currentNode = null
 	QuestionContainer.instance.clear()
@@ -45,7 +48,7 @@ func loadPreviousNode():
 	loadNode(currentNode.get_parent(), true)
 	
 func loadQuestions(convoNode):
-	print("WANTING TO LOAD QUESTIONS")
+	print("WANTINfuG TO LOAD QUESTIONS")
 	QuestionContainer.instance.loadQuestions(convoNode)
 	if(!QuestionContainer.instance.buttonClicked.is_connected(manageButtonPress)):
 		QuestionContainer.instance.buttonClicked.connect(manageButtonPress)	
@@ -54,3 +57,8 @@ func manageButtonPress(id):
 	if(currentNode.get_child(id)==null):
 		return
 	loadNode(currentNode.get_child(id))
+func playAudio():
+	var audioPlayer = viewport.instance.audioPlayer
+	audioPlayer.stream = World.instance.patient.species.vocals
+	audioPlayer.seek(0)
+	audioPlayer.play()

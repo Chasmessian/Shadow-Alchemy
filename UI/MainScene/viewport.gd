@@ -3,6 +3,7 @@ extends Control
 static var instance = null
 var patient : viewport_patient = null
 var conversationMaster = ConversationMaster.new()
+@onready var audioPlayer = $AudioStreamPlayer
 signal patientArrived
 signal patientLeft
 static var patientIn = false
