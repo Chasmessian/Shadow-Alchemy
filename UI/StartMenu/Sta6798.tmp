@@ -1,11 +1,9 @@
-[gd_scene load_steps=23 format=3 uid="uid://cximrmqg61rf1"]
+[gd_scene load_steps=21 format=3 uid="uid://cximrmqg61rf1"]
 
 [ext_resource type="Script" path="res://UI/StartMenu/scrollingSmoke.gd" id="1_8f1qc"]
 [ext_resource type="Script" path="res://UI/StartMenu/StartScreen.gd" id="1_bvwcf"]
 [ext_resource type="Texture2D" uid="uid://luvw6yu5w6bl" path="res://UI/StartMenu/cursedLogoAnimation.png" id="3_qqufk"]
 [ext_resource type="PackedScene" uid="uid://bvskqr18kovyu" path="res://fade.tscn" id="4_c3r0k"]
-[ext_resource type="Texture2D" uid="uid://cc1eogsgkx3v2" path="res://icon.svg" id="5_b8s23"]
-[ext_resource type="Script" path="res://UI/StartMenu/fallingGodot.gd" id="6_s8ghj"]
 
 [sub_resource type="Gradient" id="Gradient_1fmtm"]
 colors = PackedColorArray(0, 0, 0, 1, 0.0509458, 0.109163, 0.134267, 1)
@@ -128,15 +126,6 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_bvwcf")
 
-[node name="Fade" parent="." instance=ExtResource("4_c3r0k")]
-top_level = false
-z_index = 1
-layout_mode = 1
-
-[node name="Fade2" parent="." instance=ExtResource("4_c3r0k")]
-z_index = 9
-layout_mode = 1
-
 [node name="Smoke" type="TextureRect" parent="."]
 layout_mode = 1
 offset_right = 1152.0
@@ -195,6 +184,14 @@ grow_horizontal = 0
 grow_vertical = 0
 text = "Made by Knight of Iron and Chasmessian"
 
+[node name="Fade" parent="." instance=ExtResource("4_c3r0k")]
+layout_mode = 2
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+grow_horizontal = 1
+grow_vertical = 1
+
 [node name="Control" type="Control" parent="."]
 layout_mode = 1
 anchors_preset = 5
@@ -205,41 +202,12 @@ offset_right = -20.0
 grow_horizontal = 2
 
 [node name="Logo" type="AnimatedSprite2D" parent="Control"]
-z_index = 3
 texture_filter = 1
 position = Vector2(0, 90)
 scale = Vector2(4.39, 4.39)
 sprite_frames = SubResource("SpriteFrames_4185g")
+frame = 11
+frame_progress = 1.0
 speed_scale = 3.0
 
-[node name="Godot" type="Sprite2D" parent="."]
-z_index = 4
-position = Vector2(611, -28)
-scale = Vector2(0.4, 0.4)
-texture = ExtResource("5_b8s23")
-script = ExtResource("6_s8ghj")
-
-[node name="Label" type="Label" parent="Godot"]
-visible = false
-offset_left = -67.0
-offset_top = 85.0
-offset_right = 1290.0
-offset_bottom = 174.0
-scale = Vector2(0.1, 0.1)
-theme_override_font_sizes/font_size = 101
-text = "Proudly Made with Godot"
-horizontal_alignment = 1
-
-[node name="Center" type="Control" parent="."]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-grow_horizontal = 2
-grow_vertical = 2
-
 [connection signal="pressed" from="VBoxContainer/Play" to="." method="_on_play_pressed"]
-[connection signal="done" from="Godot" to="." method="_on_godot_done"]
-[connection signal="fell" from="Godot" to="." method="godotFell"]

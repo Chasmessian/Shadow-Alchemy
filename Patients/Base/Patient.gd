@@ -5,6 +5,14 @@ var curse = null
 var species = Human
 var texture = null
 var conversationNode = null
+var vocals = null
+var canSpeak = true #for vocals, disable for echos
+func _init():
+	create()	
+	if(vocals==null):
+		vocals = species.vocals
+func create():
+	pass
 func ratePotion(potion):
 	#alter potion based on race
 	var points = 0

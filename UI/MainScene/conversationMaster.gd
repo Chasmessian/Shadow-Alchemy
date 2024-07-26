@@ -58,7 +58,8 @@ func manageButtonPress(id):
 		return
 	loadNode(currentNode.get_child(id))
 func playAudio():
-	var audioPlayer = viewport.instance.audioPlayer
-	audioPlayer.stream = World.instance.patient.species.vocals
-	audioPlayer.seek(0)
-	audioPlayer.play()
+	if(World.instance.patient.canSpeak):
+		var audioPlayer = viewport.instance.audioPlayer
+		audioPlayer.stream = World.instance.patient.vocals
+		audioPlayer.seek(0)
+		audioPlayer.play()

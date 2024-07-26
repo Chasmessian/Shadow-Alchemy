@@ -1,19 +1,13 @@
-res://UI/End Scene/endscene.tscn
-res://UI/MainScene/conversationMaster.gd
-res://Ingredients/Base/plant.gdshader
-res://UI/End Scene/Grade.gd
-res://UI/StartMenu/StartScreen.tscn
-res://UI/End Scene/endscene.gd
-res://scoreTracker.gd
-res://world.gd
 res://world.tscn
-res://Ingredients/Dragongrass/DragonGrass.tres
-res://UI/MixingScene/Mixing.gd
-res://Patients/Base/Patient.tscn
-res://Patients/Base/Species/Demon.gd
-res://Patients/Base/Species/Fey.gd
-res://Patients/Base/Species/Human.gd
-res://Patients/Base/Species/IntelliJellyfish.gd
+res://Ingredients/Base/plant.gdshader
+res://UI/MainScene/conversationMaster.gd
+res://Patients/Base/Patient.gd
 res://UI/MainScene/viewport.tscn
-res://UI/MainScene/viewport.gd
+res://Patients/List/Patient1/patient1Convo.tscn
 res://Patients/List/Patient1/patient1.gd
+res://Patients/List/Patient2/patient2.gd
+res://UI/StartMenu/StartScreen.tscn
+res://UI/StartMenu/StartScreen.gd
+res://Ingredients/Dragongrass/DragonGrass.tres
+res://UI/StartMenu/fallingGodot.gd
+res://fade.gd

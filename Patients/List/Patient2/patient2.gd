@@ -1,5 +1,5 @@
 extends Patient
-func _init():
+func create():
 	species = Fey
 	stats = patientStats.new()
 	stats.age = 40
