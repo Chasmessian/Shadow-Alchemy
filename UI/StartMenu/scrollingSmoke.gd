@@ -1,4 +1,6 @@
 extends TextureRect
-@export var amount = 1
+@export var amount = 10
 func _process(delta):
-	texture.noise.offset.x += 0.1
+	texture.noise.offset.x += amount * delta
+	texture.noise.offset.y += amount * delta
+	texture.noise.offset.z += amount * delta

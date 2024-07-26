@@ -1,18 +1,15 @@
-res://Question Container.tscn
+res://UI/MainScene/viewport.tscn
+res://UI/MainScene/conversationMaster.gd
 res://Ingredients/Dragongrass/DragonGrass.tres
 res://Ingredients/Base/plant.gdshader
-res://Question Container.gd
-res://UI/MainScene/viewport.tscn
-res://UI/MainScene/viewport.gd
-res://UI/MainScene/conversationMaster.gd
 res://UI/MainScene/Dialogue/speech_bubble.tscn
 res://UI/MainScene/Dialogue/dialogue.tscn
 res://world.tscn
+res://Question Container.tscn
 res://Patients/List/Patient2/patient2Convo.tscn
-res://UI/MainScene/Dialogue/dialogue.gd
 res://UI/MainScene/Side Dialogue Buttons/Question Button.tscn
 res://UI/MainScene/Side Dialogue Buttons/conversation.tscn
-res://UpperQuestions.gd
-res://world.gd
 res://UI/MixingScene/Mixing.tscn
-res://UI/MixingScene/Mixing.gd
+res://world.gd
+res://UI/StartMenu/scrollingSmoke.gd
+res://UI/StartMenu/StartScreen.tscn
