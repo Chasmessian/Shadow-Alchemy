@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://wpmsr4gf1wq5"]
+
+[ext_resource type="Script" path="res://UI/MainScene/Side Dialogue Buttons/conversation.gd" id="1_n4yf8"]
+
+[node name="PatientNConvo" type="Node"]
+script = ExtResource("1_n4yf8")
+isRoot = true
+response = ["Oh... h-hey there."]
+
+[node name="conversation" type="Node" parent="."]
+script = ExtResource("1_n4yf8")
+text = "Can you describe the problem?"
+response = ["I've had a lot of difficulty sleeping lately.", "I've been... scared."]
+
+[node name="conversation2" type="Node" parent="."]
+script = ExtResource("1_n4yf8")
+text = "When did the symptoms start?"
+response = ["A couple days ago. I'm getting really tired of this, and it's getting worse."]
+
+[node name="conversation3" type="Node" parent="."]
+script = ExtResource("1_n4yf8")
+text = "How are you feeling right now?"
+response = ["To tell you the truth? Terrified.", "I keep thinking I see-", "Ah, heh, nevermind!", "It's probably nothing..."]
+
+[node name="conversation4" type="Node" parent="."]
+script = ExtResource("1_n4yf8")
+text = "Anything else I need to know?"
+response = ["I... can't shake the feeling I'm being watched."]

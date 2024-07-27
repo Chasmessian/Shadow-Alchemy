@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://sqijdmvchp30"]
+
+[ext_resource type="Script" path="res://UI/MainScene/Side Dialogue Buttons/conversation.gd" id="1_t3g6x"]
+
+[node name="PatientDConvo" type="Node"]
+script = ExtResource("1_t3g6x")
+isRoot = true
+response = ["Hey Doc. Thanks for seeing me on such short notice."]
+
+[node name="conversation" type="Node" parent="."]
+script = ExtResource("1_t3g6x")
+text = "Can you describe the problem?"
+response = ["Well now, I wasn't able to get a wink of sleep last night!", "On account of all the coughing, that is.", "*coughing*", "Plus, I've just been so tired recently.", "Must be all that time spent working for the Grand Mage."]
+
+[node name="conversation2" type="Node" parent="."]
+script = ExtResource("1_t3g6x")
+text = "When did the symptoms start?"
+response = ["Yesterday morning, I think."]
+
+[node name="conversation3" type="Node" parent="."]
+script = ExtResource("1_t3g6x")
+text = "How are you feeling right now?"
+response = ["*coughing*"]
+
+[node name="conversation4" type="Node" parent="."]
+script = ExtResource("1_t3g6x")
+text = "Anything else I need to know?"
+response = ["I don't think my work insurance is going to cover this..."]

@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://8fqrpeiphjya"]
+
+[ext_resource type="Script" path="res://UI/MainScene/Side Dialogue Buttons/conversation.gd" id="1_wd571"]
+
+[node name="PatientOConvo" type="Node"]
+script = ExtResource("1_wd571")
+isRoot = true
+response = ["...?"]
+
+[node name="conversation" type="Node" parent="."]
+script = ExtResource("1_wd571")
+text = "Can you describe the problem?"
+response = ["My body isn't working like it used to.", "I keep falling over. My thinking... it's slower.", "My movements are slow."]
+
+[node name="conversation2" type="Node" parent="."]
+script = ExtResource("1_wd571")
+text = "When did the symptoms start?"
+response = ["I... I don't remember.", "That's... uh... concerning..."]
+
+[node name="conversation3" type="Node" parent="."]
+script = ExtResource("1_wd571")
+text = "How are you feeling right now?"
+response = ["Like I'm going to die."]
+
+[node name="conversation4" type="Node" parent="."]
+script = ExtResource("1_wd571")
+text = "Anything else I need to know?"
+response = ["Uh... I think... I'm a wizard?"]

@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://4r5mussk4gd2"]
+
+[ext_resource type="Script" path="res://UI/MainScene/Side Dialogue Buttons/conversation.gd" id="1_gc7ud"]
+
+[node name="PatientLConvo" type="Node"]
+script = ExtResource("1_gc7ud")
+isRoot = true
+response = ["*stares*"]
+
+[node name="conversation" type="Node" parent="."]
+script = ExtResource("1_gc7ud")
+text = "Can you describe the problem?"
+response = ["Yes.", "I... hunger..."]
+
+[node name="conversation2" type="Node" parent="."]
+script = ExtResource("1_gc7ud")
+text = "When did the symptoms start?"
+response = ["Four... days."]
+
+[node name="conversation3" type="Node" parent="."]
+script = ExtResource("1_gc7ud")
+text = "How are you feeling right now?"
+response = ["I... am hungry."]
+
+[node name="conversation4" type="Node" parent="."]
+script = ExtResource("1_gc7ud")
+text = "Anything else I need to know?"
+response = ["Zooplankton...", "I hunger for zooplankton...", "This hunger will consume me."]

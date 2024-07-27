@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://dhh47qmuh3it0"]
+
+[ext_resource type="Script" path="res://UI/MainScene/Side Dialogue Buttons/conversation.gd" id="1_22kw2"]
+
+[node name="Patient F Convo" type="Node"]
+script = ExtResource("1_22kw2")
+isRoot = true
+response = ["Finally, my turn!"]
+
+[node name="conversation" type="Node" parent="."]
+script = ExtResource("1_22kw2")
+text = "Can you describe the problem?"
+response = ["It's just the Common Mould. I'm sure of it.", "I'm tired and that's all!", "I'll get over it."]
+
+[node name="conversation2" type="Node" parent="."]
+script = ExtResource("1_22kw2")
+text = "When did the symptoms start?"
+response = ["Two days ago, as I was helping a friend out with their aliens war.  ", "Must've caught the Mould after I got bit one of 'em."]
+
+[node name="conversation3" type="Node" parent="."]
+script = ExtResource("1_22kw2")
+text = "How are you feeling right now?"
+response = ["Very, very tired.", "I just need rest. I'll be okay."]
+
+[node name="conversation4" type="Node" parent="."]
+script = ExtResource("1_22kw2")
+text = "Anything else I need to know?"
+response = ["Zzz..."]

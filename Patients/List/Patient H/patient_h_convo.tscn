@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://c5xkufwiikgkt"]
+
+[ext_resource type="Script" path="res://UI/MainScene/Side Dialogue Buttons/conversation.gd" id="1_0utyl"]
+
+[node name="PatientHConvo" type="Node"]
+script = ExtResource("1_0utyl")
+isRoot = true
+response = ["Kids these days..."]
+
+[node name="conversation" type="Node" parent="."]
+script = ExtResource("1_0utyl")
+text = "Can you describe the problem?"
+response = ["I got old. Fast. And I don't know what to do."]
+
+[node name="conversation2" type="Node" parent="."]
+script = ExtResource("1_0utyl")
+text = "When did the symptoms start?"
+response = ["It was my fortieth birthday until suddenly, I turned eighty."]
+
+[node name="conversation3" type="Node" parent="."]
+script = ExtResource("1_0utyl")
+text = "How are you feeling right now?"
+response = ["I feel as if I am not ready to accept the fleeting nature of my life.", "I feel as if the world has changed around me, and I can't keep up.", "I feel as if I am running out of time.", "My back hurts."]
+
+[node name="conversation4" type="Node" parent="."]
+script = ExtResource("1_0utyl")
+text = "Anything else I need to know?"
+response = ["Life is short. Tell your loved ones you love them.", "Don't worry so much. Life has a way of working itself out.", "Slow down and smell the roses."]

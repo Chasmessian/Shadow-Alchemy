@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://xvrvcl3fygri"]
+
+[ext_resource type="Script" path="res://UI/MainScene/Side Dialogue Buttons/conversation.gd" id="1_uj5oc"]
+
+[node name="PatientJConvo" type="Node"]
+script = ExtResource("1_uj5oc")
+isRoot = true
+response = ["AAAHHH!!!"]
+
+[node name="conversation" type="Node" parent="."]
+script = ExtResource("1_uj5oc")
+text = "Can you describe the problem?"
+response = ["I'M ON FIRE!!!"]
+
+[node name="conversation2" type="Node" parent="."]
+script = ExtResource("1_uj5oc")
+text = "When did the symptoms start?"
+response = ["AAAAAAAAAHHH!!!"]
+
+[node name="conversation3" type="Node" parent="."]
+script = ExtResource("1_uj5oc")
+text = "How are you feeling right now?"
+response = ["HOT!!!"]
+
+[node name="conversation4" type="Node" parent="."]
+script = ExtResource("1_uj5oc")
+text = "Anything else I need to know?"
+response = ["AAAAAAAAAAAAAAAAAAAAAHHH!!!"]

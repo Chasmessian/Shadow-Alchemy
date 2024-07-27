@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://bukeodgpc001u"]
+
+[ext_resource type="Script" path="res://UI/MainScene/Side Dialogue Buttons/conversation.gd" id="1_k0fey"]
+
+[node name="PatientGConvo" type="Node"]
+script = ExtResource("1_k0fey")
+isRoot = true
+response = ["Hey, sorry I'm late. Traffic was a nightmare."]
+
+[node name="conversation" type="Node" parent="."]
+script = ExtResource("1_k0fey")
+text = "Can you describe the problem?"
+response = ["I think I might be cursed? Life's just been... downhill.", "I keep falling down the stairs. I've lost my keys ten times. I'm late to everything.", "It's nothing like I've ever seen before."]
+
+[node name="conversation2" type="Node" parent="."]
+script = ExtResource("1_k0fey")
+text = "When did the symptoms start?"
+response = ["Hard ot say. I've spent the last week demolishing my buddy's house with a hammer.", "Maybe something went wrong?"]
+
+[node name="conversation3" type="Node" parent="."]
+script = ExtResource("1_k0fey")
+text = "How are you feeling right now?"
+response = ["Doomed."]
+
+[node name="conversation4" type="Node" parent="."]
+script = ExtResource("1_k0fey")
+text = "Anything else I need to know?"
+response = ["I lost my wallet, so... I'll pay you later."]
