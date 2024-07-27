@@ -1,3 +1,4 @@
+CheckButton
 conversation
 AudioStreamPlayer
 HTTPRequest
@@ -12,4 +13,3 @@ Sprite2D
 Node2D
 TextureRect
 ColorRect
-VBoxContainer

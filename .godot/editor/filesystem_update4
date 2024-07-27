@@ -6,3 +6,17 @@ res://music.tscn
 res://Ingredients/Dragongrass/DragonGrass.tres
 res://Patients/List/Patient2/patient2Convo.tscn
 res://UI/MainScene/conversationMaster.gd
+res://Patients/tutorialShadow/tutorialConversation.tscn
+res://Patients/Base/Species/Shadow.gd
+res://Patients/tutorialShadow/shadowtutorial.gd
+res://Afflictions/examplitis.gd
+res://Afflictions/merlinism.gd
+res://Afflictions/Common Mould.gd
+res://world.gd
+res://scoreTracker.gd
+res://UI/StartMenu/StartScreen.tscn
+res://UI/StartMenu/StartScreen.gd
+res://Patients/List/Patient1/patient1Convo.tscn
+res://Patients/Base/Species/IntelliJellyfish.gd
+res://Patients/List/Patient1/patient1.gd
+res://UI/MainScene/Dialogue/dialogue.tscn

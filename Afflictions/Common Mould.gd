@@ -3,5 +3,5 @@ extends affliction
 func _init():
 	solutionIngredients = [Silverleaf, GarlicNettle, DragonGrass]
 #var solutionDoses = []
-func cure(potion):
+func cure(potion, stats, species):
 	pass

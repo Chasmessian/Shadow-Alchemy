@@ -16,6 +16,8 @@ func _on_play_pressed():
 	animation.connect(func():
 		$Fade2.fadeOut(1)
 		$Fade2.done.connect(func():
+			if($VBoxContainer/Tutorial.button_pressed):
+				scoreTracker.tutorial = true
 			get_tree().change_scene_to_file("res://world.tscn"))
 		)
 

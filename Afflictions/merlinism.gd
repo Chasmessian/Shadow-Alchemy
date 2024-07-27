@@ -10,3 +10,4 @@ func cure(potion : Potion, stats : patientStats, species):
 	var doses = [northernDose,2, localMinutes%10]
 	return ratePotion(potion, doses, species)
 
+ 
