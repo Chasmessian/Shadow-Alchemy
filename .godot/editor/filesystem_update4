@@ -17,3 +17,4 @@ res://UI/MainScene/viewPortPatient.tscn
 res://UI/MainScene/viewport.tscn
 res://UI/MainScene/Dialogue/speech_bubble.tscn
 res://UI/StartMenu/StartScreen.gd
+res://Patients/List/Patient C/patient_c.gd
