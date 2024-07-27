@@ -20,3 +20,5 @@ res://Patients/List/Patient1/patient1Convo.tscn
 res://Patients/Base/Species/IntelliJellyfish.gd
 res://Patients/List/Patient1/patient1.gd
 res://UI/MainScene/Dialogue/dialogue.tscn
+res://Patients/patientList.gd
+res://LowerUIButtons.tscn

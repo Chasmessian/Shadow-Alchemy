@@ -43,10 +43,10 @@ size_flags_vertical = 3
 size_flags_stretch_ratio = 4.0
 text = "Mixing"
 
-[node name="Help" type="Button" parent="VBoxContainer2"]
+[node name="Settings" type="Button" parent="VBoxContainer2"]
 layout_mode = 2
 size_flags_vertical = 3
-text = "?"
+text = "settings"
 
 [connection signal="pressed" from="VBoxContainer/Seeds" to="." method="ChangeMode" binds= ["plant"]]
 [connection signal="pressed" from="VBoxContainer/Water" to="." method="ChangeMode" binds= ["water"]]
