@@ -69,9 +69,9 @@ size_flags_vertical = 3
 
 [connection signal="mouse_entered" from="VBoxContainer/Panel" to="." method="_on_panel_mouse_entered"]
 [connection signal="mouse_exited" from="VBoxContainer/Panel" to="." method="_on_panel_mouse_exited"]
-[connection signal="pressed" from="VBoxContainer/HBoxContainer/Subtract" to="." method="click"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/Subtract" to="." method="subtract"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Subtract" to="." method="click"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/Add" to="." method="add"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/Add" to="." method="click"]
-[connection signal="pressed" from="VBoxContainer2/Button" to="." method="click"]
 [connection signal="pressed" from="VBoxContainer2/Button" to="." method="clearIngredient"]
+[connection signal="pressed" from="VBoxContainer2/Button" to="." method="click"]

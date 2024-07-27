@@ -25,7 +25,6 @@ func clearIngredient():
 	label.hide()
 
 func delete():
-	Inventory.remove(storedIngredient,currentAmount)
 	storedIngredient = null
 	currentAmount = 0
 	$VBoxContainer/Panel/TextureRect.texture = null
