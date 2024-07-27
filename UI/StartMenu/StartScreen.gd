@@ -2,6 +2,7 @@ extends Control
 
 var isReady = false
 signal animation
+var settingMenu = null
 @onready var tutorialButton = $Tutorial
 func _ready():
 	animation.connect(func():
@@ -14,6 +15,7 @@ func _on_play_pressed():
 	beenPressed = true
 	playAnimation()	
 	animation.connect(func():
+		killMenu()
 		$Fade2.fadeOut(1)
 		$Fade2.done.connect(func():
 			if(tutorialButton.button_pressed):
@@ -42,3 +44,15 @@ func _on_godot_done():
 		animation.emit()
 	)
 	pass # Replace with function body.
+
+
+func _on_settings_pressed():
+	settingMenu = load("res://UI/Settings/settingsMenu.tscn").instantiate()
+	add_child(settingMenu)
+	settingMenu.KILLMENOW.connect(killMenu)
+	
+func killMenu():
+	if(settingMenu==null):
+		return
+	settingMenu.queue_free()
+	settingMenu = null

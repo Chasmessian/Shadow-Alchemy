@@ -7,6 +7,9 @@
 [ext_resource type="Texture2D" uid="uid://bjp4rdgp6e5xu" path="res://UI/JournalScene/arrow_right.png" id="4_fmr4h"]
 
 [node name="Journal" type="Node2D"]
+top_level = true
+z_index = 25
+z_as_relative = false
 script = ExtResource("1_3nkps")
 
 [node name="ImageContainer" type="MarginContainer" parent="."]

@@ -18,3 +18,16 @@ res://UI/MainScene/viewport.tscn
 res://UI/MainScene/Dialogue/speech_bubble.tscn
 res://UI/StartMenu/StartScreen.gd
 res://Patients/List/Patient C/patient_c.gd
+res://UI/Settings/settings.tscn
+res://scoreTracker.gd
+res://UI/Settings/settings.gd
+res://UI/MixingScene/Mixing.gd
+res://UI/MixingScene/Mixing.tscn
+res://Settings.gd
+res://UI/Settings/settingsMenu.tscn
+res://UI/Settings/settingsMenu.gd
+res://UI/Garden/Garden Pot.gd
+res://UI/MainScene/viewport.gd
+res://UI/MixingScene/mixing_slot.tscn
+res://UI/Garden/garden.tscn
+res://LowerUIButtons.gd

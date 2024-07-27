@@ -1,3 +1,10 @@
+Control
+Button
+Label
+HSlider
+PanelContainer
+VBoxContainer
+Panel
 CheckButton
 conversation
 AudioStreamPlayer
@@ -6,10 +13,3 @@ CanvasLayer
 GPUParticles2D
 AnimatedSprite2D
 TextureButton
-Control
-HBoxContainer
-Label
-Sprite2D
-Node2D
-TextureRect
-ColorRect

@@ -53,3 +53,4 @@ text = "settings"
 [connection signal="pressed" from="VBoxContainer/Harvest" to="." method="ChangeMode" binds= ["harvest"]]
 [connection signal="pressed" from="VBoxContainer2/Journal" to="." method="openJournal"]
 [connection signal="pressed" from="VBoxContainer2/Mixing" to="." method="openMixing"]
+[connection signal="pressed" from="VBoxContainer2/Settings" to="." method="_on_settings_pressed"]

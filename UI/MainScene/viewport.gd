@@ -39,6 +39,9 @@ func patientLeave():
 		,4)
 func _ready():
 	patient = get_node("Patient")
+	audioPlayer.volume_db = Settings.getDialogueVolume()
+	Settings.dialogueChanged.connect(func():
+		audioPlayer.volume_db =  Settings.getDialogueVolume())
 	
 func loadPatient(p):
 	patient.texture = p.texture

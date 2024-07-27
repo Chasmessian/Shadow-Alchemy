@@ -7,6 +7,7 @@ var draggedSlot = null
 @onready var ingredientSlots = [$"VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer/Mortar and Pestle/Slots/Mixing Slot",$"VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer/Mortar and Pestle/Slots/Mixing Slot2", $"VBoxContainer/HBoxContainer/Mixing Panel/HBoxContainer/Mortar and Pestle/Slots/Mixing Slot3"]
 
 func _ready():
+	$"Button Click".volume_db = Settings.getMiscVolume()
 	for i in ingredientSlots:
 		i.subtracted.connect(slotSubtracted)
 	#testing purposes

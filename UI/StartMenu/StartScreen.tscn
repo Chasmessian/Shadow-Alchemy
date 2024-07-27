@@ -214,7 +214,7 @@ offset_bottom = -8.0
 grow_horizontal = 0
 grow_vertical = 0
 text = "Made by Knight of Iron and Chasmessian
-Music by Locke"
+Music by Elise Larson"
 horizontal_alignment = 2
 
 [node name="Godot" type="Sprite2D" parent="."]
@@ -246,5 +246,6 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [connection signal="pressed" from="VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="VBoxContainer/Settings" to="." method="_on_settings_pressed"]
 [connection signal="done" from="Godot" to="." method="_on_godot_done"]
 [connection signal="fell" from="Godot" to="." method="godotFell"]

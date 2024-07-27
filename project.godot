@@ -22,6 +22,7 @@ config/icon="res://icon.svg"
 
 scoreTracker="*res://scoreTracker.gd"
 Music="*res://music.tscn"
+Settings="*res://Settings.gd"
 
 [display]
 

@@ -11,8 +11,14 @@ static var wateringSounds = ['res://UI/Garden/Sounds/watering/watering.wav','res
 static var harvestSounds = ["res://UI/Garden/Sounds/harvest1.wav", "res://UI/Garden/Sounds/harvest2.wav", "res://UI/Garden/Sounds/harvest3.wav", "res://UI/Garden/Sounds/harvest4.wav", "res://UI/Garden/Sounds/harvest5.wav"]
 var isPlaying = false
 
+func ready():
+	$audio.volume_db =  Settings.getMiscVolume()
+	Settings.miscChanged.connect(func():
+		$audio.volume_db = Settings.getMiscVolume())
+
 func growPlant(plantToGrow):
 	if(!isPlaying):
+		$audio.volume_db =  Settings.getMiscVolume()
 		$audio.stream = load(plantingSounds.pick_random())
 		$audio.play()
 		$audio.finished.connect(func():
@@ -26,6 +32,7 @@ func growPlant(plantToGrow):
 		
 func harvest():
 	if(!isPlaying):
+		$audio.volume_db =  Settings.getMiscVolume()
 		$audio.stream = load(harvestSounds.pick_random())
 		$audio.play()
 		$audio.finished.connect(func():
@@ -38,6 +45,7 @@ func harvest():
 	
 func water():
 	if(!isPlaying and !isWatering):
+		$audio.volume_db =  Settings.getMiscVolume()
 		$audio.stream = load(wateringSounds.pick_random())
 		$audio.play()
 		$audio.finished.connect(func():
