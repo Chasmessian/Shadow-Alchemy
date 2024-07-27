@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://gy0eom1b588n"]
+
+[ext_resource type="Script" path="res://UI/MainScene/Side Dialogue Buttons/conversation.gd" id="1_1g56g"]
+
+[node name="PatientKConvo" type="Node"]
+script = ExtResource("1_1g56g")
+isRoot = true
+response = ["Howdy!"]
+
+[node name="conversation" type="Node" parent="."]
+script = ExtResource("1_1g56g")
+text = "Can you describe the problem?"
+response = ["Hmm... not quite sure! But I have been super cold recently...", "I thought it could have something to do with my new job farming icicles, but the coldness stays with me even at home..."]
+
+[node name="conversation2" type="Node" parent="."]
+script = ExtResource("1_1g56g")
+text = "When did the symptoms start?"
+response = ["As long as I can remember.", "So, about a month."]
+
+[node name="conversation3" type="Node" parent="."]
+script = ExtResource("1_1g56g")
+text = "How are you feeling right now?"
+response = ["Honestly, just really excited to get back to icicle farming.", "It's really renewed my sense of purpose."]
+
+[node name="conversation4" type="Node" parent="."]
+script = ExtResource("1_1g56g")
+text = "Anything else I need to know?"
+response = ["Would you like to buy any icicles?"]

@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://cf8vn5g3hitj3"]
+
+[ext_resource type="Script" path="res://UI/MainScene/Side Dialogue Buttons/conversation.gd" id="1_ifakr"]
+
+[node name="PatientBConvo" type="Node"]
+script = ExtResource("1_ifakr")
+isRoot = true
+response = ["Good morning!"]
+
+[node name="conversation" type="Node" parent="."]
+script = ExtResource("1_ifakr")
+text = "Can you describe the problem?"
+response = ["Why, of course, my dear!", "I've been gambling away all my life savings and still haven't won big!", "Hm? Oh, you mean a curse-related problem?", "I'm fine. My only son, Todd, forced me to come in. Heaven knows why!"]
+
+[node name="conversation2" type="Node" parent="."]
+script = ExtResource("1_ifakr")
+text = "When did the symptoms start?"
+response = ["I haven't the foggiest what you mean!", "Really now, I have casinos to be playing in.", "I gamble everywhere, of course. Lose money everywhere as well.", "Why, I'm wanted in nearly a dozen realms!"]
+
+[node name="conversation3" type="Node" parent="."]
+script = ExtResource("1_ifakr")
+text = "How are you feeling right now?"
+response = ["I've lost nearly everything to gambling.", "How do you think I'm feeling.", "If you said, \"about to win big,\" then you're correct!"]
+
+[node name="conversation4" type="Node" parent="."]
+script = ExtResource("1_ifakr")
+text = "Anything else I need to know?"
+response = ["Nope! But hey, could you write telling my only son, Bob, taht nothing is wrong with me?", "I don't want to hear anymore nonsense about how I 'don't remember names' anymore! "]

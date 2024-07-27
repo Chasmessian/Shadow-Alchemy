@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://hx6un4f363lo"]
+
+[ext_resource type="Script" path="res://UI/MainScene/Side Dialogue Buttons/conversation.gd" id="1_ejcro"]
+
+[node name="PatientEConvo" type="Node"]
+script = ExtResource("1_ejcro")
+isRoot = true
+response = ["Heyyyyyyyyyyyy."]
+
+[node name="conversation" type="Node" parent="."]
+script = ExtResource("1_ejcro")
+text = "Can you describe the problem?"
+response = ["I got really drunk at a party a few days ago. Don't remember much at all.", "Anyway, I got bit! I don't have a clue how.", "Been forced to stay inside since..."]
+
+[node name="conversation2" type="Node" parent="."]
+script = ExtResource("1_ejcro")
+text = "When did the symptoms start?"
+response = ["Three days ago."]
+
+[node name="conversation3" type="Node" parent="."]
+script = ExtResource("1_ejcro")
+text = "How are you feeling right now?"
+response = ["A little thirsty, but nothing to be concerned about."]
+
+[node name="conversation4" type="Node" parent="."]
+script = ExtResource("1_ejcro")
+text = "Anything else I need to know?"
+response = ["Not at all!", "Well, I've developed an allergy to the sun, but surely that's just allergies."]

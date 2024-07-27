@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://bp07m3mjdodpn"]
+
+[ext_resource type="Script" path="res://UI/MainScene/Side Dialogue Buttons/conversation.gd" id="1_cduqj"]
+
+[node name="PatientAConvo" type="Node"]
+script = ExtResource("1_cduqj")
+isRoot = true
+response = ["I'm not happy with the lot I've been dealt."]
+
+[node name="conversation" type="Node" parent="."]
+script = ExtResource("1_cduqj")
+text = "Can you describe the problem?"
+response = ["I must've been bitten by something in my sleep.", "'Cause now I hunger for flesh and blood."]
+
+[node name="conversation2" type="Node" parent="."]
+script = ExtResource("1_cduqj")
+text = "When did the symptoms start?"
+response = ["I was bit three days ago. It wasn't until today that I noticed the hunger."]
+
+[node name="conversation3" type="Node" parent="."]
+script = ExtResource("1_cduqj")
+text = "How are you feeling right now?"
+response = ["I smell... food. Everywhere.", "I can smell everything.", "And I hunger."]
+
+[node name="conversation4" type="Node" parent="."]
+script = ExtResource("1_cduqj")
+text = "Anything else I need to know?"
+response = ["I don't know. I didn't get very good sleep last night?"]

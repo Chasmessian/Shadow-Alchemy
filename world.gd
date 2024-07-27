@@ -5,7 +5,7 @@ var openMenu = null
 static var instance : World = null
 var patient : Patient = null
 static var patientCount = 0.0
-const totalPatients = 2.0
+const totalPatients = 10.0
 const patientMaxScore = 10
 static var gameInProgress = false
 
