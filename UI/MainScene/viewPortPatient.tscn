@@ -6,7 +6,6 @@
 [node name="Patient" type="Sprite2D"]
 z_index = -2
 texture_filter = 1
-position = Vector2(629, 161)
 scale = Vector2(10, 10)
 texture = ExtResource("1_x7fe4")
 script = ExtResource("2_653dv")

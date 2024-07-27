@@ -8,6 +8,7 @@ static var patientCount = 0.0
 const totalPatients = 15.0
 const patientMaxScore = 10
 static var gameInProgress = false
+signal patientRating(rating)
 
 func _init():
 	if(instance==null):
@@ -58,6 +59,7 @@ func tryPotion(potion):
 		status = "failed"
 	elif(percentage==1):
 		status = "perfect"
+	patientRating.emit(status)
 	print("SCORE: " + str(scoreTracker.points))
 	viewport.instance.patientLeave()
 	viewport.instance.patientLeft.connect(loadPatient,CONNECT_ONE_SHOT)

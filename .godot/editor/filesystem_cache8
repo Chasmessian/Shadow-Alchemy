@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1722056210
+::res://::1722092344
 button.png::CompressedTexture2D::959990636478400185::1722013495::1722013496::1::::<><>::
 Cursed Cure Theme.ogg::AudioStreamOggVorbis::3477102026729917574::1722040744::1722040846::1::::<><>::
 export_presets.cfg::TextFile::-1::1722044582::0::1::::<><>::
@@ -8,17 +8,17 @@ fade.tscn::PackedScene::3898181876870175048::1721935326::0::1::::<><>::res://fad
 icon.svg::CompressedTexture2D::4967161088587048813::1721225073::1721678960::1::::<><>::
 inventory.gd::GDScript::-1::1721755021::0::1::::Inventory<>Node<>::
 journal.tscn::PackedScene::3853580450286591515::1721788588::0::1::::<><>::uid://che6nifmou86t::::res://UI/JournalScene/journal.png<>res://UI/JournalScene/Journal/journal.gd<>uid://cp24vf1dyuc5t::::res://UI/JournalScene/arrow_left.png<>uid://qxc36i5l7jjy::::res://UI/JournalScene/VCR_OSD_MONO_1.001.ttf<>uid://65i5dlsuqf6q::::res://UI/JournalScene/journal background.png<>uid://bjp4rdgp6e5xu::::res://UI/JournalScene/arrow_right.png
-LowerUIButtons.gd::GDScript::-1::1721841873::0::1::::<>HBoxContainer<>::
-LowerUIButtons.tscn::PackedScene::4198428598363332030::1722053451::0::1::::<><>::res://LowerUIButtons.gd
+LowerUIButtons.gd::GDScript::-1::1722058212::0::1::::<>HBoxContainer<>::
+LowerUIButtons.tscn::PackedScene::4198428598363332030::1722091758::0::1::::<><>::res://LowerUIButtons.gd
 MenuBorder.png::CompressedTexture2D::7584485898993743407::1721928424::1721928429::1::::<><>::
-music.tscn::PackedScene::2304429153906158332::1722055828::0::1::::<><>::uid://bpslmk5td1xnq::::res://Cursed Cure Theme.ogg
+music.tscn::PackedScene::2304429153906158332::1722091757::0::1::::<><>::uid://bpslmk5td1xnq::::res://Cursed Cure Theme.ogg
 Potion.gd::GDScript::-1::1721852722::0::1::::Potion<>Node<>::
 Potion.tscn::PackedScene::3845060575476844110::1721790944::0::1::::<><>::res://Potion.gd
 Question Container.gd::GDScript::-1::1722023143::0::1::::QuestionContainer<>ScrollContainer<>::
 Question Container.tscn::PackedScene::2396524124990957033::1722023098::0::1::::<><>::res://Question Container.gd
 scoreTracker.gd::GDScript::-1::1722055230::0::1::::<>Node<>::
-Settings.gd::GDScript::-1::1722056141::0::1::::<>Node<>::
-Theme.tres::Theme::9057932493850293447::1722050221::0::1::::<><>::uid://nxa5112sp8uv::::res://button.png<>uid://qxc36i5l7jjy::::res://UI/JournalScene/VCR_OSD_MONO_1.001.ttf
+Settings.gd::GDScript::-1::1722058453::0::1::::<>Node<>::
+Theme.tres::Theme::9057932493850293447::1722091195::0::1::::<><>::uid://nxa5112sp8uv::::res://button.png<>uid://qxc36i5l7jjy::::res://UI/JournalScene/VCR_OSD_MONO_1.001.ttf
 UpperQuestions.gd::GDScript::-1::1722023144::0::1::::<>PanelContainer<>::
 UpperQuestions.tscn::PackedScene::4664067285471669915::1722023098::0::1::::<><>::res://UpperQuestions.gd<>uid://bae5nw7fcom1v::::res://Question Container.tscn
 world.gd::GDScript::-1::1722051932::0::1::::World<>Node2D<>::
@@ -32,11 +32,11 @@ vampirism.gd::GDScript::-1::1722027367::0::1::::vampirism<>affliction<>::
 affliction.gd::GDScript::-1::1721927474::0::1::::affliction<>RefCounted<>::
 affliction.tscn::PackedScene::1061794438983007828::1721841875::0::1::::<><>::res://Afflictions/Base/affliction.gd
 ::res://Ingredients/::1721511154
-::res://Ingredients/Base/::1722056210
+::res://Ingredients/Base/::1722092343
 ingredient.gd::GDScript::-1::1721695584::0::1::::Ingredient<>Node<>::
 ingredient.tscn::PackedScene::8178448440680841002::1721687078::0::1::::<><>::res://Ingredients/Base/ingredient.gd<>uid://nmh1ia4jncxn::::res://Ingredients/blood rose/bloodrose.png
 plant.gd::GDScript::-1::1721682554::0::1::::Plant<>Node2D<>::
-plant.gdshader::Shader::-1::1722056210::0::1::::<><>::
+plant.gdshader::Shader::-1::1722092343::0::1::::<><>::
 plant.tscn::PackedScene::4383893728796868224::1721682576::0::1::::<><>::res://Ingredients/Base/plant.gd<>res://Ingredients/Base/plant.gdshader
 waterlevel.tscn::PackedScene::7059412416225186389::1721682576::0::1::::<><>::uid://by77vvhe8djfp::::res://Ingredients/Base/watermeter.png
 watermeter.png::CompressedTexture2D::4138994578606273989::1721607356::1721607361::1::::<><>::
@@ -52,10 +52,10 @@ bloodrose.png::CompressedTexture2D::937699371451000379::1721521975::1721521977::
 BloodRose.tres::AtlasTexture::8665153044492996643::1721693104::0::1::::<><>::uid://nmh1ia4jncxn::::res://Ingredients/blood rose/bloodrose.png
 BloodRose.tscn::PackedScene::7497673021366274779::1721698308::0::1::::<><>::res://Ingredients/blood rose/BloodRose.gd
 blood_rose_plant.tscn::PackedScene::2202077381913806247::1721682637::0::1::::<><>::uid://b3pudbev0ul1q::::res://Ingredients/Base/plant.tscn<>res://Ingredients/blood rose/BloodRose.gd<>uid://nmh1ia4jncxn::::res://Ingredients/blood rose/bloodrose.png
-::res://Ingredients/Dragongrass/::1722050221
+::res://Ingredients/Dragongrass/::1722091195
 DragonGrass.gd::GDScript::-1::1721698372::0::1::::DragonGrass<>Ingredient<>::
 dragongrass.png::CompressedTexture2D::1501386528434694696::1721522921::1721522925::1::::<><>::
-DragonGrass.tres::AtlasTexture::4159625185968475685::1722050221::0::1::::<><>::uid://vnju78pjxy4g::::res://Ingredients/Dragongrass/dragongrass.png
+DragonGrass.tres::AtlasTexture::4159625185968475685::1722091195::0::1::::<><>::uid://vnju78pjxy4g::::res://Ingredients/Dragongrass/dragongrass.png
 DragonGrass.tscn::PackedScene::1795753254605632821::1721698308::0::1::::<><>::res://Ingredients/Dragongrass/DragonGrass.gd
 dragon_grass_plant.tscn::PackedScene::4970489445487140108::1721698309::0::1::::<><>::uid://b3pudbev0ul1q::::res://Ingredients/Base/plant.tscn<>res://Ingredients/Dragongrass/DragonGrass.gd<>uid://vnju78pjxy4g::::res://Ingredients/Dragongrass/dragongrass.png
 ::res://Ingredients/garlic nettle/::1721790885
@@ -148,8 +148,8 @@ page_solutions_15.txt::TextFile::-1::1721529798::0::1::::<><>::
 page_solutions_16.txt::TextFile::-1::1721529798::0::1::::<><>::
 ::res://Patients/::1722053490
 patientList.gd::GDScript::-1::1722053490::0::1::::PatientList<>Node<>::
-::res://Patients/Base/::1722039191
-Patient.gd::GDScript::-1::1722039191::0::1::::Patient<>Node2D<>::
+::res://Patients/Base/::1722091251
+Patient.gd::GDScript::-1::1722091251::0::1::::Patient<>Node2D<>::
 Patient.tscn::PackedScene::5266455037343321353::1721966441::0::1::::<><>::res://Patients/Base/Patient.gd
 patientStats.gd::GDScript::-1::1721854073::0::1::::patientStats<>Node<>::
 ::res://Patients/Base/Species/::1722046314
@@ -165,7 +165,7 @@ fey.ogg::AudioStreamOggVorbis::2069175366542386751::1721939988::1721939997::1:::
 human.ogg::AudioStreamOggVorbis::5054921630913335993::1722020501::1722020502::1::::<><>::
 intellijelly.ogg::AudioStreamOggVorbis::6067073267513098271::1721939988::1721939997::1::::<><>::
 lamppost.ogg::AudioStreamOggVorbis::4345380704331406968::1722020501::1722020502::1::::<><>::
-::res://Patients/List/::1722050079
+::res://Patients/List/::1722091231
 ::res://Patients/List/Patient1/::1722053451
 patient1.gd::GDScript::-1::1722046320::0::1::::<>Patient<>::
 patient1Convo.tscn::PackedScene::2245254631318724516::1722053451::0::1::::<><>::res://UI/MainScene/Side Dialogue Buttons/conversation.gd
@@ -178,8 +178,8 @@ patient_a_convo.tscn::PackedScene::3492828645015405911::1722050079::0::1::::<><>
 ::res://Patients/List/Patient B/::1722050079
 patient_b.gd::GDScript::-1::1722050079::0::1::::<>Patient<>::
 patient_b_convo.tscn::PackedScene::5193209909880409802::1722050079::0::1::::<><>::res://UI/MainScene/Side Dialogue Buttons/conversation.gd
-::res://Patients/List/Patient C/::1722053417
-patient_c.gd::GDScript::-1::1722053417::0::1::::<>Patient<>::
+::res://Patients/List/Patient C/::1722092343
+patient_c.gd::GDScript::-1::1722092331::0::1::::<>Patient<>::
 patient_c_convo.tscn::PackedScene::3180356083358905461::1722050079::0::1::::<><>::res://UI/MainScene/Side Dialogue Buttons/conversation.gd
 ::res://Patients/List/Patient D/::1722050079
 patient_d.gd::GDScript::-1::1722050079::0::1::::<>Patient<>::
@@ -199,8 +199,10 @@ patient_h_convo.tscn::PackedScene::6926630547653333327::1722050079::0::1::::<><>
 ::res://Patients/List/Patient I/::1722050079
 patient_i.gd::GDScript::-1::1722050079::0::1::::<>Patient<>::
 patient_i_convo.tscn::PackedScene::221144830698068739::1722050079::0::1::::<><>::res://UI/MainScene/Side Dialogue Buttons/conversation.gd
-::res://Patients/List/Patient J/::1722050079
-patient_j.gd::GDScript::-1::1722050079::0::1::::<>Patient<>::
+::res://Patients/List/Patient J/::1722092343
+flame.png::CompressedTexture2D::7392316598844899914::1722091088::1722092345::1::::<><>::
+flame.tscn::PackedScene::7798856979361563408::1722092343::0::1::::<><>::uid://ddk5my0scavvm::::res://Patients/List/Patient J/flame.png
+patient_j.gd::GDScript::-1::1722092331::0::1::::<>Patient<>::
 patient_j_convo.tscn::PackedScene::1658765150378406066::1722050079::0::1::::<><>::res://UI/MainScene/Side Dialogue Buttons/conversation.gd
 ::res://Patients/List/Patient K/::1722050079
 patient_k.gd::GDScript::-1::1722050079::0::1::::<>Patient<>::
@@ -247,13 +249,13 @@ MEH.png::CompressedTexture2D::3243234239933403196::1721961786::1721962295::1::::
 PASS.png::CompressedTexture2D::4815686368919198678::1721961646::1721962295::1::::<><>::
 PERFECT.png::CompressedTexture2D::5044016849882562364::1721962102::1721962295::1::::<><>::
 SPEED.png::CompressedTexture2D::1732731532712063091::1721962293::1721962295::1::::<><>::
-::res://UI/Garden/::1722053450
+::res://UI/Garden/::1722091757
 deadParticle.png::CompressedTexture2D::3107570376327300343::1722028370::1722028371::1::::<><>::
-Garden Pot.gd::GDScript::-1::1722034181::0::1::::<>Node2D<>::
-Garden Pot.tscn::PackedScene::4808042212202694196::1722053450::0::1::::<><>::res://UI/Garden/Garden Pot.gd<>uid://c7tvqxyjrgfvx::::res://Ingredients/Base/waterlevel.tscn<>uid://5a1uump5awwp::::res://UI/Garden/particle.png
+Garden Pot.gd::GDScript::-1::1722057948::0::1::::<>Node2D<>::
+Garden Pot.tscn::PackedScene::4808042212202694196::1722091757::0::1::::<><>::res://UI/Garden/Garden Pot.gd<>uid://c7tvqxyjrgfvx::::res://Ingredients/Base/waterlevel.tscn<>uid://5a1uump5awwp::::res://UI/Garden/particle.png
 garden.gd::GDScript::-1::1721680505::0::1::::Garden<>Control<>::
 Garden.png::CompressedTexture2D::2557957347790565131::1721273300::1721678971::1::::<><>::
-garden.tscn::PackedScene::5882202851968948714::1721682576::0::1::::<><>::res://UI/Garden/garden.gd<>uid://bhjmns3fqquvh::::res://UI/Garden/testGarden.png<>uid://carb0ug6jsvvw::::res://UI/Garden/Garden Pot.tscn
+garden.tscn::PackedScene::5882202851968948714::1722091757::0::1::::<><>::res://UI/Garden/garden.gd<>uid://bhjmns3fqquvh::::res://UI/Garden/testGarden.png<>uid://carb0ug6jsvvw::::res://UI/Garden/Garden Pot.tscn
 particle.png::CompressedTexture2D::2107280736557301011::1722023483::1722023485::1::::<><>::
 testGarden.png::CompressedTexture2D::2897074797103864385::1721968756::1721968768::1::::<><>::
 ::res://UI/Garden/Sounds/::1722033496
@@ -282,16 +284,16 @@ VCR_OSD_MONO_1.001.ttf::FontFile::1170675264728083678::1721529798::1721529798::1
 ::res://UI/JournalScene/Journal/::1722053451
 journal.gd::GDScript::-1::1722049967::0::1::::<>Node2D<>::
 journal.tscn::PackedScene::8378294806184983948::1722053451::0::1::::<><>::res://UI/JournalScene/Journal/journal.gd<>uid://che6nifmou86t::::res://UI/JournalScene/journal.png<>uid://cp24vf1dyuc5t::::res://UI/JournalScene/arrow_left.png<>uid://qxc36i5l7jjy::::res://UI/JournalScene/VCR_OSD_MONO_1.001.ttf<>uid://bjp4rdgp6e5xu::::res://UI/JournalScene/arrow_right.png
-::res://UI/MainScene/::1722053451
+::res://UI/MainScene/::1722092343
 castle_background_4x.png::CompressedTexture2D::3283334841090128271::1721529799::1721529799::1::::<><>::
 conversationMaster.gd::GDScript::-1::1722043766::0::1::::ConversationMaster<>Node<>::
 speech_bubble.png::CompressedTexture2D::6974087210514826798::1721531106::1721531106::1::::<><>::
 speech_icon.png::CompressedTexture2D::1709650700215939421::1721531106::1721531106::1::::<><>::
 speech_icon_2.png::CompressedTexture2D::7587704484205897416::1721531106::1721531106::1::::<><>::
-viewport.gd::GDScript::-1::1722023144::0::1::::viewport<>Control<>::
-viewport.tscn::PackedScene::2114146973724343407::1722053451::0::1::::<><>::uid://bm1qbsf35h4yt::::res://UI/MainScene/castle_background_4x.png<>res://UI/MainScene/viewport.gd<>uid://tdosqb38s672::::res://UI/MainScene/Dialogue/speech_bubble.tscn<>uid://nlabr871r8le::::res://UI/MainScene/viewPortPatient.tscn
-viewPortPatient.gd::GDScript::-1::1721873729::0::1::::viewport_patient<>Sprite2D<>::
-viewPortPatient.tscn::PackedScene::935165853747866598::1722053451::0::1::::<><>::uid://btul8fod5n46n::::res://Patients/Sprites/wizard1.png<>res://UI/MainScene/viewPortPatient.gd
+viewport.gd::GDScript::-1::1722092275::0::1::::viewport<>Control<>::
+viewport.tscn::PackedScene::2114146973724343407::1722092331::0::1::::<><>::uid://bm1qbsf35h4yt::::res://UI/MainScene/castle_background_4x.png<>res://UI/MainScene/viewport.gd<>uid://tdosqb38s672::::res://UI/MainScene/Dialogue/speech_bubble.tscn<>uid://nlabr871r8le::::res://UI/MainScene/viewPortPatient.tscn
+viewPortPatient.gd::GDScript::-1::1722092222::0::1::::viewport_patient<>Sprite2D<>::
+viewPortPatient.tscn::PackedScene::935165853747866598::1722092343::0::1::::<><>::uid://btul8fod5n46n::::res://Patients/Sprites/wizard1.png<>res://UI/MainScene/viewPortPatient.gd<>uid://djd3bgqsixrcq::::res://Patients/List/Patient J/flame.tscn
 ::res://UI/MainScene/Dialogue/::1722053451
 dialogue.gd::GDScript::-1::1722041188::0::1::::Dialogue<>Node2D<>::
 dialogue.tscn::PackedScene::1907250289603139986::1722053451::0::1::::<><>::res://UI/MainScene/Dialogue/dialogue.gd<>uid://qxc36i5l7jjy::::res://UI/JournalScene/VCR_OSD_MONO_1.001.ttf
@@ -302,17 +304,17 @@ conversation.gd::GDScript::-1::1722023143::0::1::::conversation<>Node<>::
 conversation.tscn::PackedScene::6978678503580759466::1721956302::0::1::::<><>::res://UI/MainScene/Side Dialogue Buttons/conversation.gd
 dialogue question.gd::GDScript::-1::1721871397::0::1::::<>PanelContainer<>::
 Question Button.tscn::PackedScene::4209146422246156443::1721956302::0::1::::<><>::res://UI/MainScene/Side Dialogue Buttons/dialogue question.gd
-::res://UI/MixingScene/::1722055961
+::res://UI/MixingScene/::1722091757
 button Click.gd::GDScript::-1::1722023143::0::1::::<>AudioStreamPlayer<>::
 click.gd::GDScript::-1::1722023143::0::1::::<>RefCounted<>::
 draggedItem.gd::GDScript::-1::1722023143::0::1::::<>TextureRect<>::
 draggedItem.tscn::PackedScene::6081619517234425582::1722023098::0::1::::<><>::uid://b0i7oipxd0pj6::::res://Ingredients/Dragongrass/DragonGrass.tres<>res://UI/MixingScene/draggedItem.gd
 itemSlot.gd::GDScript::-1::1722023143::0::1::::mixingItemSlot<>VBoxContainer<>::
 itemSlot.tscn::PackedScene::5797323812973276119::1721843088::0::1::::<><>::res://UI/MixingScene/itemSlot.gd<>uid://b0i7oipxd0pj6::::res://Ingredients/Dragongrass/DragonGrass.tres<>uid://qxc36i5l7jjy::::res://UI/JournalScene/VCR_OSD_MONO_1.001.ttf
-Mixing.gd::GDScript::-1::1722055961::0::1::::<>Node2D<>::
-Mixing.tscn::PackedScene::2047278081458652591::1722055961::0::1::::<><>::res://UI/MixingScene/Mixing.gd<>uid://bm1wqssj1xhiv::::res://UI/MixingScene/mixing_slot.tscn<>uid://csv8nc7vi11eo::::res://UI/MixingScene/draggedItem.tscn<>uid://dgebgl6qg3x4k::::res://UI/MixingScene/syringe.png<>res://UI/MixingScene/button Click.gd
+Mixing.gd::GDScript::-1::1722057276::0::1::::<>Node2D<>::
+Mixing.tscn::PackedScene::2047278081458652591::1722091757::0::1::::<><>::res://UI/MixingScene/Mixing.gd<>uid://bm1wqssj1xhiv::::res://UI/MixingScene/mixing_slot.tscn<>uid://csv8nc7vi11eo::::res://UI/MixingScene/draggedItem.tscn<>uid://dgebgl6qg3x4k::::res://UI/MixingScene/syringe.png<>res://UI/MixingScene/button Click.gd
 mixing_slot.gd::GDScript::-1::1722023143::0::1::::<>HBoxContainer<>::
-mixing_slot.tscn::PackedScene::3283725949169742393::1722023098::0::1::::<><>::res://UI/MixingScene/mixing_slot.gd
+mixing_slot.tscn::PackedScene::3283725949169742393::1722091757::0::1::::<><>::res://UI/MixingScene/mixing_slot.gd
 spacing.tscn::PackedScene::1877440101068082396::1721766628::0::1::::<><>::
 Submit.gd::GDScript::-1::1722023144::0::1::::<>Button<>::
 syringe.png::CompressedTexture2D::7588724682061833792::1722015746::1722015748::1::::<><>::
@@ -321,13 +323,13 @@ Seed Selection.gd::GDScript::-1::1721850749::0::1::::SeedSelection<>Node2D<>::
 Seed Selection.tscn::PackedScene::5254983173789438770::1722028175::0::1::::<><>::uid://divqcygwjniho::::res://UI/Seed Selection/seedSlot.tscn<>res://UI/Seed Selection/Seed Selection.gd<>res://Ingredients/blood rose/BloodRose.gd<>res://Ingredients/Dragongrass/DragonGrass.gd<>res://Ingredients/garlic nettle/GarlicNettle.gd<>res://Ingredients/goldweed/GoldWeed.gd<>res://Ingredients/harpy tongue/Harpy Tongue.gd<>res://Ingredients/Hob Goblossom/Hob Goblossom.gd<>res://Ingredients/Iron/Iron.gd<>res://Ingredients/Northern Fang/NorthernFang.gd<>res://Ingredients/potato/Potato.gd<>res://Ingredients/ShadowWood/shadow_wood.gd<>res://Ingredients/silverleaf/silverleaf.gd
 seedSlot.gd::GDScript::-1::1721850715::0::1::::<>VBoxContainer<>::
 seedSlot.tscn::PackedScene::7765101047332247508::1721851835::0::1::::<><>::uid://b0i7oipxd0pj6::::res://Ingredients/Dragongrass/DragonGrass.tres<>res://UI/Seed Selection/seedSlot.gd<>res://Ingredients/Batwort/Batwort.gd<>res://Ingredients/Base/plant.gdshader
-::res://UI/Settings/::1722056210
-settings.tscn::PackedScene::5774829961120591317::1722056210::0::1::::<><>::res://UI/Settings/settingsMenu.gd
-settingsMenu.gd::GDScript::-1::1722056200::0::1::::settingsMenu<>Control<>::
-::res://UI/StartMenu/::1722055829
+::res://UI/Settings/::1722091757
+settingsMenu.gd::GDScript::-1::1722057697::0::1::::settingsMenu<>Control<>::
+settingsMenu.tscn::PackedScene::5774829961120591317::1722091757::0::1::::<><>::res://UI/Settings/settingsMenu.gd
+::res://UI/StartMenu/::1722091757
 cursedLogo.png::CompressedTexture2D::7617794202859453685::1722008186::1722008188::1::::<><>::
 cursedLogoAnimation.png::CompressedTexture2D::814680845662414777::1722052994::1722052997::1::::<><>::
 fallingGodot.gd::GDScript::-1::1722023143::0::1::::<>Sprite2D<>::
 scrollingSmoke.gd::GDScript::-1::1721955753::0::1::::<>TextureRect<>::
-StartScreen.gd::GDScript::-1::1722055654::0::1::::<>Control<>::
-StartScreen.tscn::PackedScene::6404459410815159048::1722055829::0::1::::<><>::res://UI/StartMenu/scrollingSmoke.gd<>res://UI/StartMenu/StartScreen.gd<>uid://luvw6yu5w6bl::::res://UI/StartMenu/cursedLogoAnimation.png<>uid://bvskqr18kovyu::::res://fade.tscn<>uid://cc1eogsgkx3v2::::res://icon.svg<>res://UI/StartMenu/fallingGodot.gd
+StartScreen.gd::GDScript::-1::1722057770::0::1::::<>Control<>::
+StartScreen.tscn::PackedScene::6404459410815159048::1722091757::0::1::::<><>::res://UI/StartMenu/scrollingSmoke.gd<>res://UI/StartMenu/StartScreen.gd<>uid://luvw6yu5w6bl::::res://UI/StartMenu/cursedLogoAnimation.png<>uid://bvskqr18kovyu::::res://fade.tscn<>uid://cc1eogsgkx3v2::::res://icon.svg<>res://UI/StartMenu/fallingGodot.gd

@@ -7,6 +7,8 @@ var texture = null
 var conversationNode = null
 var vocals = null
 var canSpeak = true #for vocals, disable for echos
+var particles = null
+var particlesGetCured = false
 var exitDialogue = {
 	"perfect" : "perfect", 
 	"decent" : "decent",

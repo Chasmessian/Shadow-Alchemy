@@ -7,6 +7,7 @@ var walkingTo = null
 var timeToWalk = null
 var timeSpentWalking = 0
 var flipAtEnd = false
+var emitter = null
 signal arrived
 
 
@@ -37,3 +38,18 @@ func _process(delta):
 				flip()
 			flipAtEnd = false
 			arrived.emit()
+			
+func loadEmitter(newEmitter):
+	if(emitter!=null):
+		emitter.queue_free()
+		emitter = null
+	emitter = newEmitter.instantiate()
+	add_child(emitter)
+	emitter.scale = Vector2(0.1,0.1)
+	
+func clearEmitter():
+	if(emitter==null):
+		return
+	else:
+		emitter.queue_free()
+		emitter = null

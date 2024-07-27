@@ -9,6 +9,8 @@ func create():
 	curse = vampirism.new()
 	texture = load("res://Patients/Sprites/demon.png")
 	conversationNode = load("res://Patients/List/Patient J/patient_j_convo.tscn")
+	particles = load("res://Patients/List/Patient J/flame.tscn")
+	particlesGetCured = true
 	exitDialogue = {
 		"perfect" : "Thank you, I feel much better",
 		"decent" : "Thank you... I guess",

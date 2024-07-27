@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://djd3bgqsixrcq"]
+
+[ext_resource type="Texture2D" uid="uid://ddk5my0scavvm" path="res://Patients/List/Patient J/flame.png" id="1_qckoq"]
+
+[sub_resource type="Gradient" id="Gradient_wupqw"]
+colors = PackedColorArray(0.600478, 0, 0.131608, 1, 0.79551, 0.619723, 0.0698777, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_q3xcf"]
+gradient = SubResource("Gradient_wupqw")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_06l7n"]
+particle_flag_disable_z = true
+emission_shape = 2
+emission_sphere_radius = 28.8
+angle_min = -221.5
+angle_max = 443.1
+direction = Vector3(0, -1, 0)
+spread = 55.665
+initial_velocity_max = 88.29
+gravity = Vector3(0, -98, 0)
+scale_min = 5.0
+scale_max = 10.0
+color_ramp = SubResource("GradientTexture1D_q3xcf")
+
+[node name="GPUParticles2D" type="GPUParticles2D"]
+show_behind_parent = true
+texture_filter = 1
+scale = Vector2(10, 10)
+amount = 126
+process_material = SubResource("ParticleProcessMaterial_06l7n")
+texture = ExtResource("1_qckoq")
+lifetime = 1.5

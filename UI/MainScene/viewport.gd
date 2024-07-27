@@ -34,7 +34,7 @@ func patientLeave():
 	patient.flipAtEnd = true
 	conversationMaster.clearConversation()
 	patient.arrived.connect(func(): 
-		print("PAtient ARRIVED IN")
+		patient.clearEmitter()
 		patientLeft.emit()
 		,4)
 func _ready():
@@ -46,6 +46,12 @@ func _ready():
 func loadPatient(p):
 	patient.texture = p.texture
 	patient.position = get_node("Leave").position
+	if(p.particlesGetCured):
+		World.instance.patientRating.connect(func(rating):
+			if(rating=="perfect"):
+				patient.clearEmitter(),4)
+	if(p.particles!=null):
+		patient.loadEmitter(p.particles)
 	bringOutPatient(patient)
 
 	#something to do with dialogue
