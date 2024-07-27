@@ -1,8 +1,8 @@
 class_name PatientList
 extends Node
 static var patients = [
-	"res://Patients/List/Patient1/patient1.gd",
-	"res://Patients/List/Patient2/patient2.gd",
+	#"res://Patients/List/Patient1/patient1.gd", #examples
+	#"res://Patients/List/Patient2/patient2.gd",
 	"res://Patients/List/Patient A/patient_a.gd",
 	"res://Patients/List/Patient B/patient_b.gd",
 	"res://Patients/List/Patient C/patient_c.gd",

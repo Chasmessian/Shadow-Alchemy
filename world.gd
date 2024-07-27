@@ -5,7 +5,7 @@ var openMenu = null
 static var instance : World = null
 var patient : Patient = null
 static var patientCount = 0.0
-const totalPatients = 10.0
+const totalPatients = 15.0
 const patientMaxScore = 10
 static var gameInProgress = false
 
@@ -47,6 +47,8 @@ func tryPotion(potion):
 	var patientPoints = patient.ratePotion(potion)
 	if(scoreTracker.tutorial):
 		scoreTracker.tutorial = false
+		World.gameInProgress = true
+		
 	else:
 		scoreTracker.points += patientPoints
 	var percentage = float(patientPoints)/float(patientMaxScore)

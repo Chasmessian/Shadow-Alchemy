@@ -2,7 +2,7 @@ extends Control
 
 var isReady = false
 signal animation
-
+@onready var tutorialButton = $Tutorial
 func _ready():
 	animation.connect(func():
 		isReady = true)
@@ -16,7 +16,7 @@ func _on_play_pressed():
 	animation.connect(func():
 		$Fade2.fadeOut(1)
 		$Fade2.done.connect(func():
-			if($VBoxContainer/Tutorial.button_pressed):
+			if(tutorialButton.button_pressed):
 				scoreTracker.tutorial = true
 			get_tree().change_scene_to_file("res://world.tscn"))
 		)

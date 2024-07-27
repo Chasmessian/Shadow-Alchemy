@@ -22,12 +22,11 @@ mouse_filter = 2
 script = ExtResource("1_lkgja")
 
 [node name="Patient" parent="." instance=ExtResource("2_wlxyc")]
-z_index = -1
 position = Vector2(-146, 158)
 flip_h = true
 
 [node name="Castle Background" type="Sprite2D" parent="."]
-z_index = -2
+z_index = -3
 position = Vector2(378, 198)
 scale = Vector2(2.16, 2.21143)
 texture = ExtResource("1_1hy6x")
