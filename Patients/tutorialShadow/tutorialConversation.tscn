@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://dqtvddbn3kswm"]
+
+[ext_resource type="Script" path="res://UI/MainScene/Side Dialogue Buttons/conversation.gd" id="1_fm4dg"]
+
+[node name="TutorialConversation" type="Node"]
+script = ExtResource("1_fm4dg")
+isRoot = true
+response = ["Hey, I'm your shadow. You better listen up. I'm here to show you around so you can escape your pain. Do things well and maybe I will relieve you of your  curse. You can click these words to see if I have more to say", "Just like that. You can also ask questions in the panel on the right. If you want to come back to listen to what I have to say again, click the arrow above that question."]
+
+[node name="conversation" type="Node" parent="."]
+script = ExtResource("1_fm4dg")
+text = "My curse?"
+response = ["yep,  you are indeed cursed. Anyway, people like me will walk in and aren't feeling well. Your job is to get them feeling better.", "There are plenty of curses in this world, many are given by their own shadows. You can read up on curses in the journal in the bottom right.", "Each curse has unique symptoms and a unique cure."]
+
+[node name="conversation" type="Node" parent="conversation"]
+script = ExtResource("1_fm4dg")
+text = "How do I cure my patients?"
+response = ["How about I act like a patient who is sick and you can practice?"]
+
+[node name="conversation" type="Node" parent="conversation/conversation"]
+script = ExtResource("1_fm4dg")
+text = "sure"
+response = ["I'm sick, I have a super rare curse called \"examplitis\", it requires 1 dragongrass, 1 iron, and 1 hob goblossom.", "Note that since I'm a shadow, I don't have any allergies, but your patients will. Look in the journal to see what to do about different races.", "Click seeds in the panel on the bottom right to select a seed and thhen click a pot in the garden.", "Once you plant a seed, you can water it. Select the water button to start watering. Watering plants increases their level, but be careful, if you water when it is ripe, you will kill it.", "Once a plant is watered, click harvest and then on the plant to obtain it."]
+
+[node name="conversation" type="Node" parent="conversation/conversation/conversation"]
+script = ExtResource("1_fm4dg")
+text = "I think I understand"
+response = ["Great! Now you'll want to open the mixing menu and place the ingredients for the cure in the order I told you. Remember, dragongrass, iron, hob goblossom", "Once you place them in their slots, click submit and you'll give me the cure."]

@@ -33,11 +33,7 @@ func loadNode(convoNode, immedientQuestions=false): #For when a question is aske
 		Dialogue.instance.ending_dialogue.connect(loadPreviousNode, CONNECT_ONE_SHOT)
 		return
 	else:
-		if(!immedientQuestions):
-			Dialogue.instance.ending_dialogue.connect(func():
-				loadQuestions(convoNode), CONNECT_ONE_SHOT)
-		else:
-			loadQuestions(convoNode)
+		loadQuestions(convoNode)
 	pass
 	
 func loadPreviousNode():

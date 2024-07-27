@@ -1,50 +1,22 @@
 res://UI/Garden/Garden Pot.tscn
 res://Theme.tres
-res://Ingredients/Dragongrass/DragonGrass.tres
 res://Ingredients/Base/plant.gdshader
 res://world.tscn
 res://music.tscn
-res://Patients/List/Patient1/patient1Convo.tscn
-res://journal.tscn
-res://Patients/List/Patient A/patient_a_convo.tscn
-res://patient_a.gd
-res://Patients/List/Patient B/patient_b_convo.tscn
-res://patient_b.gd
-res://Patients/patientList.gd
-res://Patients/List/Patient C/patient_c_convo.tscn
-res://Patients/List/Patient C/patient_c.gd
-res://Patients/List/Patient D/patient_d_convo.tscn
-res://patient_d.gd
-res://patient_e.gd
-res://Patients/List/Patient E/patient_e_convo.tscn
-res://Patients/List/Patient E/patient_e.gd
-res://patient_f.gd
-res://Patients/List/Patient F/patient_f_convo.tscn
-res://patient_g.gd
-res://Patients/List/Patient G/patient_g_convo.tscn
-res://Patients/List/Patient G/patient_g.gd
-res://patient_h.gd
-res://Patients/List/Patient H/patient_h_convo.tscn
-res://Patients/List/Patient H/patient_h.gd
-res://Patients/List/Patient I/patient_i_convo.tscn
-res://patient_i.gd
-res://patient_j.gd
-res://Patients/List/Patient J/patient_j_convo.tscn
-res://patient_k.gd
-res://Patients/List/Patient K/patient_k_convo.tscn
-res://Patients/List/Patient K/patient_k.gd
-res://Patients/List/Patient L/patient_l_convo.tscn
-res://patient_l.gd
-res://Patients/List/Patient L/patient_l.gd
-res://patient_m.gd
-res://Patients/List/Patient M/patient_m_convo.tscn
-res://Patients/List/Patient N/patient_n_convo.tscn
-res://patient_n.gd
-res://Patients/List/Patient N/patient_n.gd
-res://Patients/List/Patient O/patient_o_convo.tscn
-res://patient_o.gd
-res://Patients/List/Patient A/patient_a.gd
-res://Patients/List/Patient B/patient_b.gd
-res://Patients/List/Patient D/patient_d.gd
-res://Patients/List/Patient F/patient_f.gd
+res://Ingredients/Dragongrass/DragonGrass.tres
+res://Patients/List/Patient2/patient2Convo.tscn
+res://UI/MainScene/conversationMaster.gd
+res://Patients/tutorialShadow/tutorialConversation.tscn
+res://Patients/Base/Species/Shadow.gd
+res://Patients/tutorialShadow/shadowtutorial.gd
+res://Afflictions/examplitis.gd
+res://Afflictions/merlinism.gd
+res://Afflictions/Common Mould.gd
 res://world.gd
+res://scoreTracker.gd
+res://UI/StartMenu/StartScreen.tscn
+res://UI/StartMenu/StartScreen.gd
+res://Patients/List/Patient1/patient1Convo.tscn
+res://Patients/Base/Species/IntelliJellyfish.gd
+res://Patients/List/Patient1/patient1.gd
+res://UI/MainScene/Dialogue/dialogue.tscn

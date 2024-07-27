@@ -7,7 +7,6 @@ var patient : Patient = null
 static var patientCount = 0.0
 const totalPatients = 10.0
 const patientMaxScore = 10
-
 static var gameInProgress = false
 
 func _init():
@@ -22,8 +21,14 @@ func _ready():
 	get_tree().current_scene.add_child(fade)
 	fade.fadeIn(2)
 	fade.done.connect(func():
-		loadPatient()
-		World.gameInProgress = true, 4)
+		if(!scoreTracker.tutorial):
+			loadPatient()
+			World.gameInProgress = true
+		else:
+			patient = load("res://Patients/tutorialShadow/shadowtutorial.gd").new()
+			viewport.instance.loadPatient(patient)
+			
+			, 4)
 	
 func changeMenu(newMenu):
 	if(openMenu!=null):
@@ -40,7 +45,10 @@ func tryPotion(potion):
 	if(patient==null):
 		return
 	var patientPoints = patient.ratePotion(potion)
-	scoreTracker.points += patientPoints
+	if(scoreTracker.tutorial):
+		scoreTracker.tutorial = false
+	else:
+		scoreTracker.points += patientPoints
 	var percentage = float(patientPoints)/float(patientMaxScore)
 	print(percentage)
 	var status = "decent"

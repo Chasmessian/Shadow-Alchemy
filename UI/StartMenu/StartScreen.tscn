@@ -165,7 +165,7 @@ layout_mode = 2
 size_flags_vertical = 3
 text = "Play"
 
-[node name="Tutorial" type="Button" parent="VBoxContainer"]
+[node name="Tutorial" type="CheckButton" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 text = "Tutorial"
