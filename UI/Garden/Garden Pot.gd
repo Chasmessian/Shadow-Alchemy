@@ -7,6 +7,7 @@ var waterIncrease = 5 #Time to water in seconds, roughly
 #func _ready():
 	#growPlant(load("res://Ingredients/blood rose/blood_rose_plant.tscn"))
 static var plantingSounds = ["res://UI/Garden/Sounds/plant.wav", "res://UI/Garden/Sounds/plant2.wav", "res://UI/Garden/Sounds/plant3.wav", "res://UI/Garden/Sounds/plant4.wav", "res://UI/Garden/Sounds/plant5.wav"]
+static var wateringSounds = ['res://UI/Garden/Sounds/watering/watering.wav','res://UI/Garden/Sounds/watering/watering2.wav', 'res://UI/Garden/Sounds/watering/watering4.wav', 'res://UI/Garden/Sounds/watering/watering5.wav']#, 'res://UI/Garden/Sounds/watering/watering3.wav']
 static var harvestSounds = ["res://UI/Garden/Sounds/harvest1.wav", "res://UI/Garden/Sounds/harvest2.wav", "res://UI/Garden/Sounds/harvest3.wav", "res://UI/Garden/Sounds/harvest4.wav", "res://UI/Garden/Sounds/harvest5.wav"]
 var isPlaying = false
 
@@ -36,8 +37,13 @@ func harvest():
 	isWatering = false
 	
 func water():
+	if(!isPlaying and !isWatering):
+		$audio.stream = load(wateringSounds.pick_random())
+		$audio.play()
+		$audio.finished.connect(func():
+			isPlaying = false
+			)
 	isWatering = true
-	pass
 	
 func _process(delta):
 	waterMeter.value = waterProgress

@@ -7,6 +7,11 @@ var texture = null
 var conversationNode = null
 var vocals = null
 var canSpeak = true #for vocals, disable for echos
+var exitDialogue = {
+	"perfect" : "perfect", 
+	"decent" : "decent",
+	"failed" : "failed"
+}
 func _init():
 	create()	
 	if(vocals==null):

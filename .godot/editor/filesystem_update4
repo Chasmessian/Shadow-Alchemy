@@ -1,6 +1,12 @@
-res://world.tscn
-res://Theme.tres
-res://Ingredients/Dragongrass/DragonGrass.tres
-res://Ingredients/Base/plant.gdshader
 res://UI/Garden/Garden Pot.tscn
-res://UI/Garden/Garden Pot.gd
+res://Theme.tres
+res://Ingredients/Base/plant.gdshader
+res://Patients/Base/Patient.gd
+res://UI/MainScene/conversationMaster.gd
+res://Patients/List/Patient1/patient1.gd
+res://Ingredients/Dragongrass/DragonGrass.tres
+res://Patients/List/Patient2/patient2.gd
+res://world.tscn
+res://world.gd
+res://music.tscn
+res://UI/MainScene/Dialogue/dialogue.gd

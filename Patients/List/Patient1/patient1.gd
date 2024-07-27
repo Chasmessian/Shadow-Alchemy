@@ -9,3 +9,8 @@ func create():
 	curse = vampirism.new()
 	texture = load("res://Patients/Sprites/intellijellyfish1.png")
 	conversationNode = load("res://Patients/List/Patient1/patient1Convo.tscn")
+	exitDialogue = {
+		"perfect" : "Thank you, I feel much better",
+		"decent" : "Thank you... I guess",
+		"failed" : "...mmmm O- sounds tasty right about now"
+	}

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bpslmk5td1xnq"
+path="res://.godot/imported/Cursed Cure Theme.ogg-0879b760c425998f2f818368050da5c9.oggvorbisstr"
+
+[deps]
+
+source_file="res://Cursed Cure Theme.ogg"
+dest_files=["res://.godot/imported/Cursed Cure Theme.ogg-0879b760c425998f2f818368050da5c9.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

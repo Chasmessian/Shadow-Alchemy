@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://73ju140pcjwm"]
+
+[ext_resource type="AudioStream" uid="uid://bpslmk5td1xnq" path="res://Cursed Cure Theme.ogg" id="1_17lrp"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_17lrp")
+autoplay = true

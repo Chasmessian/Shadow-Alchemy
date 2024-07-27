@@ -39,10 +39,22 @@ func closeMenu():
 func tryPotion(potion):
 	if(patient==null):
 		return
-	scoreTracker.points += patient.ratePotion(potion)
+	var patientPoints = patient.ratePotion(potion)
+	scoreTracker.points += patientPoints
+	var percentage = float(patientPoints)/float(patientMaxScore)
+	print(percentage)
+	var status = "decent"
+	if(percentage<.3):
+		status = "failed"
+	elif(percentage==1):
+		status = "perfect"
 	print("SCORE: " + str(scoreTracker.points))
 	viewport.instance.patientLeave()
 	viewport.instance.patientLeft.connect(loadPatient,CONNECT_ONE_SHOT)
+	ConversationMaster.instance.exitDialogue(status)
+	viewport.instance.patientLeft.connect(func():
+		Dialogue.instance.ending_dialogue.emit())
+	
 	
 		
 func loadPatient():

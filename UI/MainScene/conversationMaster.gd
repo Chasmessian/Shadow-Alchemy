@@ -63,3 +63,6 @@ func playAudio():
 		audioPlayer.stream = World.instance.patient.vocals
 		audioPlayer.seek(0)
 		audioPlayer.play()
+func exitDialogue(status):
+	Dialogue.instance.loadDialogue([World.instance.patient.exitDialogue[status]])
+	

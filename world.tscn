@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://uc4kphg4jjyt"]
+[gd_scene load_steps=7 format=3 uid="uid://uc4kphg4jjyt"]
 
 [ext_resource type="PackedScene" uid="uid://cp2nay63s25us" path="res://UI/Garden/garden.tscn" id="1_3fwft"]
 [ext_resource type="Script" path="res://world.gd" id="1_7qcas"]
@@ -6,7 +6,6 @@
 [ext_resource type="PackedScene" uid="uid://b020rgq1ep5nu" path="res://LowerUIButtons.tscn" id="3_cupsl"]
 [ext_resource type="PackedScene" uid="uid://b7pkrh22t7lp8" path="res://UpperQuestions.tscn" id="4_jxe11"]
 [ext_resource type="Texture2D" uid="uid://dgb8m0dhf37c2" path="res://MenuBorder.png" id="6_my717"]
-[ext_resource type="AudioStream" uid="uid://xv35vktnpqhm" path="res://Cursed Cure Theme.mp3" id="7_5yatq"]
 
 [node name="World" type="Node2D"]
 position = Vector2(-1, -1)
@@ -58,7 +57,3 @@ texture_filter = 1
 position = Vector2(381, 383)
 scale = Vector2(95, 4)
 texture = ExtResource("6_my717")
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("7_5yatq")
-autoplay = true

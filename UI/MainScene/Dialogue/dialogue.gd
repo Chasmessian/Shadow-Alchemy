@@ -31,7 +31,8 @@ func start_dialogue():
 	current_message = 0
 	display = ""
 	current_char = 0
-	
+	print(messages)
+		
 	$next_char.set_wait_time(typing_speed)
 	$next_char.start()
 	
