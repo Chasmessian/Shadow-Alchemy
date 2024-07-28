@@ -1,14 +1,6 @@
-res://UI/Settings/settingsMenu.tscn
+res://Patients/List/Patient O/patient_o_convo.tscn
 res://Theme.tres
 res://Ingredients/Dragongrass/DragonGrass.tres
 res://Ingredients/Base/plant.gdshader
-res://UI/StartMenu/StartScreen.tscn
-res://UI/MixingScene/Mixing.tscn
-res://UI/MixingScene/mixing_slot.tscn
-res://UI/Garden/garden.tscn
-res://UI/Garden/Garden Pot.tscn
-res://UI/MainScene/viewport.tscn
-res://Patients/List/Patient J/flame.tscn
-res://UI/MainScene/viewPortPatient.tscn
-res://world.tscn
-res://UI/MixingScene/mixing_slot.gd
+res://Journal Text/page_solutions_10.txt
+res://Journal Text/page_solutions_11.txt

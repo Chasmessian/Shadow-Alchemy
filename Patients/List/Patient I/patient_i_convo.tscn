@@ -25,4 +25,4 @@ response = ["Coldness. Nothingness.", "I don't know, okay?", "And I don't care."
 [node name="conversation4" type="Node" parent="."]
 script = ExtResource("1_5y728")
 text = "Anything else I need to know?"
-response = ["How about you shut up and do your job?"]
+response = ["How about you shut up and do your job?", "I didn't ask to spend my 30th birthday being pestered."]

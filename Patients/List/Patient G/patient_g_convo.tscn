@@ -15,7 +15,7 @@ response = ["I think I might be cursed? Life's just been... downhill.", "I keep 
 [node name="conversation2" type="Node" parent="."]
 script = ExtResource("1_k0fey")
 text = "When did the symptoms start?"
-response = ["Hard ot say. I've spent the last week demolishing my buddy's house with a hammer.", "Maybe something went wrong?"]
+response = ["Hard to say. I've spent the last week demolishing my buddy's house with a hammer.", "Maybe something went wrong?"]
 
 [node name="conversation3" type="Node" parent="."]
 script = ExtResource("1_k0fey")
