@@ -6,7 +6,7 @@ func create():
 	stats.curseAge = 10
 	stats.isAdult = true
 	stats.weight = 90
-	curse = vampirism.new()
+	curse = MambellaEffect.new()
 	texture = load("res://Patients/Sprites/Fey1.png")
 	conversationNode = load("res://Patients/List/Patient B/patient_b_convo.tscn")
 	exitDialogue = {

@@ -4,3 +4,38 @@ res://Ingredients/Dragongrass/DragonGrass.tres
 res://Ingredients/Base/plant.gdshader
 res://Journal Text/page_solutions_10.txt
 res://Journal Text/page_solutions_11.txt
+res://Afflictions/OzythsLuck.gd
+res://Afflictions/CurseofEchoes.gd
+res://Afflictions/Common Mould.gd
+res://world.gd
+res://Afflictions/Fireflu.gd
+res://Afflictions/merlinism.gd
+res://Afflictions/transformed.gd
+res://Patients/Base/Patient.gd
+res://Patients/Base/patientStats.gd
+res://Patients/List/Patient C/patient_c.gd
+res://Afflictions/frozenHeart.gd
+res://Patients/List/Patient I/patient_i_convo.tscn
+res://Afflictions/PrePossessionParanoia.gd
+res://Patients/List/Patient K/patient_k_convo.tscn
+res://Patients/List/Patient N/patient_n_convo.tscn
+res://Patients/List/Patient N/patient_n.gd
+res://Afflictions/postPossessionParanoia.gd
+res://Afflictions/mambellaeffect.gd
+res://Afflictions/DiseaseOfDevouring.gd
+res://Afflictions/Base/affliction.gd
+res://Afflictions/deadvines.gd
+res://Afflictions/Lycanthropy.gd
+res://Afflictions/zombification.gd
+res://Patients/List/Patient A/patient_a.gd
+res://Patients/List/Patient B/patient_b.gd
+res://Patients/List/Patient D/patient_d.gd
+res://Patients/List/Patient F/patient_f.gd
+res://Patients/List/Patient G/patient_g.gd
+res://Patients/List/Patient H/patient_h.gd
+res://Patients/List/Patient I/patient_i.gd
+res://Patients/List/Patient J/patient_j.gd
+res://Patients/List/Patient K/patient_k.gd
+res://Patients/List/Patient L/patient_l.gd
+res://Patients/List/Patient M/patient_m.gd
+res://Patients/List/Patient O/patient_o.gd
