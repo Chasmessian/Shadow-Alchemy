@@ -65,12 +65,22 @@ func change_page(amount): #Just for changing the page
 
 func get_page(number): # Whenever we need to update the page I guess? Journal should always start at page 0.
 	var mandela_effect = RandomNumberGenerator.new().randi_range(1,100)
-	if number == 10 and mandela_effect > 90:
-			current_title_left.text = "Mambella's Effect"
-			current_title_right.text = "Mambella's Effect"
+	if number == 10:
+			if(mandela_effect > 85):
+				current_title_left.text = "Mambella's Effect"
+				current_title_right.text = "Mambella's Effect"
+			else:
+				current_title_left.text = all_page_titles_left[number]
+				current_title_right.text = all_page_titles_left[number]
 			current_content_left.text = all_page_content_left[number]
 			var solution = all_page_content_right[number]
-			current_content_right.text = all_page_content_right[number] #use string.format to make the solution appear different each time
+			var dose1 = randi_range(1,8)
+			var dose2 = randi_range(1,8)
+			var dose3 = randi_range(1,8)
+			var doses = {"dose1":dose1,"dose2" :dose2,"dose3":dose3}
+			solution = solution.format(doses) #use string.format to make the solution appear different each time
+			current_content_right.text = solution
+			
 	else:
 		current_title_left.text = all_page_titles_left[number]
 		current_title_right.text = all_page_titles_left[number]
