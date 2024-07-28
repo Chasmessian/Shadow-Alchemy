@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var all_page_titles_left = PackedStringArray(['Main Menu', 'The Common Mould', "Ozyth's Luck", 'Curse of Echoes', 'Fireflu', 'The Transformed', 'Frozenheart', 'Merlinism', 'Pre-Possession Paranoia', 'Post-Possession Pathos', "Mambella Effect", 'Disease of Devouring', 'Deadvines', 'Lycanthropy', 'Vampirism', 'Zombification'])
+@onready var all_page_titles_left = PackedStringArray(['Main Menu', "About Humans and Fey", "About Desmonds and Intellijellys",'The Common Mould', "Ozyth's Luck", 'Curse of Echoes', 'Fireflu', 'The Transformed', 'Frozenheart', 'Merlinism', 'Pre-Possession Paranoia', 'Post-Possession Pathos', "Mambella Effect", 'Disease of Devouring', 'Deadvines', 'Lycanthropy', 'Vampirism', 'Zombification'])
 @onready var all_page_content_left = PackedStringArray([])
 @onready var current_title_left = $"JournalContainer/VBoxContainer/HBoxContainer/Left Page/Title"
 @onready var current_content_left = $"JournalContainer/VBoxContainer/HBoxContainer/Left Page/Label"
@@ -29,6 +29,13 @@ func load_pages():
 			file_number += 1
 		else:
 			break
+	var humanInfo = FileAccess.open("res://Journal Text/HumanInfo.txt", FileAccess.READ)
+	all_page_content_left.insert(1,humanInfo.get_as_text())
+	humanInfo.close()
+	var demonInfo = FileAccess.open("res://Journal Text/DemonInfo.txt", FileAccess.READ)
+	all_page_content_left.insert(2,demonInfo.get_as_text())
+	demonInfo.close()
+	#Insert race info as pages 2 and 3 on both sides (but 0 indexed)
 
 func load_solutions():
 	var base_path = "res://Journal Text/"
@@ -45,6 +52,13 @@ func load_solutions():
 			file_number += 1
 		else:
 			break
+	var FeyInfo = FileAccess.open("res://Journal Text/FeyInfo.txt", FileAccess.READ)
+	all_page_content_right.insert(1,FeyInfo.get_as_text())
+	FeyInfo.close()
+	var jellyInfo = FileAccess.open("res://Journal Text/IntellijellyfishInfo.txt", FileAccess.READ)
+	all_page_content_right.insert(2,jellyInfo.get_as_text())
+	jellyInfo.close()
+	print(all_page_content_right)
 
 func _on_left_arrow_pressed():
 	change_page(-1)
@@ -81,9 +95,18 @@ func get_page(number): # Whenever we need to update the page I guess? Journal sh
 			solution = solution.format(doses) #use string.format to make the solution appear different each time
 			current_content_right.text = solution
 			
+	elif(number == 1):
+		current_title_left.text = "About Humans"
+		current_title_right.text = "About Fey"
+		current_content_left.text = all_page_content_left[number]
+		current_content_right.text = all_page_content_right[number]
+	elif(number == 2):
+		current_title_left.text = "About Demons"
+		current_title_right.text = "About IntelliJellyfish"
+		current_content_left.text = all_page_content_left[number]
+		current_content_right.text = all_page_content_right[number]
 	else:
 		current_title_left.text = all_page_titles_left[number]
 		current_title_right.text = all_page_titles_left[number]
 		current_content_left.text = all_page_content_left[number]
 		current_content_right.text = all_page_content_right[number]
-	

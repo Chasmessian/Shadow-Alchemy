@@ -1,5 +1,5 @@
 extends Node
-const default = 0.8
+const default = 0.6
 var dialogue = default
 var music = default
 var misc = default
