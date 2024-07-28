@@ -41,3 +41,4 @@ res://Patients/List/Patient M/patient_m.gd
 res://Patients/List/Patient O/patient_o.gd
 res://journal.tscn
 res://UI/JournalScene/Journal/journal.gd
+res://world.tscn
