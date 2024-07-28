@@ -39,3 +39,5 @@ res://Patients/List/Patient K/patient_k.gd
 res://Patients/List/Patient L/patient_l.gd
 res://Patients/List/Patient M/patient_m.gd
 res://Patients/List/Patient O/patient_o.gd
+res://journal.tscn
+res://UI/JournalScene/Journal/journal.gd

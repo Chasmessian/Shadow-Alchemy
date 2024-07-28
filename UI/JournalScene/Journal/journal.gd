@@ -68,9 +68,12 @@ func get_page(number): # Whenever we need to update the page I guess? Journal sh
 	if number == 10 and mandela_effect > 90:
 			current_title_left.text = "Mambella's Effect"
 			current_title_right.text = "Mambella's Effect"
+			current_content_left.text = all_page_content_left[number]
+			var solution = all_page_content_right[number]
+			current_content_right.text = all_page_content_right[number] #use string.format to make the solution appear different each time
 	else:
 		current_title_left.text = all_page_titles_left[number]
 		current_title_right.text = all_page_titles_left[number]
-	current_content_left.text = all_page_content_left[number]
-	current_content_right.text = all_page_content_right[number]
+		current_content_left.text = all_page_content_left[number]
+		current_content_right.text = all_page_content_right[number]
 	
