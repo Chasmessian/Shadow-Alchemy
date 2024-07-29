@@ -1,15 +1,13 @@
-res://UI/JournalScene/Journal/journal.tscn
-res://Theme.tres
-res://Ingredients/Dragongrass/DragonGrass.tres
-res://Ingredients/Base/plant.gdshader
-res://UI/JournalScene/Journal/journal.gd
-res://Journal Text/DemonInfo.txt
-res://Journal Text/FeyInfo.txt
-res://Journal Text/HumanInfo.txt
-res://Journal Text/IntellijellyfishInfo.txt
 res://Patients/List/Patient I/patient_i_convo.tscn
+res://Theme.tres
+res://Ingredients/Base/plant.gdshader
 res://Patients/List/Patient K/patient_k_convo.tscn
 res://Patients/List/Patient N/patient_n_convo.tscn
 res://journal.tscn
 res://world.tscn
-res://Settings.gd
+res://UI/JournalScene/Journal/journal.tscn
+res://UI/JournalScene/Journal/journal.gd
+res://Journal Text/page_solutions_16.txt
+res://Journal Text/page_solutions_10.txt
+res://Journal Text/page_solutions_11.txt
+res://Journal Text/page_solutions_13.txt
