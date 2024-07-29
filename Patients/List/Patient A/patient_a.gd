@@ -6,7 +6,7 @@ func create():
 	stats.curseAge = 3
 	stats.isAdult = true
 	stats.weight = 90
-	curse = vampirism.new()
+	curse = Lycanthropy.new()
 	texture = load("res://Patients/Sprites/wizard2.png")
 	conversationNode = load("res://Patients/List/Patient A/patient_a_convo.tscn")
 	exitDialogue = {

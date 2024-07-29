@@ -6,7 +6,8 @@ func create():
 	stats.curseAge = 10
 	stats.isAdult = true
 	stats.weight = 90
-	curse = vampirism.new()
+	stats.seesThings = true
+	curse = PrePossessionParanoia.new()
 	texture = load("res://Patients/Sprites/demon.png")
 	conversationNode = load("res://Patients/List/Patient N/patient_n_convo.tscn")
 	exitDialogue = {

@@ -1,6 +1,9 @@
 class_name affliction
 var solutionIngredients = []
 func ratePotion(potion, doses, species):
+	for i in range(len(doses)):
+		if(doses[i]==0):
+			doses[i]=1 #minimum of 1 ingredient
 	print("CURING")
 	var pointsEarned = 10
 	var perfect = true

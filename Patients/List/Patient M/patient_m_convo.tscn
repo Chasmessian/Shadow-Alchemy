@@ -26,3 +26,28 @@ response = ["Are you feeling right now?"]
 script = ExtResource("1_5xj8g")
 text = "Anything else I need to know?"
 response = ["I need to know."]
+
+[node name="conversation5" type="Node" parent="conversation4"]
+script = ExtResource("1_5xj8g")
+text = "You good?"
+response = ["You good?"]
+
+[node name="conversation6" type="Node" parent="conversation4/conversation5"]
+script = ExtResource("1_5xj8g")
+text = "ummm..."
+response = ["ummm..."]
+
+[node name="conversation7" type="Node" parent="conversation4/conversation5/conversation6"]
+script = ExtResource("1_5xj8g")
+text = "Stop copying me"
+response = ["Stop copying me"]
+
+[node name="conversation7" type="Node" parent="conversation4/conversation5/conversation6/conversation7"]
+script = ExtResource("1_5xj8g")
+text = "I will stop copying you"
+response = ["I will stop copying you"]
+
+[node name="conversation7" type="Node" parent="conversation4/conversation5/conversation6/conversation7/conversation7"]
+script = ExtResource("1_5xj8g")
+text = "I am an idiot"
+response = ["You are an idiot"]

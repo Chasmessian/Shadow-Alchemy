@@ -6,7 +6,7 @@ func create():
 	stats.curseAge = 10
 	stats.isAdult = true
 	stats.weight = 90
-	curse = vampirism.new()
+	curse = Fireflu.new()
 	texture = load("res://Patients/Sprites/demon.png")
 	conversationNode = load("res://Patients/List/Patient J/patient_j_convo.tscn")
 	particles = load("res://Patients/List/Patient J/flame.tscn")
