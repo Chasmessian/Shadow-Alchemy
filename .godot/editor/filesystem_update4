@@ -11,4 +11,19 @@ res://UI/MainScene/viewport.tscn
 res://Patients/List/Patient J/flame.tscn
 res://UI/MainScene/viewPortPatient.tscn
 res://world.tscn
-res://UI/MixingScene/mixing_slot.gd
+res://journal.tscn
+res://UI/JournalScene/Journal/journal.gd
+res://Journal Text/page_solutions_2.txt
+res://Journal Text/page_solutions_3.txt
+res://Journal Text/page_solutions_4.txt
+res://Journal Text/page_solutions_5.txt
+res://Journal Text/page_solutions_6.txt
+res://Journal Text/page_solutions_7.txt
+res://Journal Text/page_solutions_8.txt
+res://Journal Text/page_solutions_9.txt
+res://Journal Text/page_solutions_10.txt
+res://Journal Text/page_solutions_12.txt
+res://Journal Text/page_solutions_13.txt
+res://Journal Text/page_solutions_14.txt
+res://Journal Text/page_solutions_15.txt
+res://Journal Text/page_solutions_16.txt

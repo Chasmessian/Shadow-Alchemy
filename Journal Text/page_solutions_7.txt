@@ -1,1 +1,2 @@
-One day there will be solutions here.
+FOR ALL CASES:
+To cure, please administer two (2) potatoes IF the patient's age is odd, three (3) if otherwise. Second, please administer two (2) goldweed IF the amount of full days since obtaining the curse is odd, three (3) if otherwise. Lastly, IF the number two (2) is the number two (2) in the current Eon of this Universe, then add two (2) shadow wood.

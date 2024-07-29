@@ -1,1 +1,2 @@
-One day there will be solutions here.
+FOR ALL CASES:
+To cure, please administer between one (1) and four (4) iron plants. Secondly, administer silver leaves equal to the number five (5) minus the number of iron plants in the first slot. Lastly, administer more iron plants in the final slot equal to the amount of silver leaves multipled by two and a half (2.5).
