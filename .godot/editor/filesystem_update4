@@ -1,46 +1,16 @@
 res://Patients/List/Patient I/patient_i_convo.tscn
 res://Theme.tres
+res://Ingredients/Dragongrass/DragonGrass.tres
 res://Ingredients/Base/plant.gdshader
 res://Patients/List/Patient K/patient_k_convo.tscn
 res://Patients/List/Patient N/patient_n_convo.tscn
 res://journal.tscn
 res://world.tscn
 res://UI/JournalScene/Journal/journal.tscn
-res://UI/JournalScene/Journal/journal.gd
-res://Journal Text/page_solutions_16.txt
-res://Journal Text/page_solutions_10.txt
-res://Journal Text/page_solutions_11.txt
-res://Journal Text/page_solutions_13.txt
-res://Patients/Base/Patient.gd
-res://Patients/Base/Species/Human.gd
-res://Patients/Base/Species/Demon.gd
-res://Patients/Base/Species/Fey.gd
-res://Patients/Base/Species/IntelliJellyfish.gd
-res://world.gd
-res://Patients/List/Patient A/patient_a.gd
-res://Patients/List/Patient B/patient_b.gd
-res://Patients/List/Patient C/patient_c.gd
-res://Ingredients/Dragongrass/DragonGrass.tres
-res://Patients/List/Patient D/patient_d.gd
-res://Patients/List/Patient E/patient_e_convo.tscn
-res://Patients/List/Patient E/patient_e.gd
-res://Patients/List/Patient F/patient_f_convo.tscn
-res://Patients/List/Patient F/patient_f.gd
-res://Patients/List/Patient G/patient_g_convo.tscn
-res://Patients/List/Patient G/patient_g.gd
-res://Patients/List/Patient H/patient_h.gd
-res://Patients/List/Patient I/patient_i.gd
-res://Patients/List/Patient J/patient_j.gd
 res://Patients/List/Patient D/patient_d_convo.tscn
-res://Patients/List/Patient K/patient_k.gd
-res://Patients/List/Patient L/patient_l.gd
-res://Patients/List/Patient M/patient_m.gd
-res://Patients/List/Patient N/patient_n.gd
+res://Patients/List/Patient E/patient_e_convo.tscn
+res://Patients/List/Patient F/patient_f_convo.tscn
+res://Patients/List/Patient G/patient_g_convo.tscn
 res://Patients/List/Patient O/patient_o_convo.tscn
-res://Patients/List/Patient O/patient_o.gd
-res://Journal Text/page_content_1.txt
 res://Journal Text/page_solutions_1.txt
-res://Journal Text/DemonInfo.txt
-res://Journal Text/FeyInfo.txt
-res://Journal Text/HumanInfo.txt
-res://Journal Text/IntellijellyfishInfo.txt
+res://Patients/Base/Species/Shadow.gd
