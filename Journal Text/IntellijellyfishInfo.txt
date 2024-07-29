@@ -1,3 +1,5 @@
-PLACEHOLDER INTELLIJELLYFISH INFO
+DESCRIPTION:
+Intellijellyfish are the master species of the Seventh Sea Realm, distinguished from regular jellyfish by their two eyes. They speak with a Sea-thern accent.
 
-ALLERGIC TO HOBGOBLOSSOM, REPLACE WITH IRON
+ALLERGIES:
+All intellijellyfish are allergic to hob goblossom. Iron plants are the proper substitution.

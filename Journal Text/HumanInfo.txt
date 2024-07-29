@@ -1,3 +1,5 @@
-PLACEHOLDER HUMAN INFO
+DESCRIPTION:
+Humans are the master species of the Mortal Realm. Many of them have built huge towers, grown beards, and wear big hats, giving them the power to master the realm's magic.
 
-ALLERGIC TO SHADOWWOOD, REPLACE WITH POTATOS
+ALLERGIES:
+All humans are allergic to shadow wood. Potatoes are the proper substitution.

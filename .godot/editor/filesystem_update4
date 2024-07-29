@@ -2,6 +2,7 @@ res://Patients/List/Patient I/patient_i_convo.tscn
 res://Theme.tres
 res://Ingredients/Dragongrass/DragonGrass.tres
 res://Ingredients/Base/plant.gdshader
+res://Journal Text/page_content_1.txt
 res://Patients/List/Patient K/patient_k_convo.tscn
 res://Patients/List/Patient N/patient_n_convo.tscn
 res://journal.tscn
@@ -12,5 +13,10 @@ res://Patients/List/Patient E/patient_e_convo.tscn
 res://Patients/List/Patient F/patient_f_convo.tscn
 res://Patients/List/Patient G/patient_g_convo.tscn
 res://Patients/List/Patient O/patient_o_convo.tscn
-res://Journal Text/page_solutions_1.txt
-res://Patients/Base/Species/Shadow.gd
+res://Journal Text/HumanInfo.txt
+res://Journal Text/FeyInfo.txt
+res://Journal Text/DemonInfo.txt
+res://Journal Text/IntellijellyfishInfo.txt
+res://Journal Text/page_content_16.txt
+res://Journal Text/page_content_15.txt
+res://Journal Text/page_content_14.txt

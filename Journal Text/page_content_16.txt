@@ -1,5 +1,5 @@
 ORIGIN
-The curse of the undead. The curse is spread to the uninfected after being bitten by a zombie, while alive or while recently deceased. It is worth mentioning that those who have been zombified are merely reanimated corpses, and are no longer their former selves.
+The curse of the undead. The curse is spread to the uninfected after being bitten by a zombie, while alive or while recently deceased. Those who have been zombified are merely reanimated corpses, and are no longer their former selves.
 
 SYMPTOMS
-Symptoms typically begin immediately after initial contact. For a living victim, there will be a sudden onset of fatigue which will gradually increase for about one to two days, after which they will fall prone and die. After about twelve hours, the cursed infection will finally take hold and begin the reanimation of the body’s organs, and the corpse will do everything in its power to spread the curse further.
+Symptoms begin immediately after initial contact. For a living victim, there will be a sudden onset of fatigue which will gradually increase for about one to two days, after which they will fall prone and die. After about twelve hours, the cursed infection will finally take hold and begin the reanimation of the body’s organs, and the corpse will do everything in its power to spread the curse further.

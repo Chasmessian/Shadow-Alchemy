@@ -1,3 +1,5 @@
-PLACEHOLDER DEMON INFO
+DESCRIPTION:
+Demons are the master species of the Realm Below. They wear dark, brooding clothing and have red skin. They also have little horns.
 
-ALLERGIC TO POTATOS, REPLACE WITH SHADOW WOOD
+ALLERGIES:
+All demons are allergic to potatoes. Shadow wood is the proper substitution.

@@ -1,3 +1,5 @@
-PLACE HOLDER FEY INFO
+DESCRIPTION:
+Fey are the master species of the Realm Above. They have cute little bluish rabbitlike faces and carry around a little candle for protection. 
 
-ALLERGIC TO IRON, REPLACE WITH HOBGOBLOSSOM
+ALLERGIES:
+All fey are allergic to iron plants. The hob goblossom is the proper substitution.
