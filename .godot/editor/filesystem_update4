@@ -40,3 +40,7 @@ res://Patients/List/Patient O/patient_o_convo.tscn
 res://Patients/List/Patient O/patient_o.gd
 res://Journal Text/page_content_1.txt
 res://Journal Text/page_solutions_1.txt
+res://Journal Text/DemonInfo.txt
+res://Journal Text/FeyInfo.txt
+res://Journal Text/HumanInfo.txt
+res://Journal Text/IntellijellyfishInfo.txt
