@@ -12,6 +12,7 @@ func create():
 	conversationNode = load("res://Patients/List/Patient M/patient_m_convo.tscn")
 	exitDialogue = {
 		"perfect" : "Thank you, I feel much better",
-		"decent" : "Thank you... I guess",
-		"failed" : "CoE."
+		"decent" : "...",
+		"failed" : "...", 
+		"allergic" : "..."
 	}

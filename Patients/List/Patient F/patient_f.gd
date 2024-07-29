@@ -10,7 +10,8 @@ func create():
 	texture = load("res://Patients/Sprites/intellijellyfish1.png")
 	conversationNode = load("res://Patients/List/Patient F/patient_f_convo.tscn")
 	exitDialogue = {
-		"perfect" : "Thank you, I feel much better",
-		"decent" : "Thank you... I guess",
-		"failed" : "Zombification."
+		"perfect" : "I was... a zombie?",
+		"decent" : "I... feel better... ish",
+		"failed" : "I think I'm going to go sleep this off", 
+		"allergic" : "I'm turning blue"
 	}

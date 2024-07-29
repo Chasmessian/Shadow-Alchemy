@@ -12,7 +12,8 @@ func create():
 	particles = load("res://Patients/List/Patient J/flame.tscn")
 	particlesGetCured = true
 	exitDialogue = {
-		"perfect" : "Thank you, I feel much better",
-		"decent" : "Thank you... I guess",
-		"failed" : "Fireflu."
+		"perfect" : "Woah, thank you so much",
+		"decent" : "FEELS SLIGHTLY COLDER, AAAAAAAAAAHHHH",
+		"failed" : "AAAAAHHHHHH",
+		"allergic" : "AAAAAHHHH, not my veins burn too"
 	}

@@ -10,7 +10,8 @@ func create():
 	texture = load("res://Patients/Sprites/Fey1.png")
 	conversationNode = load("res://Patients/List/Patient B/patient_b_convo.tscn")
 	exitDialogue = {
-		"perfect" : "Thank you, I feel much better",
+		"perfect" : "Oh wow, I just realized dragons don't have hair",
 		"decent" : "Thank you... I guess",
-		"failed" : "Mambella Effect."
+		"failed" : "Thanks, dentist",
+		"allergic" : "I'm not sure my body agrees with this stuff"
 	}

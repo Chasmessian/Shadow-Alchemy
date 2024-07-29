@@ -45,7 +45,9 @@ func closeMenu():
 func tryPotion(potion):
 	if(patient==null):
 		return
-	var patientPoints = patient.ratePotion(potion)
+	var rating = patient.ratePotion(potion)
+	var patientPoints = rating[0]
+	var allergic = rating[1]
 	if(scoreTracker.tutorial):
 		scoreTracker.tutorial = false
 		World.gameInProgress = true
@@ -59,6 +61,8 @@ func tryPotion(potion):
 		status = "failed"
 	elif(percentage==1):
 		status = "perfect"
+	if(allergic):
+		status = "allergic"
 	patientRating.emit(status)
 	print("SCORE: " + str(scoreTracker.points))
 	viewport.instance.patientLeave()

@@ -13,5 +13,6 @@ func create():
 	exitDialogue = {
 		"perfect" : "Thank you, I feel much better",
 		"decent" : "Thank you... I guess",
-		"failed" : "PPP."
+		"failed" : "I still see... nevermind", 
+		"allergic" : "this is painful"
 	}

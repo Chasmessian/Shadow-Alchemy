@@ -12,5 +12,6 @@ func create():
 	exitDialogue = {
 		"perfect" : "Oh hey. My cravings have gone. Thanks.",
 		"decent" : "You sure this'll work?",
-		"failed" : "Werewolf."
+		"failed" : "I can still feel the moon", 
+		"allergic" : "I think I'm having a bad reaction to something in there."
 	}

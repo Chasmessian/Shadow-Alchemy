@@ -12,7 +12,7 @@ var particlesGetCured = false
 var exitDialogue = {
 	"perfect" : "perfect", 
 	"decent" : "decent",
-	"failed" : "failed"
+	"failed" : "failed", 
 }
 func _init():
 	create()	
@@ -27,6 +27,7 @@ func ratePotion(potion):
 		return
 	points += curse.cure(potion, stats, species)
 	#then add the rating from the species
-	points += species.ratePotion(potion)
+	var speciesRating = species.ratePotion(potion)
+	points += speciesRating[0]
 	print(points)
-	return points
+	return [points, speciesRating[1]]

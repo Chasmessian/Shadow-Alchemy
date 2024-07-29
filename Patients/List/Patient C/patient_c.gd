@@ -12,7 +12,8 @@ func create():
 	conversationNode = load("res://Patients/List/Patient C/patient_c_convo.tscn")
 	vocals = load("res://Patients/Base/Species/sounds/lamppost.ogg")
 	exitDialogue = {
-		"perfect" : "Thank you, I feel much better",
-		"decent" : "Thank you... I guess",
-		"failed" : "The Transformed."
+		"perfect" : "Oh wow, I'm feel myself slowly changing back",
+		"decent" : "I have a bit more feeling, but not much",
+		"failed" : "LAMPPOST", 
+		"allergic" : "I'm not sure I can have this"
 	}

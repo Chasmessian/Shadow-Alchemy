@@ -8,11 +8,12 @@ extends Node2D
 @onready var current_title_right = $"JournalContainer/VBoxContainer/HBoxContainer/Right Page/Title"
 @onready var current_content_right = $"JournalContainer/VBoxContainer/HBoxContainer/Right Page/Label"
 @onready var page_number = 0
-
+static var lastPageOpened = 0
 func _ready():
 	load_pages()
 	load_solutions()
-	get_page(0)
+	get_page(lastPageOpened)
+	page_number = lastPageOpened
 
 func load_pages():
 	var base_path = "res://Journal Text/"
@@ -65,7 +66,6 @@ func _on_left_arrow_pressed():
 
 func _on_right_arrow_pressed():
 	change_page(1)
-
 func _on_exit_journal_2_pressed():
 	World.instance.closeMenu()
 
@@ -75,6 +75,7 @@ func _on_exit_journal_pressed():
 func change_page(amount): #Just for changing the page
 	page_number += amount
 	page_number = clamp(page_number, 0, all_page_titles_left.size()-1)
+	lastPageOpened = page_number
 	get_page(page_number)
 
 func get_page(number): # Whenever we need to update the page I guess? Journal should always start at page 0.
