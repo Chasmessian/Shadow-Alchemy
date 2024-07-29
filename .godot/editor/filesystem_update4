@@ -38,3 +38,5 @@ res://Patients/List/Patient M/patient_m.gd
 res://Patients/List/Patient N/patient_n.gd
 res://Patients/List/Patient O/patient_o_convo.tscn
 res://Patients/List/Patient O/patient_o.gd
+res://Journal Text/page_content_1.txt
+res://Journal Text/page_solutions_1.txt
