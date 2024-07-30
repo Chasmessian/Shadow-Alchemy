@@ -55,7 +55,7 @@ func tryPotion(potion):
 	else:
 		scoreTracker.points += patientPoints
 	var percentage = float(patientPoints)/float(patientMaxScore)
-	print(percentage)
+	#print(percentage)
 	var status = "decent"
 	if(percentage<.3):
 		status = "failed"
@@ -64,7 +64,7 @@ func tryPotion(potion):
 	if(allergic):
 		status = "allergic"
 	patientRating.emit(status)
-	print("SCORE: " + str(scoreTracker.points))
+	#print("SCORE: " + str(scoreTracker.points))
 	viewport.instance.patientLeave()
 	viewport.instance.patientLeft.connect(loadPatient,CONNECT_ONE_SHOT)
 	ConversationMaster.instance.exitDialogue(status)

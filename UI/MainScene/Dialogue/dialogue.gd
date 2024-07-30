@@ -31,7 +31,7 @@ func start_dialogue():
 	current_message = 0
 	display = ""
 	current_char = 0
-	print(messages)
+	#print(messages)
 		
 	$next_char.set_wait_time(typing_speed)
 	$next_char.start()
@@ -82,7 +82,7 @@ func loadDialogue(messageList):
 	start_dialogue()
 	
 func loadConversation(convo):
-	print("LOADING ")
+	#print("LOADING ")
 	for i in range($ConversationHolder.get_child_count()):
 		$ConversationHolder.get_child(i).queue_free()
 	var convoInstance = convo.instantiate()

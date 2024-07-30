@@ -4,7 +4,7 @@ func ratePotion(potion, doses, species):
 	for i in range(len(doses)):
 		if(doses[i]==0):
 			doses[i]=1 #minimum of 1 ingredient
-	print("CURING")
+	#print("CURING")
 	var pointsEarned = 10
 	var perfect = true
 	#10 points possible
@@ -24,7 +24,7 @@ func ratePotion(potion, doses, species):
 			perfect = false
 	if(!perfect):
 		pointsEarned-=1
-	print(pointsEarned)
+	#print(pointsEarned)
 		
 	return pointsEarned
 	#will have if statements to see if potion matches the requirements

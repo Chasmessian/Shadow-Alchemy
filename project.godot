@@ -10,13 +10,17 @@ config_version=5
 
 [application]
 
-config/name="Shadow Alchemy"
+config/name="Curse Cured"
 run/main_scene="res://UI/StartMenu/StartScreen.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 boot_splash/show_image=false
 boot_splash/fullsize=false
 boot_splash/use_filter=false
-config/icon="res://icon.svg"
+config/icon="res://cursedLogo.png"
+
+[audio]
+
+driver/output_latency.web=90
 
 [autoload]
 

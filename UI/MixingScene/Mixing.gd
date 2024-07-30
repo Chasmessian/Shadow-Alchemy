@@ -115,8 +115,8 @@ func submit():
 		World.instance.closeMenu())
 	for i in ingredientSlots:
 		i.delete()
-		print(i.storedIngredient)
-		print(i.currentAmount)
+		#print(i.storedIngredient)
+		#print(i.currentAmount)
 	var potion = Potion.new(ingredients, doses)
-	print("TRYING IT OUT")
+	#print("TRYING IT OUT")
 	World.instance.tryPotion(potion)

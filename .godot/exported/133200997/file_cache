@@ -1,0 +1,88 @@
+res://Afflictions/Base/affliction.tscn::2dff067b2cceb0d666864d11b6701516::1721841875::res://.godot/exported/133200997/export-6fdd91af44b892c0420ff482d1571d46-affliction.scn
+res://Ingredients/Base/ingredient.tscn::4e8a4adb4d3561c3e2755fd1b045b8ec::1721687078::res://.godot/exported/133200997/export-dd525c1c928d3a13f0fc5271b9327a8f-ingredient.scn
+res://Ingredients/Base/plant.tscn::b8fec337064338969d718dabc956cb1e::1721682576::res://.godot/exported/133200997/export-a51e7783ad222372ec1b442f501be088-plant.scn
+res://Ingredients/Base/waterlevel.tscn::2a3e5fd221c1f29d41b4e2a095a37118::1721682576::res://.godot/exported/133200997/export-7987338fb5009ddc89e9756cb52423c4-waterlevel.scn
+res://Ingredients/Batwort/Batwort.tres::406d978a3b8b69954e3a18e44d69b57a::1721693028::res://.godot/exported/133200997/export-b92a93d5110cb6597203c4ea86823380-Batwort.res
+res://Ingredients/Batwort/Batwort.tscn::b9538f0eecd948ce33a78b654e6ad105::1721698308::res://.godot/exported/133200997/export-70f400295a3064903d7bd905d26dc7cb-Batwort.scn
+res://Ingredients/Batwort/batwortPlant.tscn::68633c88aaa288e67a74181372fb6d56::1721854666::res://.godot/exported/133200997/export-b8c7dd3aaddb90ab2a9a31001287ab14-batwortPlant.scn
+res://Ingredients/blood rose/BloodRose.tres::0d3412995947cc3aaaa13caa14bcee88::1721693104::res://.godot/exported/133200997/export-da19e8fd6e807e811f16c512442ae7f5-BloodRose.res
+res://Ingredients/blood rose/BloodRose.tscn::71921a3231d022bff48b2539aac36063::1721698308::res://.godot/exported/133200997/export-7c8536e6df89902b10494bac96ff8f60-BloodRose.scn
+res://Ingredients/blood rose/blood_rose_plant.tscn::8003c09c8d9cffbd7877e754f667a708::1721682637::res://.godot/exported/133200997/export-df7d5f2dd75e445a2452553a05310c98-blood_rose_plant.scn
+res://Ingredients/Dragongrass/DragonGrass.tres::60d544084db89f804004c5e991d4b0d8::1722286740::res://.godot/exported/133200997/export-6cb1ac4e182689c391ccb5eb18f6245c-DragonGrass.res
+res://Ingredients/Dragongrass/DragonGrass.tscn::01403cff57b7d0b6d03d579b77e82433::1721698308::res://.godot/exported/133200997/export-cb9627dc4bf3a5d176a24a313a5c29aa-DragonGrass.scn
+res://Ingredients/Dragongrass/dragon_grass_plant.tscn::c3bfbee6545a905a9ddcbf78b20f27b2::1721698309::res://.godot/exported/133200997/export-d07be05a341a19dbaf244f7d0173a319-dragon_grass_plant.scn
+res://Ingredients/garlic nettle/garlicNettle.tres::ff54066fca6842086010063b78f61b12::1721698014::res://.godot/exported/133200997/export-cd4cb0f1381b4e7eabcb835bd1996049-garlicNettle.res
+res://Ingredients/garlic nettle/GarlicNettle.tscn::7ce9ea523c50c8fb3eca415ff91e78b1::1721698309::res://.godot/exported/133200997/export-8c42b28000b6e934714805ba01fa9c87-GarlicNettle.scn
+res://Ingredients/garlic nettle/garlic_nettle_plant.tscn::bc3a05340e8a9757966e93f48f8210ca::1721698309::res://.godot/exported/133200997/export-2945f7282e615fe84eccf0e55225c3f5-garlic_nettle_plant.scn
+res://Ingredients/goldweed/GoldWeed.tres::3cc519097d996c2f13e8edfbd8f80620::1721693197::res://.godot/exported/133200997/export-27e8fe30b427e3ef4aa999ee51d6530d-GoldWeed.res
+res://Ingredients/goldweed/GoldWeed.tscn::8935d53a5b44058702b7ed72183512d9::1721698308::res://.godot/exported/133200997/export-96a69e92ec89517f66b521bec021a0d7-GoldWeed.scn
+res://Ingredients/goldweed/goldweed_plant.tscn::8dccfb002efc0fe0b70864c99be7f308::1721682576::res://.godot/exported/133200997/export-8d6e30a7400c5bae113b2f98c9b583ac-goldweed_plant.scn
+res://Ingredients/harpy tongue/Harpy Tongue.tres::09252b6df4d24daf54a877e7233caa4b::1721698069::res://.godot/exported/133200997/export-1432ac86fb021862668c79f5e4ff8388-Harpy Tongue.res
+res://Ingredients/harpy tongue/Harpy Tongue.tscn::216c13020ad0fe6adadd72de74694b91::1721684285::res://.godot/exported/133200997/export-1f34f6dabe82323892a82a20fbfd1cc3-Harpy Tongue.scn
+res://Ingredients/harpy tongue/harpy_tongue_plant.tscn::71b105f319417f0309795858c2e1498c::1721686718::res://.godot/exported/133200997/export-e9448fa8d1e92ab13b941c9179f632e4-harpy_tongue_plant.scn
+res://Ingredients/Hob Goblossom/Hob Goblossom.tscn::637900f2adbbfbe9739b915fe25c7ffd::1721684253::res://.godot/exported/133200997/export-8eb38870d6549c2ab14a0f2cf8c0377f-Hob Goblossom.scn
+res://Ingredients/Hob Goblossom/HobGoblossom.tres::0a95b8f8234a1d0b1908a54618656676::1721838205::res://.godot/exported/133200997/export-e194f502bcf149ad056548011e5bd1e7-HobGoblossom.res
+res://Ingredients/Hob Goblossom/hob_goblossom_plant.tscn::5ef4356116459182f59352a728cb7b9e::1721687893::res://.godot/exported/133200997/export-99ac357fbdd6699060282b6630912dc7-hob_goblossom_plant.scn
+res://Ingredients/Iron/Iron.tres::6f839e4f5681b4d345f587df000fe78c::1721698126::res://.godot/exported/133200997/export-811f2aa5d8110165e5e531d7cfce56c8-Iron.res
+res://Ingredients/Iron/Iron.tscn::5629ba4ce18dfb2adbf83e9d3370ecff::1721684211::res://.godot/exported/133200997/export-56c02930a250611610a3e05e56de9caf-Iron.scn
+res://Ingredients/Iron/iron_plant.tscn::b876fc40118cad3ca91bbba6298903d3::1721686671::res://.godot/exported/133200997/export-9da354f0234d8ad649e3d67c9051535a-iron_plant.scn
+res://Ingredients/Northern Fang/northern fang.tres::489156d9bfbd84818974b55af357e4b6::1721842453::res://.godot/exported/133200997/export-c9989e50f7d721219417d669bc6b38b2-northern fang.res
+res://Ingredients/Northern Fang/NorthernFang.tscn::d4502056d04ccc88cc0c83b8935e8daa::1721843088::res://.godot/exported/133200997/export-d5b9848609b9fa40a6eb52993235188e-NorthernFang.scn
+res://Ingredients/Northern Fang/northern_fang_plant.tscn::acbcbd5dd59a9199654426ca76541d8c::1721843088::res://.godot/exported/133200997/export-31281d4a15c2a9a86513c9cb8b8d272f-northern_fang_plant.scn
+res://Ingredients/potato/potato.tres::67360b849a8a44c5b42dbba201b8ed8e::1721698181::res://.godot/exported/133200997/export-7d24c76ee43cc4f29cfbd0dbeed55ed4-potato.res
+res://Ingredients/potato/Potato.tscn::e0467fcf7e9330cb00f45c7e269a80b3::1721684120::res://.godot/exported/133200997/export-d5059107125ac2c5068c6ad354d4fcf0-Potato.scn
+res://Ingredients/potato/potato_plant.tscn::690d4d379bf06525da05bf17ded7fdc9::1721841876::res://.godot/exported/133200997/export-007e8835bf341466ec5cade4cb106a3c-potato_plant.scn
+res://Ingredients/ShadowWood/shadow wood.tres::3440f22a982fb8b3bf4ebb79966906bf::1721698210::res://.godot/exported/133200997/export-3b6e31949f5b5c6a82d65ebca78ca0b3-shadow wood.res
+res://Ingredients/ShadowWood/shadow_wood.tscn::a4074fd798d585b40836c7a29214039e::1721684076::res://.godot/exported/133200997/export-cb99a694125b69bf5d124c9ae67950ad-shadow_wood.scn
+res://Ingredients/ShadowWood/shadow_wood_plant.tscn::16d7f2998678b3f17146f68c30f12099::1721686921::res://.godot/exported/133200997/export-2fe93a91df15ab7e77dc7f0ca2f405fe-shadow_wood_plant.scn
+res://Ingredients/silverleaf/silverleaf.tres::c257070fd0daa6aa2b6e601f3bcd90bc::1721698230::res://.godot/exported/133200997/export-5e813cd9e9d175533ca3b9fcb3b49058-silverleaf.res
+res://Ingredients/silverleaf/silverleaf.tscn::cbfa017b5d0babe0f33f6abce08c7e4b::1721684015::res://.godot/exported/133200997/export-be13149a2eead80fe368fa525d6e9bd2-silverleaf.scn
+res://Ingredients/silverleaf/silverleaf_plant.tscn::79652f81e2f7aa9981ca5f4c29cde8cf::1721686912::res://.godot/exported/133200997/export-59bebcd9746e3434357c7d7ab3a87cdc-silverleaf_plant.scn
+res://Patients/Base/Patient.tscn::75b18fddc77d006317d368744c69106c::1721966441::res://.godot/exported/133200997/export-1d0458ff1d2bab3ff80ee8c1da49490c-Patient.scn
+res://Patients/List/Patient1/patient1Convo.tscn::a6393616f741dd6e6e1997d16f0030be::1722053451::res://.godot/exported/133200997/export-57d26ebe7445932d22b1c31eabc6a854-patient1Convo.scn
+res://Patients/List/Patient2/patient2Convo.tscn::eae9f7e1020c018514a1ff05f6733f56::1722053451::res://.godot/exported/133200997/export-91d967bd9bf6125efdaf6d8a029b381c-patient2Convo.scn
+res://Patients/List/Patient A/patient_a_convo.tscn::19b4e17d7f5d660c18f4ad6dcb40b38c::1722119996::res://.godot/exported/133200997/export-dac7661cf9032df8d62ac384ed28161a-patient_a_convo.scn
+res://Patients/List/Patient B/patient_b_convo.tscn::dc25250d64cf5f465c01e4552ae79f4a::1722122376::res://.godot/exported/133200997/export-c587e2f74a1c7563533c42b4f76d832a-patient_b_convo.scn
+res://Patients/List/Patient C/patient_c_convo.tscn::9892a7c0b8d6e7c5b2f737104ce46842::1722050079::res://.godot/exported/133200997/export-871c970afe0873f75481d9775ee68828-patient_c_convo.scn
+res://Patients/List/Patient D/patient_d_convo.tscn::fe37a20f406c917d07454ee8725fabec::1722287124::res://.godot/exported/133200997/export-cf46b1e9800b31a5de1250d217485d65-patient_d_convo.scn
+res://Patients/List/Patient E/patient_e_convo.tscn::23df4510fcb786f006d017f4243b8d52::1722287124::res://.godot/exported/133200997/export-18c7a4f7136880298fa746df729a9d71-patient_e_convo.scn
+res://Patients/List/Patient F/patient_f_convo.tscn::5cd7c25507721f878efcf6d32c8a88d8::1722287124::res://.godot/exported/133200997/export-b55f9c7912be47a21847f97f098076ac-patient_f_convo.scn
+res://Patients/List/Patient G/patient_g_convo.tscn::824e7e1b107204b3a0ecf330f72e3edc::1722287124::res://.godot/exported/133200997/export-a36461c62e54c3cf7cd586f9da18b0f2-patient_g_convo.scn
+res://Patients/List/Patient H/patient_h_convo.tscn::2478b1a8ad5300f433d0029731f82fa9::1722122376::res://.godot/exported/133200997/export-fac62d56eb8803bb0ffa0ad867e62e59-patient_h_convo.scn
+res://Patients/List/Patient I/patient_i_convo.tscn::b3bae93fed9d0132db62ec679fb50aed::1722287124::res://.godot/exported/133200997/export-17719dabdea62d6f9e58e89dd726b40c-patient_i_convo.scn
+res://Patients/List/Patient J/flame.tscn::ca6829c23a3f368b60532add2e6e9f54::1722122376::res://.godot/exported/133200997/export-a565de62aebc4a72be6ee7b9601bafad-flame.scn
+res://Patients/List/Patient J/patient_j_convo.tscn::f3ae1cf56e2e30500243cce519b01e22::1722050079::res://.godot/exported/133200997/export-1e56d25829a4a88441af0d0691ee220c-patient_j_convo.scn
+res://Patients/List/Patient K/patient_k_convo.tscn::12225c0bb7d13ba36ba8cc74e5cfff38::1722287124::res://.godot/exported/133200997/export-bc6c8aa12cf66b08ed804acbc9ab21d8-patient_k_convo.scn
+res://Patients/List/Patient L/patient_l_convo.tscn::db11c719b833ddccc4effc94d3180ae8::1722122376::res://.godot/exported/133200997/export-e053ca32986af13aafaa7a461c3c5180-patient_l_convo.scn
+res://Patients/List/Patient M/patient_m_convo.tscn::a93eafa3238b3cdf793ce126200f8ad8::1722122376::res://.godot/exported/133200997/export-3309c6b5818be7d9930141a7f7d4d258-patient_m_convo.scn
+res://Patients/List/Patient N/patient_n_convo.tscn::0317e0c129ddba7cd34cf7cb87da8432::1722287124::res://.godot/exported/133200997/export-a75647808fbc4313f04794a3a1e0e3cc-patient_n_convo.scn
+res://Patients/List/Patient O/patient_o_convo.tscn::b8018e76bbe8f03e7f9456dc0cb200c1::1722287124::res://.godot/exported/133200997/export-88714f6147027deffc0bca9d873101e5-patient_o_convo.scn
+res://Patients/tutorialShadow/tutorialConversation.tscn::06a961cf660c00e5b7acafd249b5c370::1722053451::res://.godot/exported/133200997/export-85f9b2315e8721278aebf3d361673c58-tutorialConversation.scn
+res://UI/End Scene/endscene.tscn::8803f7b792dfdf3a1dcae69a3333bb10::1721966458::res://.godot/exported/133200997/export-afb0748e8af571e97a967f139febadbc-endscene.scn
+res://UI/Garden/Garden Pot.tscn::4539325d36c67c87f8d603aea69e292a::1722122376::res://.godot/exported/133200997/export-f6bda12a946f031e3efed0447e462b8c-Garden Pot.scn
+res://UI/Garden/garden.tscn::a9b34d74a169126176aa63066ab9057e::1722122375::res://.godot/exported/133200997/export-f66b46a8c11a37d4ff589814ed3dfc3e-garden.scn
+res://UI/JournalScene/Journal/journal.tscn::f2f3bb97540218a95d638069e2ba2818::1722287124::res://.godot/exported/133200997/export-b3a668278fa2b2a245543c721c0a00e9-journal.scn
+res://UI/MainScene/Dialogue/dialogue.tscn::64b040f239132c9d755a5914b774a9fb::1722053451::res://.godot/exported/133200997/export-da7fbb0d4ccda48bbea0efc5ce9e4ceb-dialogue.scn
+res://UI/MainScene/Dialogue/speech_bubble.tscn::b3adacb3667c356345ca7a45330a56ef::1722053451::res://.godot/exported/133200997/export-797d3c1824d1c393d4b87d1e7021d553-speech_bubble.scn
+res://UI/MainScene/Side Dialogue Buttons/conversation.tscn::480259c98d116a57e0037df1e3b6d8fa::1721956302::res://.godot/exported/133200997/export-d2f241f02055968ae535f8bbdcced085-conversation.scn
+res://UI/MainScene/Side Dialogue Buttons/Question Button.tscn::b13253db96f7ac9ffe6125784d0c4006::1721956302::res://.godot/exported/133200997/export-1d91bc18692136efd73925039ac1b0c1-Question Button.scn
+res://UI/MainScene/viewport.tscn::af471161dd286be175e8f54f73e3639f::1722122376::res://.godot/exported/133200997/export-3af3c1fa25aace83483295dd819d687d-viewport.scn
+res://UI/MainScene/viewPortPatient.tscn::2a6a17fa54075e9ee1bd4c8b6c117d79::1722122376::res://.godot/exported/133200997/export-e781226dd1fb7615ea9cd03539505cd3-viewPortPatient.scn
+res://UI/MixingScene/draggedItem.tscn::490cf3491a2844b028eccac28deea9dd::1722023098::res://.godot/exported/133200997/export-79b037c6afe1074a15f0279d44a2d5ec-draggedItem.scn
+res://UI/MixingScene/itemSlot.tscn::5610ad96d434dfe5c5ce61fb20f79d83::1721843088::res://.godot/exported/133200997/export-2e9a8813338a0e4f9d892189d9b01161-itemSlot.scn
+res://UI/MixingScene/Mixing.tscn::8cc30880e53a63df94c9e3c6be5d1903::1722122375::res://.godot/exported/133200997/export-e62c50b9481ab3a74922a858c6bfc374-Mixing.scn
+res://UI/MixingScene/mixing_slot.tscn::0ef9f76b760f59549e8a4b1db8a5a064::1722122375::res://.godot/exported/133200997/export-4c961caf8d43a1b9ab01352e638fe6f7-mixing_slot.scn
+res://UI/MixingScene/spacing.tscn::053aefccf894df7503320ee5ee4eaa11::1721766628::res://.godot/exported/133200997/export-eff8a3a603feb993a35cf8e8fde2d4ff-spacing.scn
+res://UI/Seed Selection/Seed Selection.tscn::f9cd2182e24e81bf627291572c33c6e5::1722028175::res://.godot/exported/133200997/export-19fd46c1d8aac60b6366494129f586af-Seed Selection.scn
+res://UI/Seed Selection/seedSlot.tscn::5f29463d053fa2753e05f6d8fae7f169::1721851835::res://.godot/exported/133200997/export-7a86805abeca64a039f27ac1358867f2-seedSlot.scn
+res://UI/Settings/settingsMenu.tscn::628bb57383273738e9dbb6c0435ad21f::1722122375::res://.godot/exported/133200997/export-c76d1caddb42f2fed265bbac77756199-settingsMenu.scn
+res://UI/StartMenu/StartScreen.tscn::57d90666814aa27dbd8cfff5c727a191::1722122375::res://.godot/exported/133200997/export-d085ec374f1b5629009aebce74ceb365-StartScreen.scn
+res://fade.tscn::0de83c0f810634baedd9199a5429a448::1721935326::res://.godot/exported/133200997/export-96583c0abd231bb29e165ea5cfad7be5-fade.scn
+res://journal.tscn::1713c06b9a1d9e5c507a2c18a894391c::1722287124::res://.godot/exported/133200997/export-d22b380fc07e72a5c8fefdfc3ac6ffea-journal.scn
+res://LowerUIButtons.tscn::3ff9185005adf10974b7b0e9b4ad384f::1722092764::res://.godot/exported/133200997/export-6792933d816cfdb6c8585d8282b68e27-LowerUIButtons.scn
+res://music.tscn::58d8d9eec538f917c37b2294e32d913f::1722092763::res://.godot/exported/133200997/export-bb6f876339c046e4ad1ca955812acf1e-music.scn
+res://Potion.tscn::fd08c00f19b0b00083e2135c50764881::1721790944::res://.godot/exported/133200997/export-f64a588652796ac4604e3c653c5db7ad-Potion.scn
+res://Question Container.tscn::96a5c02e439987948e351d636fe1850b::1722023098::res://.godot/exported/133200997/export-9a760a6008f41be41940d203c1e00002-Question Container.scn
+res://Theme.tres::02a9318d5b1235ede22a1f25d3487708::1722286740::res://.godot/exported/133200997/export-4df2cb670c391688f097c02f900b548e-Theme.res
+res://UpperQuestions.tscn::9019f74417023317ff3fd419612611a4::1722287444::res://.godot/exported/133200997/export-4922d9d02492a3ff598a5ce6037d6424-UpperQuestions.scn
+res://world.tscn::e9852f69953f78cb57be4a63d0249541::1722287124::res://.godot/exported/133200997/export-76e0adcbc83681695885bae615f516ae-world.scn

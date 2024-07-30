@@ -15,7 +15,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 2
 size_flags_stretch_ratio = 0.01
-text = "⮐"
+text = "Back"
 
 [node name="Control" type="Control" parent="VBoxContainer"]
 layout_mode = 2

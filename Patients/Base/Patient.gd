@@ -29,5 +29,5 @@ func ratePotion(potion):
 	#then add the rating from the species
 	var speciesRating = species.ratePotion(potion)
 	points += speciesRating[0]
-	print(points)
+	#print(points)
 	return [points, speciesRating[1]]

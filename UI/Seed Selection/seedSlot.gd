@@ -3,7 +3,7 @@ extends VBoxContainer
 signal selected(ingred)
 func _on_gui_input(event):
 	if(Input.is_action_just_pressed("click")):
-		print("E")
+		#print("E")
 		selected.emit(self)
 		$TextureRect.material.set_shader_parameter("line_color", Vector4(1,0,0,1))
 func _ready():

@@ -15,7 +15,7 @@ func dialogueVolumeChanged(value):
 func musicVolumeChanged(value):
 	music = value
 	Music.volume_db = getMusicVolume()
-	print(Music.volume_db)
+	#print(Music.volume_db)
 	musicChanged.emit()
 func miscVolumeChanged(value):
 	misc = value

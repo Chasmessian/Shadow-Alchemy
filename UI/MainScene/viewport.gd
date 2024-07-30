@@ -18,7 +18,7 @@ func bringOutPatient(newPatient):
 	patient.flipAtEnd = true
 	#patient.flip()
 	patient.arrived.connect(func(): 
-		print("ARRIVED OUT")
+		#print("ARRIVED OUT")
 		viewport.patientIn = true
 		#print("PATIENT IS IN? THE ANSWER IS " + str(patientIn))
 		patientArrived.emit()

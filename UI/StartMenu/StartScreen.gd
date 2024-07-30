@@ -32,7 +32,7 @@ func playAnimation():
 
 
 func godotFell():
-	print("fell")
+	#print("fell")
 	$Godot.scaleTo(2,1)
 	$Godot.moveTo($Center.position,1)
 	

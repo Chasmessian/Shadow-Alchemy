@@ -44,7 +44,7 @@ func loadPreviousNode():
 	loadNode(currentNode.get_parent(), true)
 	
 func loadQuestions(convoNode):
-	print("WANTINfuG TO LOAD QUESTIONS")
+	#print("WANTINfuG TO LOAD QUESTIONS")
 	QuestionContainer.instance.loadQuestions(convoNode)
 	if(!QuestionContainer.instance.buttonClicked.is_connected(manageButtonPress)):
 		QuestionContainer.instance.buttonClicked.connect(manageButtonPress)	
