@@ -44,24 +44,24 @@ res://Patients/List/Patient2/patient2Convo.tscn::eae9f7e1020c018514a1ff05f6733f5
 res://Patients/List/Patient A/patient_a_convo.tscn::19b4e17d7f5d660c18f4ad6dcb40b38c::1722119996::res://.godot/exported/133200997/export-dac7661cf9032df8d62ac384ed28161a-patient_a_convo.scn
 res://Patients/List/Patient B/patient_b_convo.tscn::dc25250d64cf5f465c01e4552ae79f4a::1722122376::res://.godot/exported/133200997/export-c587e2f74a1c7563533c42b4f76d832a-patient_b_convo.scn
 res://Patients/List/Patient C/patient_c_convo.tscn::9892a7c0b8d6e7c5b2f737104ce46842::1722050079::res://.godot/exported/133200997/export-871c970afe0873f75481d9775ee68828-patient_c_convo.scn
-res://Patients/List/Patient D/patient_d_convo.tscn::fe37a20f406c917d07454ee8725fabec::1722287124::res://.godot/exported/133200997/export-cf46b1e9800b31a5de1250d217485d65-patient_d_convo.scn
-res://Patients/List/Patient E/patient_e_convo.tscn::23df4510fcb786f006d017f4243b8d52::1722287124::res://.godot/exported/133200997/export-18c7a4f7136880298fa746df729a9d71-patient_e_convo.scn
-res://Patients/List/Patient F/patient_f_convo.tscn::5cd7c25507721f878efcf6d32c8a88d8::1722287124::res://.godot/exported/133200997/export-b55f9c7912be47a21847f97f098076ac-patient_f_convo.scn
-res://Patients/List/Patient G/patient_g_convo.tscn::824e7e1b107204b3a0ecf330f72e3edc::1722287124::res://.godot/exported/133200997/export-a36461c62e54c3cf7cd586f9da18b0f2-patient_g_convo.scn
+res://Patients/List/Patient D/patient_d_convo.tscn::fe37a20f406c917d07454ee8725fabec::1722313816::res://.godot/exported/133200997/export-cf46b1e9800b31a5de1250d217485d65-patient_d_convo.scn
+res://Patients/List/Patient E/patient_e_convo.tscn::23df4510fcb786f006d017f4243b8d52::1722313816::res://.godot/exported/133200997/export-18c7a4f7136880298fa746df729a9d71-patient_e_convo.scn
+res://Patients/List/Patient F/patient_f_convo.tscn::5cd7c25507721f878efcf6d32c8a88d8::1722313816::res://.godot/exported/133200997/export-b55f9c7912be47a21847f97f098076ac-patient_f_convo.scn
+res://Patients/List/Patient G/patient_g_convo.tscn::824e7e1b107204b3a0ecf330f72e3edc::1722313816::res://.godot/exported/133200997/export-a36461c62e54c3cf7cd586f9da18b0f2-patient_g_convo.scn
 res://Patients/List/Patient H/patient_h_convo.tscn::2478b1a8ad5300f433d0029731f82fa9::1722122376::res://.godot/exported/133200997/export-fac62d56eb8803bb0ffa0ad867e62e59-patient_h_convo.scn
-res://Patients/List/Patient I/patient_i_convo.tscn::b3bae93fed9d0132db62ec679fb50aed::1722287124::res://.godot/exported/133200997/export-17719dabdea62d6f9e58e89dd726b40c-patient_i_convo.scn
+res://Patients/List/Patient I/patient_i_convo.tscn::b3bae93fed9d0132db62ec679fb50aed::1722313816::res://.godot/exported/133200997/export-17719dabdea62d6f9e58e89dd726b40c-patient_i_convo.scn
 res://Patients/List/Patient J/flame.tscn::ca6829c23a3f368b60532add2e6e9f54::1722122376::res://.godot/exported/133200997/export-a565de62aebc4a72be6ee7b9601bafad-flame.scn
 res://Patients/List/Patient J/patient_j_convo.tscn::f3ae1cf56e2e30500243cce519b01e22::1722050079::res://.godot/exported/133200997/export-1e56d25829a4a88441af0d0691ee220c-patient_j_convo.scn
-res://Patients/List/Patient K/patient_k_convo.tscn::12225c0bb7d13ba36ba8cc74e5cfff38::1722287124::res://.godot/exported/133200997/export-bc6c8aa12cf66b08ed804acbc9ab21d8-patient_k_convo.scn
+res://Patients/List/Patient K/patient_k_convo.tscn::12225c0bb7d13ba36ba8cc74e5cfff38::1722313816::res://.godot/exported/133200997/export-bc6c8aa12cf66b08ed804acbc9ab21d8-patient_k_convo.scn
 res://Patients/List/Patient L/patient_l_convo.tscn::db11c719b833ddccc4effc94d3180ae8::1722122376::res://.godot/exported/133200997/export-e053ca32986af13aafaa7a461c3c5180-patient_l_convo.scn
 res://Patients/List/Patient M/patient_m_convo.tscn::a93eafa3238b3cdf793ce126200f8ad8::1722122376::res://.godot/exported/133200997/export-3309c6b5818be7d9930141a7f7d4d258-patient_m_convo.scn
-res://Patients/List/Patient N/patient_n_convo.tscn::0317e0c129ddba7cd34cf7cb87da8432::1722287124::res://.godot/exported/133200997/export-a75647808fbc4313f04794a3a1e0e3cc-patient_n_convo.scn
-res://Patients/List/Patient O/patient_o_convo.tscn::b8018e76bbe8f03e7f9456dc0cb200c1::1722287124::res://.godot/exported/133200997/export-88714f6147027deffc0bca9d873101e5-patient_o_convo.scn
+res://Patients/List/Patient N/patient_n_convo.tscn::0317e0c129ddba7cd34cf7cb87da8432::1722313816::res://.godot/exported/133200997/export-a75647808fbc4313f04794a3a1e0e3cc-patient_n_convo.scn
+res://Patients/List/Patient O/patient_o_convo.tscn::b8018e76bbe8f03e7f9456dc0cb200c1::1722313817::res://.godot/exported/133200997/export-88714f6147027deffc0bca9d873101e5-patient_o_convo.scn
 res://Patients/tutorialShadow/tutorialConversation.tscn::06a961cf660c00e5b7acafd249b5c370::1722053451::res://.godot/exported/133200997/export-85f9b2315e8721278aebf3d361673c58-tutorialConversation.scn
 res://UI/End Scene/endscene.tscn::8803f7b792dfdf3a1dcae69a3333bb10::1721966458::res://.godot/exported/133200997/export-afb0748e8af571e97a967f139febadbc-endscene.scn
 res://UI/Garden/Garden Pot.tscn::4539325d36c67c87f8d603aea69e292a::1722122376::res://.godot/exported/133200997/export-f6bda12a946f031e3efed0447e462b8c-Garden Pot.scn
 res://UI/Garden/garden.tscn::a9b34d74a169126176aa63066ab9057e::1722122375::res://.godot/exported/133200997/export-f66b46a8c11a37d4ff589814ed3dfc3e-garden.scn
-res://UI/JournalScene/Journal/journal.tscn::f2f3bb97540218a95d638069e2ba2818::1722287124::res://.godot/exported/133200997/export-b3a668278fa2b2a245543c721c0a00e9-journal.scn
+res://UI/JournalScene/Journal/journal.tscn::f2f3bb97540218a95d638069e2ba2818::1722313816::res://.godot/exported/133200997/export-b3a668278fa2b2a245543c721c0a00e9-journal.scn
 res://UI/MainScene/Dialogue/dialogue.tscn::64b040f239132c9d755a5914b774a9fb::1722053451::res://.godot/exported/133200997/export-da7fbb0d4ccda48bbea0efc5ce9e4ceb-dialogue.scn
 res://UI/MainScene/Dialogue/speech_bubble.tscn::b3adacb3667c356345ca7a45330a56ef::1722053451::res://.godot/exported/133200997/export-797d3c1824d1c393d4b87d1e7021d553-speech_bubble.scn
 res://UI/MainScene/Side Dialogue Buttons/conversation.tscn::480259c98d116a57e0037df1e3b6d8fa::1721956302::res://.godot/exported/133200997/export-d2f241f02055968ae535f8bbdcced085-conversation.scn
@@ -78,11 +78,11 @@ res://UI/Seed Selection/seedSlot.tscn::5f29463d053fa2753e05f6d8fae7f169::1721851
 res://UI/Settings/settingsMenu.tscn::628bb57383273738e9dbb6c0435ad21f::1722122375::res://.godot/exported/133200997/export-c76d1caddb42f2fed265bbac77756199-settingsMenu.scn
 res://UI/StartMenu/StartScreen.tscn::57d90666814aa27dbd8cfff5c727a191::1722122375::res://.godot/exported/133200997/export-d085ec374f1b5629009aebce74ceb365-StartScreen.scn
 res://fade.tscn::0de83c0f810634baedd9199a5429a448::1721935326::res://.godot/exported/133200997/export-96583c0abd231bb29e165ea5cfad7be5-fade.scn
-res://journal.tscn::1713c06b9a1d9e5c507a2c18a894391c::1722287124::res://.godot/exported/133200997/export-d22b380fc07e72a5c8fefdfc3ac6ffea-journal.scn
+res://journal.tscn::1713c06b9a1d9e5c507a2c18a894391c::1722313816::res://.godot/exported/133200997/export-d22b380fc07e72a5c8fefdfc3ac6ffea-journal.scn
 res://LowerUIButtons.tscn::3ff9185005adf10974b7b0e9b4ad384f::1722092764::res://.godot/exported/133200997/export-6792933d816cfdb6c8585d8282b68e27-LowerUIButtons.scn
 res://music.tscn::58d8d9eec538f917c37b2294e32d913f::1722092763::res://.godot/exported/133200997/export-bb6f876339c046e4ad1ca955812acf1e-music.scn
 res://Potion.tscn::fd08c00f19b0b00083e2135c50764881::1721790944::res://.godot/exported/133200997/export-f64a588652796ac4604e3c653c5db7ad-Potion.scn
-res://Question Container.tscn::96a5c02e439987948e351d636fe1850b::1722023098::res://.godot/exported/133200997/export-9a760a6008f41be41940d203c1e00002-Question Container.scn
+res://Question Container.tscn::96a5c02e439987948e351d636fe1850b::1722313817::res://.godot/exported/133200997/export-9a760a6008f41be41940d203c1e00002-Question Container.scn
 res://Theme.tres::02a9318d5b1235ede22a1f25d3487708::1722286740::res://.godot/exported/133200997/export-4df2cb670c391688f097c02f900b548e-Theme.res
-res://UpperQuestions.tscn::9019f74417023317ff3fd419612611a4::1722287444::res://.godot/exported/133200997/export-4922d9d02492a3ff598a5ce6037d6424-UpperQuestions.scn
-res://world.tscn::e9852f69953f78cb57be4a63d0249541::1722287124::res://.godot/exported/133200997/export-76e0adcbc83681695885bae615f516ae-world.scn
+res://UpperQuestions.tscn::9019f74417023317ff3fd419612611a4::1722313817::res://.godot/exported/133200997/export-4922d9d02492a3ff598a5ce6037d6424-UpperQuestions.scn
+res://world.tscn::e9852f69953f78cb57be4a63d0249541::1722313816::res://.godot/exported/133200997/export-76e0adcbc83681695885bae615f516ae-world.scn
